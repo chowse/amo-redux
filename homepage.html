@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+
+<script type="text/javascript">
+	document.documentElement.className += ' js';
+</script>
+
+<head>
+	<title>Firefox Add-ons</title>
+	<link rel="stylesheet" href="static/reset.min.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="static/style.css" type="text/css" media="screen" />
+</head>
+
+<body>
+
+
+<header id="global-header"><div class="funnel">
+	<a id="mozilla-tab" href="#">Mozilla</a>
+	
+	<div class="menu">
+		<p>
+			<a href="#">Register</a>
+			or
+			<a href="#">Log in</a>
+		</p>
+
+		<p>
+			<a href="#">Other Applications</a>
+		</p>
+</div></header>
+
+
+<header id="site-header"><div class="funnel">
+	<h1>
+		<a href="homepage.html">Add-ons</a>
+	</h1>
+	
+	<form id="site-search">
+		<input type="text" placeholder="Search for Add-ons"></input>
+		<button>Search</button>
+	</form>
+	
+	<nav id="site-nav">
+		<ul>
+			<!--
+			--><li><a href="#">Featured</a></li><!--
+			--><li><a href="#">Most Popular</a></li><!--
+			--><li><a class="selected" href="#">Top Rated</a></li><!--
+			--><li><a href="#">Collections</a></li><!--
+			--><li><a href="#">Personas</a></li><!--
+			--><li><a href="#">Themes</a></li><!--
+			--><li>
+				<form id="site-nav-search">
+					<input type="text" placeholder="Search for Add-ons"></input>
+					<button>Search</button>
+				</form>
+			</li><!--
+			-->
+		</ul>
+	</nav>
+</div></header>
+
+
+<div id="page-content"><div class="funnel">
+	
+<nav id="nav-sidebar" class="secondary-col">
+	<div id="nav-primary">
+		<h2>Explore <strong>Add-ons</strong></h2>
+		<ul>
+			<li><a href="#">Featured</a></li>
+			<li><a href="#">Most Popular</a></li>
+			<li><a class="selected" href="#">Top Rated</a></li>
+			<li><a href="#">Collections</a></li>
+		</ul>
+	</div>
+	
+	<div id="nav-categories">
+		<h2>Explore Add-ons</h2>
+		<ul>
+			<li><a href="#">Alerts &amp; Updates</a></li>
+			<li><a href="#">Appearance</a></li>
+			<li><a class="selected" href="#">Bookmarks</a></li>
+			<li><a href="#">Download Management</a></li>
+			<li><a href="#">Feeds, News &amp; Blogging</a></li>
+			<li><a href="#">Games &amp; Entertainment</a></li>
+			<li><a href="#">Language Support</a></li>
+			<li><a href="#">Photos, Music &amp; Videos</a></li>
+			<li><a href="#">Privacy &amp; Security</a></li>
+			<li><a href="#">Shopping</a></li>
+			<li><a href="#">Social &amp; Communication</a></li>
+			<li><a href="#">Tabs</a></li>
+			<li><a href="#">Web Development</a></li>
+			<li><a href="#">Other</a></li>
+		</ul>
+	</div>
+	
+	<div id="nav-types">
+		<h2>More Add-ons</h2>
+		<ul>
+			<li><a href="#">Extensions</a></li>
+			<li><a href="#">Dictionaries &amp; Languages</a></li>
+			<li><a href="#">Personas</a></li>
+			<li><a href="#">Plugins</a></li>
+			<li><a href="#">Search Tools</a></li>
+			<li><a href="#">Themes</a></li>
+		</ul>
+	</div>
+</nav>
+
+
+<div class="primary-col">
+	<section id="promo-block" class="island deep">
+	</section>
+	
+	<div class="secondary-col">
+		<section id="top-list" class="island">
+			<header>
+				<h2>
+					Top Add-ons
+					<a href="#">All &raquo;</a>
+				</h2>
+			</header>
+			
+			<ol class="extension-list">
+				<li>
+					<a href="#"><span class="meta"></span> Lorem Ipsum Dolor</a>
+					<span class="meta">9,999,999 downloads</span>
+				</li>
+				<li>
+					<a href="#"><span class="meta"></span> Lorem Ipsum Dolor</a>
+					<span class="meta">9,999,999 downloads</span>
+				</li>
+				<li>
+					<a href="#"><span class="meta"></span> Lorem Ipsum Dolor</a>
+					<span class="meta">9,999,999 downloads</span>
+				</li>
+				<li>
+					<a href="#"><span class="meta"></span> Lorem Ipsum Dolor</a>
+					<span class="meta">9,999,999 downloads</span>
+				</li>
+				<li>
+					<a href="#"><span class="meta"></span> Lorem Ipsum Dolor</a>
+					<span class="meta">9,999,999 downloads</span>
+				</li>
+			</ol>
+		</section>
+
+		<section id="featured-personas" class="island">
+			<header>
+				<h2>
+					Top Personas
+					<a href="#">All &raquo;</a>
+				</h2>
+			</header>
+			
+			<ol class="persona-list">
+				<li>
+					<a href="#"><img src="" alt="" /></a>
+				</li>
+				<li>
+					<a href="#"><img src="" alt="" /></a>
+				</li>
+				<li>
+					<a href="#"><img src="" alt="" /></a>
+				</li>
+				<li>
+					<a href="#"><img src="" alt="" /></a>
+				</li>
+				<li>
+					<a href="#"><img src="" alt="" /></a>
+				</li>
+			</ol>
+		</section>
+	</div>
+	
+	<div class="primary-col">
+		<section id="featured" class="island">
+			<header>
+				<h2>
+					Featured Add-ons
+					<a href="#">See all &raquo;</a>
+				</h2>
+				
+				<div class="pager">
+					<!--
+					--><a class="prev" href="#">Prev</a><!--
+					--><a href="#">1</a><!--
+					--><a href="#">2</a><!--
+					--><a href="#">3</a><!--
+					--><a class="next" href="#">Prev</a><!--
+					-->
+				</div>
+			</header>
+			
+			<div class="pages">
+				<ul class="page">
+					<!--
+					--><li>
+						<div class="extension">
+							<p class="title"><a href="#">
+								<span class="icon"></span>
+								Lorem Ipsum Dolor
+							</a></p>
+							<p class="category">Social &amp; Communication</p>
+							<p class="rating"><span class="rating-stars rating-4"></span> <a href="#">30</a></p>
+						</div>
+					</li><!--
+					
+					--><li>
+						<div class="extension">
+							<p class="title"><a href="#">
+								<span class="icon"></span>
+								Lorem Ipsum Dolor
+							</a></p>
+							<p class="category">Social &amp; Communication</p>
+							<p class="rating"><span class="rating-stars rating-4"></span> <a href="#">30</a></p>
+						</div>
+					</li><!--
+					
+					--><li>
+						<div class="extension">
+							<p class="title"><a href="#">
+								<span class="icon"></span>
+								Lorem Ipsum Dolor
+							</a></p>
+							<p class="category">Social &amp; Communication</p>
+							<p class="rating"><span class="rating-stars rating-4"></span> <a href="#">30</a></p>
+						</div>
+					</li><!--
+					
+					--><li>
+						<div class="extension">
+							<p class="title"><a href="#">
+								<span class="icon"></span>
+								Lorem Ipsum Dolor
+							</a></p>
+							<p class="category">Social &amp; Communication</p>
+							<p class="rating"><span class="rating-stars rating-4"></span> <a href="#">30</a></p>
+						</div>
+					</li><!--
+					-->
+				</ul>
+			</div>
+		</section>
+
+
+		<section id="featured-themes" class="island">
+			<header>
+				<h2>
+					Featured Themes
+					<a href="#">See all &raquo;</a>
+				</h2>
+				
+				<div class="pager">
+					<!--
+					--><a class="prev" href="#">Prev</a><!--
+					--><a href="#">1</a><!--
+					--><a href="#">2</a><!--
+					--><a href="#">3</a><!--
+					--><a class="next" href="#">Prev</a><!--
+					-->
+				</div>
+			</header>
+			
+			<div class="pages">
+				<ul class="page threecol">
+					<!--
+					--><li>
+						<div class="theme">
+							<p class="preview"><img src="" /></p>
+							<p class="title"><a href="#">Lorem Ipsum Dolor <span></span></a></p>
+						</div>
+					</li><!--
+					
+					--><li>
+						<div class="theme">
+							<p class="preview"><img src="" /></p>
+							<p class="title"><a href="#">Lorem Ipsum Dolor <span></span></a></p>
+						</div>
+					</li><!--
+					
+					--><li>
+						<div class="theme">
+							<p class="preview"><img src="" /></p>
+							<p class="title"><a href="#">Lorem Ipsum Dolor <span></span></a></p>
+						</div>
+					</li><!--
+					
+					--><li>
+						<div class="theme">
+							<p class="preview"><img src="" /></p>
+							<p class="title"><a href="#">Lorem Ipsum Dolor <span></span></a></p>
+						</div>
+					</li><!--
+					
+					--><li>
+						<div class="theme">
+							<p class="preview"><img src="" /></p>
+							<p class="title"><a href="#">Lorem Ipsum Dolor <span></span></a></p>
+						</div>
+					</li><!--
+					
+					--><li>
+						<div class="theme">
+							<p class="preview"><img src="" /></p>
+							<p class="title"><a href="#">Lorem Ipsum Dolor <span></span></a></p>
+						</div>
+					</li><!--
+					-->
+				</ul>
+			</div>
+		</section>
+
+
+		<section id="featured-collections" class="island">
+			<header>
+				<h2>
+					Featured Collections
+					<a href="#">See all &raquo;</a>
+				</h2>
+				
+				<div class="pager">
+					<!--
+					--><a class="prev" href="#">Prev</a><!--
+					--><a href="#">1</a><!--
+					--><a href="#">2</a><!--
+					--><a href="#">3</a><!--
+					--><a class="next" href="#">Prev</a><!--
+					-->
+				</div>
+			</header>
+
+			<div class="pages">
+				<ul class="page">
+					<!--
+					--><li>
+						<div class="collection">
+							<p class="title"><a href="#">
+								<span class="icon"></span>
+								Lorem Ipsum Dolor
+							</a></p>
+							<p class="mini-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam purus velit, vehicula interdum semper a, fringilla ut sapien.</p>
+						</div>
+					</li><!--
+
+					--><li>
+						<div class="collection">
+							<p class="title"><a href="#">
+								<span class="icon"></span>
+								Lorem Ipsum Dolor
+							</a></p>
+							<p class="mini-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam purus velit, vehicula interdum semper a, fringilla ut sapien.</p>
+						</div>
+					</li><!--
+
+					--><li>
+						<div class="collection">
+							<p class="title"><a href="#">
+								<span class="icon"></span>
+								Lorem Ipsum Dolor
+							</a></p>
+							<p class="mini-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam purus velit, vehicula interdum semper a, fringilla ut sapien.</p>
+						</div>
+					</li><!--
+
+					--><li>
+						<div class="collection">
+							<p class="title"><a href="#">
+								<span class="icon"></span>
+								Lorem Ipsum Dolor
+							</a></p>
+							<p class="mini-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam purus velit, vehicula interdum semper a, fringilla ut sapien.</p>
+						</div>
+					</li><!--
+					-->
+				</ul>
+			</div>
+		</section>
+	</div>
+</div>
+
+
+</div></div>
+
+
+
+<script type="text/javascript" src="static/jquery-1.4.3.min.js"></script>
+<script type="text/javascript" src="static/script.js"></script>
+
+</body>
+
+</html>
