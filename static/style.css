@@ -658,6 +658,7 @@ html {
 /* Detail Pages  */
 
 #detail-main {
+	margin: 0;
 	padding: 19px;
 	padding-bottom: 23px;
 	font-family: Georgia;
@@ -734,16 +735,22 @@ html {
 				color: #c00000;
 			}
 
+#detail-slow,
+#detail-contribute {
+	margin: 10px 0;
+}
+
+
 #detail-slow {
 	border-color: #fef1bb;
-	background: #fef1bb url(img/turtle.png) no-repeat 15px 15px;
+	background: #fef1bb url(img/turtle.png) no-repeat 36px 15px;
 	font-family: Georgia;
 	font-size: 14px;
 	color: #666;
 }
 	#detail-slow h2,
 	#detail-slow p {
-		margin-left: 62px;
+		margin-left: 84px;
 	}
 	#detail-slow h2 {
 		font-size: 16px;
@@ -797,7 +804,7 @@ html {
 			color: #333;
 		}
 		#detail-contribute p {
-			line-height: 16px;
+			line-height: 18px;
 		}
 	#detail-contribute .action {
 		position: absolute;
@@ -885,6 +892,7 @@ html {
 				margin-left: 15px;
 				margin-top: 15px;
 				padding: 9px;
+				background: #f9fcfe;
 				border: 1px solid #C9DDF2;
 				-moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
 				-moz-transition-property: background-color, border-color, -moz-box-shadow;
@@ -934,24 +942,42 @@ html {
 
 
 .detail-page .island {
-	background: -moz-linear-gradient(top, #fff, #f4f8fc);
+	background: -moz-linear-gradient(top, #fcfdfe, #f4f8fc);
+	margin: 30px 0;
+	font-family: Georgia;
+	color: #666;
 }
+	.detail-page .island h2 {
+		font-size: 18px;
+		font-style: italic;
+		color: #333;
+	}
+	.detail-page .island .island-segment {
+		margin: 0 -14px;
+		padding: 14px;
+		border-top: 1px solid #fff;
+		border-bottom: 1px solid #C9DDF2;
+	}
+	.detail-page .island .island-segment:first-child {
+		padding-top: 0;
+		border-top: 0;
+	}
+	.detail-page .island .island-segment:last-child {
+		padding-bottom: 0;
+		border-bottom: 0;
+	}
+	
+
 
 #detail-about,
 #detail-reviews,
 #detail-related,
 #detail-devstuff {
-	margin: 30px 0;
-	font-family: Georgia;
-	color: #666;
 }
 	#detail-about h2,
 	#detail-reviews h2,
 	#detail-related h2,
 	#detail-devstuff h2 {
-		font-size: 18px;
-		font-style: italic;
-		color: #333;
 	}
 
 
@@ -1035,6 +1061,7 @@ html {
 #detail-reviews {
 	margin: 30px 0;
 	font-family: Georgia;
+	font-size: 14px;
 	color: #666;
 }
 	#detail-reviews h2 {
@@ -1042,39 +1069,119 @@ html {
 		font-style: italic;
 		color: #333;
 	}
+	#detail-reviews .review,
+	#detail-reviews .more {
+		margin-top: 20px;
+	}
+	#detail-reviews .review {
+		margin-top: 18px;
+	}
+		#detail-reviews .review h3 {
+			font-size: 16px;
+			font-style: italic;
+			color: #333;
+		}
+			#detail-reviews .review h3 a {
+				color: inherit;
+			}
+			#detail-reviews .review h3 .rating-stars {
+				margin-left: 4px;
+			}
+		#detail-reviews .review .meta {
+			margin-top: 2px;
+			font-size: 12px;
+			font-style: italic;
+			color: #999;
+		}
+			#detail-reviews .review .meta a {
+				color: #666;
+			}
+		#detail-reviews .review p {
+			margin-top: 4px;
+			line-height: 17px;
+		}
 
 
 #detail-reviews-sidebar {
 	font-size: 10px;
 }
-	#detail-reviews-sidebar .average {
+	#detail-reviews-sidebar .breakdown {
+	}
+		#detail-reviews-sidebar .average {
+			font-size: 14px;
+		}
+			#detail-reviews-sidebar .average td,
+			#detail-reviews-sidebar .average th {
+				padding-bottom: 14px;
+			}
+			#detail-reviews-sidebar .average th {
+				border-right-color: transparent;
+			}
+			#detail-reviews-sidebar .average td {
+			}
+		#detail-reviews-sidebar td,
+		#detail-reviews-sidebar th {
+			padding: 3px 0;
+			vertical-align: middle;
+		}
+		#detail-reviews-sidebar th {
+			padding-right: 6px;
+			border-right: 1px solid #999;
+		}
+		#detail-reviews-sidebar .bar {
+			display: inline-block;
+			background: #C9DDF2;
+			background: #ddd;
+			width: 80px;
+			height: 10px;
+		}
+	#detail-reviews-sidebar .write {
+		margin-top: 18px;
+	}
+
+
+#detail-related {
+}
+	#detail-related > section {
+		min-height: 80px;
+	}
+
+#detail-related-sidebar {
+}
+	#detail-related-sidebar div {
 		font-size: 14px;
 	}
-		#detail-reviews-sidebar .average td,
-		#detail-reviews-sidebar .average th {
-			padding-bottom: 14px;
-		}
-		#detail-reviews-sidebar .average th {
-			border-right-color: transparent;
-		}
-		#detail-reviews-sidebar .average td {
-		}
-	#detail-reviews-sidebar td,
-	#detail-reviews-sidebar th {
-		padding: 3px 0;
-		vertical-align: middle;
+	#detail-related-sidebar h3 {
+		margin-bottom: 3px;
+		color: #333;
 	}
-	#detail-reviews-sidebar th {
-		padding-right: 6px;
-		border-right: 1px solid #999;
+	#detail-related-sidebar .categories {
 	}
-	#detail-reviews-sidebar .bar {
-		display: inline-block;
-		background: #C9DDF2;
-		background: #ddd;
-		width: 80px;
-		height: 10px;
+		#detail-related-sidebar .categories li {
+			margin-top: 7px;
+		}
+	#detail-related-sidebar .tags {
+		margin-top: 14px;
 	}
+		#detail-related-sidebar .tags ul {
+			font-size: 12px;
+			line-height: 15px;
+		}
+		#detail-related-sidebar .tags li {
+			display: inline;
+		}
+		#detail-related-sidebar .tags li:after {
+			content: '\b7';
+			margin: 0 4px;
+		}
+
+	#detail-related-sidebar ul {
+	}
+		#detail-related-sidebar li {
+			margin-top: 2px;
+		}
+	
+
 
 
 
@@ -1089,8 +1196,57 @@ html {
 		color: #333;
 	}
 
+#detail-devcomments {
+}
+	#detail-devcomments .content {
+		font-size: 14px;
+		line-height: 17px;
+	}
+		#detail-devcomments .content p {
+			margin-top: 14px;
+		}
 
+#detail-relnotes {
+}
+	#detail-relnotes .content {
+		font-size: 14px;
+		line-height: 17px;
+	}
+		#detail-relnotes .content p {
+			margin-top: 14px;
+		}
 
+#detail-versions {
+}
+	#detail-versions .version {
+		margin-top: 18px;
+	}
+		#detail-versions .version h3 {
+			font-size: 16px;
+			font-style: italic;
+			color: #333;
+		}
+			#detail-versions .version h3 a {
+				color: inherit;
+			}
+			#detail-versions .version h3 .rating-stars {
+				margin-left: 4px;
+			}
+		#detail-versions .version .meta {
+			margin-top: 2px;
+			font-size: 12px;
+			font-style: italic;
+			color: #999;
+		}
+			#detail-versions .version .meta a {
+				color: #666;
+			}
+		#detail-versions .version p {
+			margin-top: 4px;
+			line-height: 17px;
+		}
 
-#detail-slow { display: none; }
-#detail-contribute { display: none; }
+	#detail-versions .version {
+		margin-top: 18px;
+	}
+

@@ -67,7 +67,7 @@
 <div class="secondary-col reversed">
 	<section id="detail-main-sidebar">
 		<p class="rating"><span class="rating-stars large rating-4"></span></p>
-		<p class="reviews"><a href="#">3,000 user reviews</a></p>
+		<p class="reviews"><a href="#detail-reviews">3,000 user reviews</a></p>
 		<p class="users"><strong>1,234,567</strong> active users</p>
 	
 		<ul class="actions">
@@ -95,7 +95,7 @@
 			<div class="go">
 				<a class="button install" href="#"><span>Add to Firefox</span></a>
 				<span class="no-restart">No restart required</span>
-				<a class="privacy" href="#">Privacy Policy</a>
+				<a class="privacy" href="#">View privacy Policy</a>
 			</div>
 
 			<ul class="stop">
@@ -125,9 +125,9 @@
 			<h2>Enjoy this add-on?</h2>
 
 			<p>
-				Make a small donation to
-				<a href="#">Author Name</a>
-				to support the continued development of this add-on.
+				The
+				<a href="#">developer of this add-on</a>
+				asks that you help support its continued development by making a small contribution
 			</p>
 		</div>
 
@@ -250,6 +250,10 @@
 				<td><span class="bar" style="width: 40px"></span> 50</td>
 			</tr>
 		</table>
+		
+		<p class="write">
+			<a class="button small" href="#">Write a Review</a>
+		</p>
 	</section>
 </div>
 
@@ -260,8 +264,8 @@
 		<div class="reviews">
 			<div class="review">
 				<h3>
-					Review Title
-					<span class="stars stars5"></span>
+					<a href="#">Review Title</a>
+					<span class="rating-stars rating-4"></span>
 				</h3>
 				
 				<div class="meta">
@@ -276,8 +280,8 @@
 
 			<div class="review">
 				<h3>
-					Review Title
-					<span class="stars stars5"></span>
+					<a href="#">Review Title</a>
+					<span class="rating-stars rating-3"></span>
 				</h3>
 				
 				<div class="meta">
@@ -292,8 +296,8 @@
 
 			<div class="review">
 				<h3>
-					Review Title
-					<span class="stars stars5"></span>
+					<a href="#">Review Title</a>
+					<span class="rating-stars rating-1"></span>
 				</h3>
 				
 				<div class="meta">
@@ -316,8 +320,8 @@
 
 <div class="secondary-col reversed">
 	<section id="detail-related-sidebar">
-		<div>
-			<h2>Related Categories</h2>
+		<div class="categories">
+			<h3>Related Categories</h3>
 			<ul>
 				<!--
 				--><li><a href="#">Feeds, News &amp; Blogging</a></li><!--
@@ -327,8 +331,8 @@
 			</ul>
 		</div>
 
-		<div>
-			<h2>Related Tags</h2>
+		<div class="tags">
+			<h3>Related Tags</h3>
 			<ul>
 				<!--
 				--><li><a href="#">lorem</a></li><!--
@@ -346,15 +350,15 @@
 
 <div class="primary-col reversed">
 	<section id="detail-related" class="island">
-		<section id="detail-related-addons">
+		<section id="detail-related-addons" class="island-segment">
 			<h2>Related Add-ons</h2>
 		</section>
 
-		<section id="detail-related-colls">
+		<section id="detail-related-colls" class="island-segment">
 			<h2>Part of these Collections</h2>
 		</section>
 
-		<section id="detail-related-addons">
+		<section id="detail-related-author" class="island-segment">
 			<h2>More Add-ons by <a href="#">Add-on Author</a></h2>
 		</section>
 	</section>
@@ -363,7 +367,7 @@
 
 <div class="primary-col reversed">
 	<section id="detail-devstuff" class="island">
-		<section id="detail-devcomments" class="expandable collapsed">
+		<section id="detail-devcomments" class="island-segment expandable collapsed">
 			<h2>Developer's Comments</h2>
 			
 			<a class="expander" href="#"></a>
@@ -379,7 +383,7 @@
 			</div>
 		</section>
 
-		<section id="detail-relnotes" class="expandable collapsed">
+		<section id="detail-relnotes" class="island-segment expandable collapsed">
 			<h2>Release Notes</h2>
 			
 			<a class="expander" href="#"></a>
@@ -396,7 +400,7 @@
 		</section>
 
 
-		<section id="detail-versions" class="expandable collapsed">
+		<section id="detail-versions" class="island-segment expandable collapsed">
 			<h2>Other Versions</h2>
 			
 			<a class="expander" href="#"></a>
@@ -419,7 +423,7 @@
 					</div>
 					
 					<div class="go">
-						<a class="install" href="#">Add to Firefox</a>
+						<a class="button install" href="#"><span>Add to Firefox</span></a>
 					</div>
 				</div>
 
@@ -440,15 +444,15 @@
 					</div>
 					
 					<div class="go">
-						<a class="install" href="#">Download for Windows</a>
-						<a class="install" href="#">Download for Mac OS X</a>
-						<a class="install" href="#">Download for Linux</a>
+						<a class="button install" href="#"><span>Download for Windows</span></a>
+						<a class="button install" href="#"><span>Download for Mac OS X</span></a>
+						<a class="button install" href="#"><span>Download for Linux</span></a>
 					</div>
 				</div>
 			</div>
 
 			<div class="more">
-				<a href="#">See complete version history&hellp;</a>
+				<a href="#">See complete version history&hellip;</a>
 			</div>
 		</section>
 	</section>
