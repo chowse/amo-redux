@@ -675,10 +675,10 @@ html {
 	#detail-main header {
 		margin-top: 0;
 		padding: 0;
+		font-style: italic;
 	}
 		#detail-main header h1 {
 			font-size: 24px;
-			font-style: italic;
 			line-height: 26px;
 			color: #333;
 		}
@@ -687,8 +687,8 @@ html {
 			color: #666;
 		}
 			#detail-main header .author a {
+				color: #666;
 				color: #333;
-				color: inherit;
 			}
 		#detail-main header .icon {
 			position: absolute;
@@ -712,6 +712,7 @@ html {
 			margin-top: 10px;
 		}
 		#detail-main .go {
+			font-size: 14px;
 		}
 			#detail-main .no-restart,
 			#detail-main .privacy {
@@ -720,7 +721,7 @@ html {
 			#detail-main .no-restart {
 				padding: 3px 9px;
 				border: 1px solid #C9DDF2;
-				background: #C9DDF2;
+				background: #fff;
 				-moz-border-radius: 3px;
 			}
 			#detail-main .privacy {
@@ -742,8 +743,8 @@ html {
 
 
 #detail-slow {
-	border-color: #fef1bb;
-	background: #fef1bb url(img/turtle.png) no-repeat 36px 15px;
+	border-color: #fff8dc;
+	background: #fff8dc url(img/turtle.png) no-repeat 36px 15px;
 	font-family: Georgia;
 	font-size: 14px;
 	color: #666;
@@ -860,6 +861,9 @@ html {
 			#detail-main-sidebar .actions a:focus {
 				color: #447BC4;
 				background-position: 0 -18px;
+			}
+			#detail-main-sidebar .actions #detail-addcoll {
+				background-image: url(img/add-coll.png);
 			}
 			#detail-main-sidebar .actions #detail-share {
 				background-image: url(img/share.png);
@@ -1031,13 +1035,10 @@ html {
 			margin-top: 8px;
 		}
 		#detail-about-sidebar .links a {
-			color: #999;
 			padding-left: 18px;
-			background: url(img/home.png) no-repeat 0 2px;
+			background: url(img/home.png) no-repeat 0 -18px;
 		}
 		#detail-about-sidebar .links a:hover {
-			color: #447BC4;
-			background-position: 0 -20px;
 		}
 	#detail-about-sidebar .data {
 	}
@@ -1149,19 +1150,20 @@ html {
 #detail-related-sidebar {
 }
 	#detail-related-sidebar div {
-		font-size: 14px;
+		font-size: 12px;
 	}
 	#detail-related-sidebar h3 {
 		margin-bottom: 3px;
+		font-size: 14px;
 		color: #333;
 	}
 	#detail-related-sidebar .categories {
 	}
 		#detail-related-sidebar .categories li {
-			margin-top: 7px;
+			margin-top: 6px;
 		}
 	#detail-related-sidebar .tags {
-		margin-top: 14px;
+		margin-top: 17px;
 	}
 		#detail-related-sidebar .tags ul {
 			font-size: 12px;
