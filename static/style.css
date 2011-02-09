@@ -671,6 +671,19 @@ html {
 
 /* Detail Pages  */
 
+
+#detail-breadcrumbs {
+	margin-bottom: 15px;
+	font-family: Georgia;
+	font-size: 13px;
+	color: #303030;
+}
+	#detail-breadcrumbs b {
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+
 #detail-main {
 	margin: 0;
 	padding: 19px;
