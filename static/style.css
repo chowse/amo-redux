@@ -383,8 +383,6 @@ html {
 	                 0 0 100px rgba(255, 255, 255, 0.2) inset;
 }
 
-
-
 .button.install {
 	background: -moz-linear-gradient(#84C63C, #489615);
 	color: #fff;
@@ -393,11 +391,27 @@ html {
 		padding-left: 24px;
 		background: url(img/add.png) no-repeat left center;
 	}
-.button.install.large {
-	background: -moz-linear-gradient(#84C63C, #489615);
-	color: #fff;
+.button.install.small {
 }
+	.button.install.small span {
+		background-image: url(img/add-small.png);
+		padding-left: 18px;
+	}
 
+
+.expandable {
+}
+	.expandable .expandable-content {
+		display: none;
+	}
+.expandable.expanded {
+}
+	.expandable.expanded .expandable-content {
+		display: block;
+	}
+	.expandable.expanded .collapsed-expander {
+		display: none;
+	}
 
 
 /* Global Elements  */
@@ -1012,15 +1026,7 @@ html {
 		font-size: 14px;
 		line-height: 17px;
 	}
-	#detail-about .expandable {
-		display: none;
-	}
-	#detail-about.expanded .expandable {
-		display: block;
-	}
-	#detail-about.expanded .expander {
-		display: none;
-	}
+
 
 #detail-about-sidebar {
 	margin-top: 15px;
@@ -1072,10 +1078,17 @@ html {
 	}
 	#detail-reviews .review,
 	#detail-reviews .more {
-		margin-top: 20px;
+	}
+	#detail-reviews .reviews {
+		border-bottom: 1px solid #fff;
 	}
 	#detail-reviews .review {
-		margin-top: 18px;
+		padding: 15px 0;
+		border-top: 1px solid #fff;
+		border-bottom: 1px solid #e4eef8;
+	}
+	#detail-reviews .review:first-child {
+		border-top: 0;
 	}
 		#detail-reviews .review h3 {
 			font-size: 16px;
@@ -1101,6 +1114,10 @@ html {
 			margin-top: 4px;
 			line-height: 17px;
 		}
+	#detail-reviews .more {
+		margin-top: 15px;
+	}
+
 
 
 #detail-reviews-sidebar {
@@ -1182,7 +1199,6 @@ html {
 		#detail-related-sidebar li {
 			margin-top: 2px;
 		}
-	
 
 
 
@@ -1193,35 +1209,58 @@ html {
 	color: #666;
 }
 	#detail-devstuff h2 {
+		position: relative;
 		font-size: 18px;
 		font-style: italic;
 		color: #333;
 	}
+	#detail-devstuff .collapsed h2 {
+		color: #666;
+	}
+	#detail-devstuff .expander {
+		float: right;
+		width: 18px;
+		height: 18px;
+	}
+	#detail-devstuff .expander:after {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
+	
 
 #detail-devcomments {
 }
-	#detail-devcomments .content {
+	#detail-devcomments .expandable-content {
 		font-size: 14px;
 		line-height: 17px;
 	}
-		#detail-devcomments .content p {
+		#detail-devcomments .expandable-content p {
 			margin-top: 14px;
 		}
 
 #detail-relnotes {
 }
-	#detail-relnotes .content {
+	#detail-relnotes .expandable-content {
 		font-size: 14px;
 		line-height: 17px;
 	}
-		#detail-relnotes .content p {
+		#detail-relnotes .expandable-content p {
 			margin-top: 14px;
 		}
 
 #detail-versions {
 }
 	#detail-versions .version {
-		margin-top: 18px;
+		padding: 15px 0;
+		border-top: 1px solid #fff;
+		border-bottom: 1px solid #e4eef8;
+	}
+	#detail-versions .version .first-child {
+		border-top: 0;
 	}
 		#detail-versions .version h3 {
 			font-size: 16px;
@@ -1234,21 +1273,26 @@ html {
 			#detail-versions .version h3 .rating-stars {
 				margin-left: 4px;
 			}
-		#detail-versions .version .meta {
-			margin-top: 2px;
+		#detail-versions .version .date,
+		#detail-versions .version .support {
 			font-size: 12px;
 			font-style: italic;
-			color: #999;
+			color: #666;
 		}
-			#detail-versions .version .meta a {
-				color: #666;
-			}
-		#detail-versions .version p {
+		#detail-versions .version .date {
 			margin-top: 4px;
-			line-height: 17px;
 		}
-
-	#detail-versions .version {
-		margin-top: 18px;
+		#detail-versions .version p {
+			margin-top: 12px;
+			line-height: 18px;
+		}
+		#detail-versions .version .support {
+			margin-top: 8px;
+		}
+		#detail-versions .version .go {
+			margin-top: 12px;
+		}
+	#detail-versions .more {
+		margin-top: 15px;
 	}
 

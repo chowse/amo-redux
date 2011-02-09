@@ -3,9 +3,10 @@
 (function($) {
 	$(function() {
 		
-		$('#detail-about .expander a, #detail-about .collapser a').click(function() {
-			$('#detail-about').toggleClass('expanded');
+		$('.expandable .expander').click(function() {
+			$(this).closest('.expandable').toggleClass('expanded collapsed');
 			return false;
 		});
+		
 	});
 })(jQuery);

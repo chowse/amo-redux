@@ -64,6 +64,17 @@
 <div id="page-content"><div class="funnel">
 
 
+<nav id="detail-breadcrumbs">
+	<a href="#">Add-ons</a>
+	&raquo;
+	<a href="#">Extensions</a>
+	&raquo;
+	<a href="#">Social &amp; Communication</a>
+	&raquo;
+	<a href="#">Add-ons</a>
+</nav>
+
+
 <div class="secondary-col reversed">
 	<section id="detail-main-sidebar">
 		<p class="rating"><span class="rating-stars large rating-4"></span></p>
@@ -127,7 +138,7 @@
 			<p>
 				The
 				<a href="#">developer of this add-on</a>
-				asks that you help support its continued development by making a small contribution
+				asks that you help support its continued development by making a small contribution.
 			</p>
 		</div>
 
@@ -172,7 +183,7 @@
 </div>
 
 <div class="primary-col reversed">
-	<section id="detail-about" class="island">
+	<section id="detail-about" class="island expandable collapsed">
 		<h2>About this Add-on</h2>
 		
 		<p>
@@ -187,11 +198,11 @@
 			Maecenas id bibendum lectus. Cras blandit bibendum diam non condimentum. Morbi venenatis posuere justo, quis ullamcorper metus tristique eget. Aenean non eros justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 		</p>
 		
-		<p class="expander">
+		<p class="expander collapsed-expander">
 			<a href="#">Read more&hellip;</a>
 		</p>
 		
-		<div class="expandable">
+		<div class="expandable-content">
 
 			<p>
 				Aliquam erat volutpat. Nam ut enim odio, at pulvinar felis. Curabitur felis nisi, placerat eu cursus lacinia, auctor eu ipsum. Cras rutrum dictum nibh, vitae scelerisque turpis porttitor et. Quisque nulla sem, luctus ut consequat eu, gravida et ipsum. 
@@ -209,7 +220,7 @@
 				Maecenas id bibendum lectus. Cras blandit bibendum diam non condimentum. Morbi venenatis posuere justo, quis ullamcorper metus tristique eget. Aenean non eros justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 			</p>
 		
-			<p class="collapser">
+			<p class="expander">
 				<a href="#">Show less&hellip;</a>
 			</p>
 		</div>
@@ -368,11 +379,13 @@
 <div class="primary-col reversed">
 	<section id="detail-devstuff" class="island">
 		<section id="detail-devcomments" class="island-segment expandable collapsed">
-			<h2>Developer's Comments</h2>
+			<h2>
+				Developer's Comments
+				<a class="expander" href="#"></a>
+			</h2>
 			
-			<a class="expander" href="#"></a>
 			
-			<div class="content">
+			<div class="expandable-content">
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam purus velit, vehicula interdum semper a, fringilla ut sapien. Donec vel lorem sit amet urna dignissim tempus sed sed tortor.
 				</p>
@@ -384,11 +397,12 @@
 		</section>
 
 		<section id="detail-relnotes" class="island-segment expandable collapsed">
-			<h2>Release Notes</h2>
+			<h2>
+				Release Notes
+				<a class="expander" href="#"></a>
+			</h2>
 			
-			<a class="expander" href="#"></a>
-			
-			<div class="content">
+			<div class="expandable-content">
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam purus velit, vehicula interdum semper a, fringilla ut sapien. Donec vel lorem sit amet urna dignissim tempus sed sed tortor.
 				</p>
@@ -401,58 +415,61 @@
 
 
 		<section id="detail-versions" class="island-segment expandable collapsed">
-			<h2>Other Versions</h2>
-			
-			<a class="expander" href="#"></a>
-			
-			<div class="versions">
-				<div class="version">
-					<h3><a href="#">Version 3.1.12 Beta</a></h3>
-					<div class="date">December 31, 2099</div>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam purus velit, vehicula interdum semper a, fringilla ut sapien.
-						<a href="#">more&hellip;</a>
-					</p>
-					<div class="support">
-						Works with:
-						Firefox 3.0 - 4.0.*
-						&middot;
-						Mobile 1.0 - 2.0a1pre
-						&middot;
-						Seamonkey 2.0 - 2.1b2
-					</div>
+			<h2>
+				Other Versions
+				<a class="expander" href="#"></a>
+			</h2>
+
+			<div class="expandable-content">
+				<div class="versions">
+					<div class="version">
+						<h3><a href="#">Version 3.1.12 Beta</a></h3>
+						<div class="date">December 31, 2099</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam purus velit, vehicula interdum semper a, fringilla ut sapien. Donec vel lorem sit amet urna dignissim tempus sed sed tortor.
+							<a href="#">more&hellip;</a>
+						</p>
+						<div class="support">
+							Works with:
+							Firefox 3.0 - 4.0.*
+							&middot;
+							Mobile 1.0 - 2.0a1pre
+							&middot;
+							Seamonkey 2.0 - 2.1b2
+						</div>
 					
-					<div class="go">
-						<a class="button install" href="#"><span>Add to Firefox</span></a>
+						<div class="go">
+							<a class="button install small" href="#"><span>Add to Firefox</span></a>
+						</div>
+					</div>
+
+					<div class="version">
+						<h3><a href="#">Version 3.0.1</a></h3>
+						<div class="date">January 18, 2099</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam purus velit, vehicula interdum semper a, fringilla ut sapien. Donec vel lorem sit amet urna dignissim tempus sed sed tortor.
+							<a href="#">more&hellip;</a>
+						</p>
+						<div class="support">
+							Works with:
+							Firefox 3.0 - 3.6
+							&middot;
+							Mobile 1.0 - 1.1
+							&middot;
+							Seamonkey 2.0 - 2.0.*
+						</div>
+					
+						<div class="go">
+							<a class="button install small" href="#"><span>Download for Windows</span></a>
+							<a class="button install small" href="#"><span>Download for Mac OS X</span></a>
+							<a class="button install small" href="#"><span>Download for Linux</span></a>
+						</div>
 					</div>
 				</div>
 
-				<div class="version">
-					<h3><a href="#">Version 3.0.1</a></h3>
-					<div class="date">January 18, 2099</div>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam purus velit, vehicula interdum semper a, fringilla ut sapien.
-						<a href="#">more&hellip;</a>
-					</p>
-					<div class="support">
-						Works with:
-						Firefox 3.0 - 3.6
-						&middot;
-						Mobile 1.0 - 1.1
-						&middot;
-						Seamonkey 2.0 - 2.0.*
-					</div>
-					
-					<div class="go">
-						<a class="button install" href="#"><span>Download for Windows</span></a>
-						<a class="button install" href="#"><span>Download for Mac OS X</span></a>
-						<a class="button install" href="#"><span>Download for Linux</span></a>
-					</div>
+				<div class="more">
+					<a href="#">See complete version history&hellip;</a>
 				</div>
-			</div>
-
-			<div class="more">
-				<a href="#">See complete version history&hellip;</a>
 			</div>
 		</section>
 	</section>
