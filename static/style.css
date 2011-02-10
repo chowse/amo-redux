@@ -397,6 +397,13 @@ html {
 		background-image: url(img/add-small.png);
 		padding-left: 18px;
 	}
+.button.install.disabled {
+	background: -moz-linear-gradient(#d1d4d7, #c1c5ca);
+	color: #fff;
+	-moz-box-shadow: 0 3px rgba(0, 0, 0, 0.05),
+	                 0 -4px rgba(0, 0, 0, 0.05) inset;
+	top: 0;
+}
 
 
 .expandable {
@@ -1295,3 +1302,58 @@ html {
 		margin-top: 15px;
 	}
 
+
+#proto-controls {
+}
+	#proto-controls .floating {
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		height: 12px;
+		padding: 15px 12px;
+		background: rgba(0,0,0, .8);
+		color: #ccc;
+		font-size: 12px;
+		z-index: 1000;
+	}
+	#proto-controls .fixed {
+		display: block;
+		height: 42px;
+		background: #686868;
+	}
+	#proto-controls a[data-class] {
+		margin-left: 6px;
+		padding: 3px 12px;
+		color: #fff;
+		background: #666;
+		-moz-border-radius: 3px;
+		text-decoration: none;
+	}
+	#proto-controls a[data-class]:hover {
+		background: #888;
+	}
+	#proto-controls a[data-class].selected {
+		background: #ccc;
+		color: #333;
+	}
+	#proto-controls .close {
+		float: right;
+		color: #fff;
+		text-transform: uppercase;
+	}
+
+html #detail-slow { display: none; }
+html.slow #detail-slow { display: block; }
+
+html #detail-contribute { display: none; }
+html.contrib #detail-contribute { display: block; }
+
+html #install-button { }
+html.incompatible #install-button { display: none; }
+
+html #install-button-disabled { display: none; }
+html.incompatible #install-button-disabled { display: inline-block; }
+
+html #detail-main .stop { display: none; }
+html.incompatible #detail-main .stop { display: block; }
