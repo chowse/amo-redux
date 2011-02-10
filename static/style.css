@@ -1326,12 +1326,12 @@ html {
 		margin-left: 6px;
 		padding: 3px 12px;
 		color: #fff;
-		background: #666;
+		background: #333;
 		-moz-border-radius: 3px;
 		text-decoration: none;
 	}
 	#proto-controls a[data-class]:hover {
-		background: #888;
+		background: #666;
 	}
 	#proto-controls a[data-class].selected {
 		background: #ccc;
