@@ -334,6 +334,7 @@ html {
 	text-decoration: none;
 	color: #fff;
 	background: -moz-linear-gradient(#669BE1, #5784BF);
+	text-shadow: 0 1px 0 rgba(0,0,0,.5);
 	-moz-border-radius: 6px;
 	-moz-box-shadow: 0 3px rgba(0, 0, 0, 0.1),
 	                 0 -4px rgba(0, 0, 0, 0.1) inset;
@@ -397,13 +398,30 @@ html {
 		background-image: url(img/add-small.png);
 		padding-left: 18px;
 	}
-.button.install.disabled {
-	background: -moz-linear-gradient(#d1d4d7, #c1c5ca);
-	color: #fff;
-	-moz-box-shadow: 0 3px rgba(0, 0, 0, 0.05),
-	                 0 -4px rgba(0, 0, 0, 0.05) inset;
+
+.button.install.warning {
+	background: -moz-linear-gradient(rgba(255,255,255,.25), rgba(255,255,255,.25)),
+	            url(img/warning-bg.png);
+	color: #333;
+	text-shadow: 0 -1px 0 rgba(255,255,255,.5);
 	top: 0;
 }
+	.button.install.warning span {
+		background-image: url(img/add-warning.png);
+	}
+
+
+.button.install.disabled {
+	background: -moz-linear-gradient(#d1d4d7, #c1c5ca);
+	color: #919497;
+	-moz-box-shadow: 0 3px rgba(0, 0, 0, 0.05),
+	                 0 -4px rgba(0, 0, 0, 0.05) inset;
+	text-shadow: 0 1px 0 rgba(255,255,255,.5);
+	top: 0;
+}
+	.button.install.disabled span {
+		background-image: url(img/add-disabled.png);
+	}
 
 
 .expandable {
@@ -693,6 +711,7 @@ html {
 
 #detail-main {
 	margin: 0;
+	margin-bottom: 30px;
 	padding: 19px;
 	padding-bottom: 23px;
 	font-family: Georgia;
@@ -1303,6 +1322,8 @@ html {
 	}
 
 
+/* Prototype controls */
+
 #proto-controls {
 }
 	#proto-controls .floating {
@@ -1350,10 +1371,16 @@ html #detail-contribute { display: none; }
 html.contrib #detail-contribute { display: block; }
 
 html #install-button { }
-html.incompatible #install-button { display: none; }
+html.incompatible #install-button, html.experimental #install-button { display: none; }
 
 html #install-button-disabled { display: none; }
 html.incompatible #install-button-disabled { display: inline-block; }
 
+html #install-button-warning { display: none; }
+html.experimental #install-button-warning { display: inline-block; }
+
 html #detail-main .stop { display: none; }
 html.incompatible #detail-main .stop { display: block; }
+
+html #detail-sshots { }
+html.no-sshots #detail-sshots { display: none; }
