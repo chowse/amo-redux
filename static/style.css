@@ -1243,18 +1243,31 @@ html {
 		color: #666;
 	}
 	#detail-devstuff .expander {
-		float: right;
-		width: 18px;
-		height: 18px;
-	}
-	#detail-devstuff .expander:after {
-		content: '';
 		position: absolute;
-		left: 0;
-		right: 0;
-		top: 0;
-		bottom: 0;
+		left: -14px;
+		right: -14px;
+		top: -14px;
+		bottom: -14px;
 	}
+		#detail-devstuff .expander b {
+			position: absolute;
+			right: 14px;
+			top: 0;
+			bottom: 0;
+			width: 18px;
+			height: 18px;
+			margin: auto 0;
+			background: url(img/expand.png) no-repeat right center;
+		}
+		#detail-devstuff .expander:hover b {
+			background-image: url(img/expand-hover.png);
+		}
+		#detail-devstuff .expanded .expander b {
+			background-image: url(img/collapse.png);
+		}
+		#detail-devstuff .expanded .expander:hover b {
+			background-image: url(img/collapse-hover.png);
+		}
 	
 
 #detail-devcomments {
