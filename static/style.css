@@ -471,7 +471,6 @@ html {
 		}
 		
 #site-header {
-	background: url(img/top-menu-bg.png) no-repeat center bottom;
 }
 	#site-header h1 {
 		display: inline;
@@ -480,7 +479,7 @@ html {
 			display: inline-block;
 			height: 62px;
 			line-height: 62px;
-			padding: 13px 0;
+			padding: 10px 0;
 			padding-left: 64px;
 			font-family: MetaBlack;
 			font-weight: bold;
@@ -506,38 +505,84 @@ html {
 	}
 	
 	#site-nav {
-		margin-top: -10px;
+		position: relative;
 	}
 		#site-nav li {
 			display: inline;
 		}
 		#site-nav a {
 			display: inline-block;
-			padding: 5px 0px 10px;
-			border: 0 solid transparent;
-			border-width: 10px 10px 0 10px;
+			padding: 12px 16px;
+			border: 1px solid #98B2C9;
+			border-left-width: 0;
 			font-size: 12px;
 			font-weight: bold;
+			text-decoration: none;
 			text-transform: uppercase;
+			background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.4),
+			                                      rgba(255, 255, 255, 0.8));
+			-moz-box-shadow: 0 -2px 0 rgba(152, 178, 201, 0.3) inset,
+			                 0 -2px 12px rgba(255, 255, 255, 0.8) inset;
+		}
+		#site-nav li:first-child a {
+			border-left-width: 1px;
+			-moz-border-radius: 4px 0 0 4px;
+		}
+		#site-nav li:last-child a {
+			-moz-border-radius: 0 4px 4px 0;
+		}
+		#site-nav a:hover,
+		#site-nav a.selected {
+			background-color: #fff;
 		}
 		#site-nav a.selected {
-			padding: 5px 5px 10px;
 			color: #333;
-			-moz-border-image: url(img/page-tab-bg.png) 10 10 0 10 repeat;
 			text-decoration: none;
 		}
 		#site-nav-search {
-			display: inline;
 			position: absolute;
 			right: 0;
-			bottom: 0;
-			padding-bottom: 10px;
+			top: 0;
 		}
+			#site-nav-search input {
+				width: 220px;
+				height: 36px;
+				padding: 0 40px 0 32px;
+				border: 1px solid #98B2C9;
+				background: url(img/search.png) no-repeat 10px center,
+				            -moz-linear-gradient(top, rgba(255, 255, 255, 0.4),
+				                                      rgba(255, 255, 255, 0.8));
+				color: #333;
+				font-family: Trebuchet MS;
+				font-size: 14px;
+				-moz-box-shadow: 0 -2px 0 rgba(152, 178, 201, 0.3) inset,
+				                 0 -2px 12px rgba(255, 255, 255, 0.8) inset;
+				-moz-border-radius: 4px;
+			}
+			#site-nav-search input:hover,
+			#site-nav-search input:focus {
+				background-color: #fff;
+			}
+			#site-nav-search input:-moz-placeholder {
+				color: #999;
+			}
+			#site-nav-search .submit {
+				position: absolute;
+				right: 5px;
+				top: 5px;
+			}
+			#site-nav-search button {
+				width: 28px;
+				height: 26px;
+				border: 0;
+				cursor: pointer;
+			}
+				#site-nav-search button span {
+					display: none;
+				}
 		
 		
 #page-content {
-	padding-top: 30px;
-	background: url(img/content-bg.png) repeat-y center top;
 }
 
 
@@ -698,14 +743,14 @@ html {
 
 
 #detail-breadcrumbs {
-	margin-bottom: 15px;
+	margin: 15px 0 30px;
 	font-family: Georgia;
 	font-size: 13px;
-	color: #303030;
+	color: #666;
 }
 	#detail-breadcrumbs b {
-		font-size: 16px;
-		font-weight: bold;
+		font-size: 14px;
+		font-weight: normal;
 	}
 
 
