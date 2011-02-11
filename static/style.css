@@ -580,7 +580,18 @@ html {
 				#site-nav-search button span {
 					display: none;
 				}
-		
+
+	#site-breadcrumbs {
+		margin: 15px 0 30px;
+		font-family: Georgia;
+		font-size: 13px;
+		color: #666;
+	}
+		#site-breadcrumbs b {
+			font-size: 16px;
+			font-weight: normal;
+		}
+	
 		
 #page-content {
 }
@@ -740,18 +751,6 @@ html {
 
 
 /* Detail Pages  */
-
-
-#detail-breadcrumbs {
-	margin: 15px 0 30px;
-	font-family: Georgia;
-	font-size: 13px;
-	color: #666;
-}
-	#detail-breadcrumbs b {
-		font-size: 16px;
-		font-weight: normal;
-	}
 
 
 #detail-main {
