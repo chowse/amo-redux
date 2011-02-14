@@ -471,26 +471,36 @@ html {
 		}
 		
 #site-header {
-	background: url(img/top-menu-bg.png) no-repeat bottom center;
+	margin: 35px 0;
 }
+	#site-header h1,
+	#site-header #site-nav {
+		margin-left: 64px;
+	}
+
 	#site-header h1 {
 		display: inline;
 	}
 		#site-header h1 a {
 			display: inline-block;
-			height: 62px;
-			line-height: 62px;
-			padding: 10px 0;
-			padding-left: 64px;
 			font-family: MetaBlack;
 			font-weight: bold;
 			font-size: 40px;
 			letter-spacing: -1px;
 			text-transform: uppercase;
 			color: #333;
-			background: url(img/firefox-logo.png) no-repeat left center;
 			text-decoration: none;
+			-moz-transition-property: color, text-shadow;
+			-moz-transition-duration: .2s;
 		}
+			#site-header h1 a span {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 54px;
+				height: 62px;
+				background: url(img/firefox-logo.png) no-repeat 0 0;
+			}
 		#site-header h1 a:hover,
 		#site-header h1 a:focus {
 			color: #043b84;
@@ -507,30 +517,103 @@ html {
 	
 	#site-nav {
 		position: relative;
+		margin-top: 0px;
+		font-size: 12px;
 	}
-		#site-nav li {
-			display: inline;
+		#site-nav ul {
+			margin-left: -9px;
 		}
-		#site-nav a {
-			display: inline-block;
-			padding: 5px 0px 10px;
-			border: 0 solid transparent;
-			border-width: 10px 10px 0 10px;
-			font-size: 12px;
-			font-weight: bold;
+			#site-nav li {
+				position: relative;
+				display: inline-block;
+			}
+			#site-nav li.sep {
+				display: inline;
+				border-left: 1px solid #999;
+			}
+			#site-nav .top-menu {
+				display: inline-block;
+				position: relative;
+				padding: 6px 8px;
+				border: 1px solid transparent;
+				color: #447BC4;
+				font-weight: bold;
+				text-transform: uppercase;
+				-moz-border-radius: 3px 3px 0 0;
+				-moz-transition-property: background, border;
+				-moz-transition-duration: .4s;
+				z-index: 1001;
+			}
+			#site-nav li:hover .top-menu {
+				background: #fff;
+				border-color: #98B2C9;
+				color: #484848;
+				text-decoration: none;
+			}
+			#site-nav li:hover .top-menu:hover {
+				color: #447BC4;
+			}
+			#site-nav li:hover a.top-menu.no-submenu {
+				background: none;
+				border-color: transparent;
+				text-decoration: underline;
+			}
+			#site-nav a.selected {
+			}
+		#site-nav .submenu {
+			position: absolute;
+			left: -1000em;
+			top: 25px;
+			width: 190px;
+			background: none repeat scroll 0 0 #fff;
+			border: 1px solid #98B2C9;
+			-moz-border-radius: 0 4px 4px 4px;
+			font-size: 10px;
+			text-shadow: 1px 1px 0 #fff, 0 0 5px #fff;
+			opacity: 0;
+			z-index: 1000;
+			-moz-box-shadow: 0 1px 0 rgba(152, 178, 201, 0.2),
+			                 0 -1px 0 rgba(152, 178, 201, 0.3) inset;
+			-moz-transition-property: color, opacity;
+			-moz-transition-duration: .4s;
+		}
+		#site-nav li:hover .submenu {
+			left: 9px;
+			color: #484848;
+			font-size: 10px;
 			text-transform: uppercase;
+			opacity: 1;
 		}
-		#site-nav a.selected {
-			padding: 5px 5px 10px;
-			color: #333;
-			-moz-border-image: url(img/page-tab-bg.png) 10 10 0 10 repeat;
-			text-decoration: none;
-		}
+			#site-nav .submenu li {
+				display: block;
+				-moz-box-shadow: 0 -1px 0 0 rgba(152, 178, 201, 0.2) inset;
+			}
+			#site-nav .submenu a {
+				display: block;
+				padding: 8px;
+				border: 0;
+				background: none;
+				border: 0;
+				text-decoration: none;
+				-moz-border-radius: 0;
+				-moz-transition-property: background, box-shadow;
+				-moz-transition-duration: .2s;
+			}
+			#site-nav .submenu a:hover {
+				background: rgba(152, 178, 201, 0.2);
+				-moz-box-shadow: 0 2px 0 rgba(152, 178, 201, 0.3) inset,
+				                 0 0 3px 2px rgba(152, 178, 201, 0.2) inset;
+			}
+			#site-nav .submenu li.sep {
+				display: block;
+				border: 0;
+				-moz-box-shadow: 0 -1px 0 0 #98B2C9 inset;
+			}
 
 	#site-nav-search {
 		position: absolute;
 		right: 0;
-		bottom: 15px;
+		bottom: 0;
 	}
 		#site-nav-search input {
 			width: 220px;
@@ -582,8 +665,6 @@ html {
 	
 		
 #page-content {
-	padding-top: 15px;
-	background: url(img/content-bg.png) repeat-y center top;
 }
 
 
