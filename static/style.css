@@ -650,6 +650,63 @@ html {
 			#site-nav-search button span {
 				display: none;
 			}
+			
+	.site-balloon {
+		position: relative;
+		margin-top: 15px;
+		padding: 15px 15px;
+		border: 1px solid transparent;
+		font-family: Georgia;
+		font-size: 14px;
+		color: #333;
+		-moz-border-radius: 5px;
+	}
+		.site-balloon h3,
+		.site-balloon p {
+			display: inline;
+		}
+		.site-balloon h3,
+		.site-balloon strong {
+			font-weight: bold;
+		}
+		.site-balloon b,
+		.site-balloon em {
+			position: absolute;
+			border-left: 20px solid transparent;
+			border-top: 20px solid transparent;
+		}
+		.site-balloon b {
+			left: 31px;
+			top: -20px;
+		}
+		.site-balloon em {
+			left: -19px;
+			top: -18px;
+		}
+			
+	#site-nonfx {
+		border-color: #ffc900;
+		background: #fffcee;
+		color: #333;
+	}
+		#site-nonfx b {
+			border-left-color: #ffc900;
+		}
+		#site-nonfx em {
+			border-left-color: #fffcee;
+		}
+
+	#site-welcome {
+		border-color: #bae28e;
+		background: #f1ffe0;
+		color: #333;
+	}
+		#site-welcome b {
+			border-left-color: #bae28e;
+		}
+		#site-welcome em {
+			border-left-color: #f1ffe0;
+		}
 
 	#site-breadcrumbs {
 		margin: 35px 0 15px;
@@ -1510,3 +1567,9 @@ html.incompatible #detail-main .stop { display: block; }
 
 html #detail-sshots { }
 html.no-sshots #detail-sshots { display: none; }
+
+html #site-nonfx { display: none; }
+html.non-firefox #site-nonfx { display: block; }
+
+html #site-welcome { display: none; }
+html.first-run #site-welcome { display: block; }
