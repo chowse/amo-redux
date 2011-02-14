@@ -471,7 +471,7 @@ html {
 		}
 		
 #site-header {
-	margin: 35px 0;
+	margin: 35px 0 0;
 }
 	#site-header h1,
 	#site-header #site-nav {
@@ -539,18 +539,18 @@ html {
 				padding: 6px 8px;
 				border: 1px solid transparent;
 				color: #447BC4;
+				z-index: 1001;
 				-moz-border-radius: 3px 3px 0 0;
 				-moz-transition-property: background, border;
-				-moz-transition-duration: .4s;
-				z-index: 1001;
+				-moz-transition-duration: .2s;
 			}
 			#site-nav li:hover .top-menu {
 				background: #fff;
 				border-color: #98B2C9;
 				border-bottom-color: #fff;
 			}
-			#site-nav li:hover .top-menu:hover {
-				color: #447BC4;
+			#site-nav li:hover span.top-menu {
+				color: inherit;
 			}
 			#site-nav li:hover a.top-menu.no-submenu {
 				background: none;
@@ -570,13 +570,12 @@ html {
 			font-size: 12px;
 			font-weight: normal;
 			text-transform: none;
-			text-shadow: 1px 1px 0 #fff, 0 0 5px #fff;
 			opacity: 0;
 			z-index: 1000;
 			-moz-box-shadow: 0 2px 0 rgba(152, 178, 201, 0.2),
 			                 0 -2px 0 rgba(152, 178, 201, 0.3) inset;
-			-moz-transition-property: color, opacity;
-			-moz-transition-duration: .4s;
+			-moz-transition-property: opacity;
+			-moz-transition-duration: .2s;
 		}
 		#site-nav .submenu.two-col {
 			-moz-column-count: 2;
@@ -594,20 +593,18 @@ html {
 			#site-nav .submenu a {
 				display: block;
 				padding: 6px 6px;
-				border: 0;
-				background: none;
-				border: 0;
+				text-decoration: none;
 				white-space: nowrap;
-				-moz-border-radius: 0;
-				-moz-transition-property: background, box-shadow;
-				-moz-transition-duration: .2s;
 			}
 			#site-nav .submenu a:hover {
-				color: #447BC4;
+				background: #ebf4fe;
 			}
 			#site-nav .submenu a.em {
 				background: #F4F8FC;
 				font-weight: bold;
+			}
+			#site-nav .submenu a.em:hover {
+				background: #e1edfb;
 			}
 			#site-nav .submenu li.sep {
 			}
@@ -615,7 +612,7 @@ html {
 	#site-nav-search {
 		position: absolute;
 		right: 0;
-		bottom: 0;
+		top: 28px;
 	}
 		#site-nav-search input {
 			width: 220px;
@@ -655,14 +652,14 @@ html {
 			}
 
 	#site-breadcrumbs {
-		margin: 0 0 15px;
+		margin: 35px 0 15px;
 		font-family: Georgia;
 		font-size: 13px;
 		color: #666;
 	}
 		#site-breadcrumbs b {
 			font-size: 16px;
-			font-weight: normal;
+			font-weight: bold;
 		}
 	
 		
