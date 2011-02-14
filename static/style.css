@@ -538,6 +538,7 @@ html {
 				position: relative;
 				padding: 6px 8px;
 				border: 1px solid transparent;
+				border-bottom-width: 0;
 				color: #447BC4;
 				z-index: 1001;
 				-moz-border-radius: 3px 3px 0 0;
@@ -561,7 +562,7 @@ html {
 		#site-nav .submenu {
 			position: absolute;
 			left: -1000em;
-			top: 25px;
+			top: 24px;
 			width: 190px;
 			padding: 8px 8px;
 			background: none repeat scroll 0 0 #fff;
