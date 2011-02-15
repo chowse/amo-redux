@@ -1504,6 +1504,77 @@ html {
 	#detail-versions .more {
 		margin-top: 15px;
 	}
+	
+	
+.page-overlay {
+	position: fixed;
+	z-index: 10000;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.2);
+	-moz-transition-property: opacity;
+	-moz-transition-duration: .4s;
+}
+	.page-overlay-box {
+		position: fixed;
+		z-index: 10001;
+		left: 0;
+		right: 0;
+		top: 140px;
+		width: 700px;
+		margin: 0 auto;
+		padding: 15px;
+		-moz-border-radius: 20px;
+		background: rgba(0,0,0,.5);
+		font-family: georgia;
+		-moz-transition-property: opacity;
+		-moz-transition-duration: .4s;
+	}
+		.page-overlay-box > div {
+			min-height: 200px;
+			padding: 25px;
+			background: #fff;
+			-moz-border-radius: 10px;
+		}
+		.page-overlay-box .close {
+			position: absolute;
+			right: 25px;
+			top: 25px;
+			width: 15px;
+			height: 15px;
+			padding: 5px;
+			-moz-border-radius: 4px;
+			background: url(img/overlay-close.png) no-repeat 0 0;
+			text-indent: -1000em;
+		}
+		.page-overlay-box .close:hover {
+			background-position: -25px 0;
+			background-color: #447BC4;
+		}
+		.page-overlay-box h3 {
+			font-size: 28px;
+			font-style: italic;
+		}
+		
+.page-overlay,
+.page-overlay-box {
+	display: none;
+	opacity: 0;
+}
+.page-overlay.entering,
+.page-overlay.on,
+.page-overlay.leaving,
+.page-overlay-box.entering,
+.page-overlay-box.on,
+.page-overlay-box.leaving {
+	display: block;
+}
+.page-overlay.on,
+.page-overlay-box.on {
+	opacity: 1;
+}
 
 
 /* Prototype controls */

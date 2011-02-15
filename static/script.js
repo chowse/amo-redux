@@ -1,6 +1,23 @@
 
 
 (function($) {
+	$.fn.showLightbox = function() {
+		var self = this;
+		self.addClass('entering');
+		setTimeout(function() {
+			self.addClass('on').removeClass('entering');
+		}, 100);
+		return this;
+	};
+	$.fn.hideLightbox = function() {
+		var self = this;
+		self.addClass('leaving').removeClass('on');
+		setTimeout(function() {
+			self.removeClass('leaving');
+		}, 400);
+		return this;
+	};
+	
 	$(function() {
 		
 		$('.expandable .expander').click(function() {
@@ -24,5 +41,15 @@
 			
 			return false;
 		})
+		
+		$('.show-lightbox').click(function() {
+			$('#lightbox, #lightbox-overlay').showLightbox();
+			return false;
+		});
+		
+		$('#lightbox-overlay, #lightbox-close').click(function() {
+			$('#lightbox, #lightbox-overlay').hideLightbox();
+			return false;
+		});
 	});
 })(jQuery);

@@ -204,8 +204,8 @@
 	
 		<ul class="actions">
 			<li><a id="detail-addfave" href="#">Add to favorites</a></li>
-			<li><a id="detail-addcoll" href="#">Add to collection</a></li>
-			<li><a id="detail-share" href="#">Share this add-on</a></li>
+			<li><a id="detail-addcoll" class="show-lightbox" href="#">Add to collection</a></li>
+			<li><a id="detail-share" class="show-lightbox" href="#">Share this add-on</a></li>
 		</ul>
 	</section>
 </div>
@@ -229,7 +229,7 @@
 				<a id="install-button-disabled" class="button install disabled" href="#"><span>Add to Firefox</span></a>
 				<a id="install-button-warning" class="button install warning" href="#"><span>Add to Firefox</span></a>
 				<span class="no-restart">No restart required</span>
-				<a class="privacy" href="#">View privacy Policy</a>
+				<a class="privacy show-lightbox" href="#">View privacy Policy</a>
 			</div>
 
 			<ul class="stop">
@@ -279,11 +279,11 @@
 		
 		<ul>
 			<!--
-			--><li><a href="#"><img src="" style="background-image: url(static/img/sshot.png)" /></a></li><!--
-			--><li><a href="#"><img src="" style="background-image: url(static/img/sshot2.png)" /></a></li><!--
-			--><li><a href="#"><img src="" style="background-image: url(static/img/sshot3.png)" /></a></li><!--
-			--><li><a href="#"><img src="" style="background-image: url(static/img/sshot4.png)" /></a></li><!--
-			--><li><a href="#"><img src="" style="background-image: url(static/img/sshot5.png)" /></a></li><!--
+			--><li><a class="show-lightbox" href="#"><img src="" style="background-image: url(static/img/sshot.png)" /></a></li><!--
+			--><li><a class="show-lightbox" href="#"><img src="" style="background-image: url(static/img/sshot2.png)" /></a></li><!--
+			--><li><a class="show-lightbox" href="#"><img src="" style="background-image: url(static/img/sshot3.png)" /></a></li><!--
+			--><li><a class="show-lightbox" href="#"><img src="" style="background-image: url(static/img/sshot4.png)" /></a></li><!--
+			--><li><a class="show-lightbox" href="#"><img src="" style="background-image: url(static/img/sshot5.png)" /></a></li><!--
 			-->
 		</ul>
 	</section>
@@ -386,7 +386,7 @@
 		</table>
 		
 		<p class="write">
-			<a class="button small" href="#">Write a Review</a>
+			<a class="button small show-lightbox" href="#">Write a Review</a>
 		</p>
 	</section>
 </div>
@@ -598,7 +598,17 @@
 </div>
 
 
+</div>
 
+
+</div></div>
+
+
+<div id="lightbox-overlay" class="page-overlay"></div>
+
+<div id="lightbox" class="page-overlay-box"><div>
+	<a id="lightbox-close" class="close" href="#">Close</a>
+	<h3>This is the Lightbox Title!</h3>
 </div></div>
 
 
