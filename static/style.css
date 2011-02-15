@@ -673,16 +673,16 @@ html {
 		.site-balloon b,
 		.site-balloon em {
 			position: absolute;
-			border-left: 20px solid transparent;
-			border-top: 20px solid transparent;
+			border-left: 18px solid transparent;
+			border-top: 18px solid transparent;
 		}
 		.site-balloon b {
-			left: 31px;
-			top: -20px;
+			left: 34px;
+			top: -18px;
 		}
 		.site-balloon em {
-			left: -19px;
-			top: -18px;
+			left: -17px;
+			top: -16px;
 		}
 			
 	#site-nonfx {
