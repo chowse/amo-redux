@@ -1293,6 +1293,12 @@ html {
 		}
 		#detail-about-sidebar .links a:hover {
 		}
+		#detail-about-sidebar .links a.support-mail {
+			background-image: url(img/email.png);
+		}
+		#detail-about-sidebar .links a.support-gs {
+			background-image: url(img/getsatisfaction.png);
+		}
 	#detail-about-sidebar .data {
 	}
 		#detail-about-sidebar .data li {
