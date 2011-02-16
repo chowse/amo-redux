@@ -1065,6 +1065,7 @@ html {
 		font-size: 16px;
 	}
 	#detail-main-sidebar .users {
+		position: relative;
 	}
 		#detail-main-sidebar .users strong {
 			color: #333;
@@ -1082,6 +1083,14 @@ html {
 		}
 		#detail-main-sidebar .users .stats:hover {
 			background-position: 0 -20px;
+		}
+		#detail-main-sidebar .users .stats:after {
+			content: '';
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
 		}
 	#detail-main-sidebar .actions {
 		margin-top: 24px;
