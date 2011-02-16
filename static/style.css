@@ -1434,6 +1434,10 @@ html {
 	#detail-reviews-sidebar .write {
 		margin-top: 18px;
 	}
+	#detail-reviews-sidebar .abuse {
+		margin-top: 8px;
+		font-size: 12px;
+	}
 
 
 #detail-related {
