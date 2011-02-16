@@ -1069,6 +1069,20 @@ html {
 		#detail-main-sidebar .users strong {
 			color: #333;
 		}
+		#detail-main-sidebar .users .stats {
+			display: inline-block;
+			overflow: hidden;
+			width: 16px;
+			height: 16px;
+			margin-left: 2px;
+			background: url(img/stats.png) no-repeat 0 0;
+			font-size: 12px;
+			text-indent: -1000em;
+			vertical-align: -1px;
+		}
+		#detail-main-sidebar .users .stats:hover {
+			background-position: 0 -20px;
+		}
 	#detail-main-sidebar .actions {
 		margin-top: 24px;
 	}
