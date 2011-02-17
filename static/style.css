@@ -660,7 +660,18 @@ html {
 		font-family: Georgia;
 		font-size: 14px;
 		color: #333;
+		-moz-border-radius: 10px;
+	}
+	.site-balloon:before {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		left: 4px;
+		right: 4px;
+		bottom: 0;
+		height: 15px;
 		-moz-border-radius: 5px;
+		-moz-box-shadow: 0 3px 3px rgba(0,0,0,.1);
 	}
 		.site-balloon h3,
 		.site-balloon p {
@@ -683,6 +694,23 @@ html {
 		.site-balloon em {
 			left: -17px;
 			top: -16px;
+		}
+		.site-balloon .close {
+			position: absolute;
+			overflow: hidden;
+			right: 15px;
+			top: 0;
+			bottom: 0;
+			width: 25px;
+			height: 25px;
+			margin: auto 0;
+			-moz-border-radius: 4px;
+			background: url(img/banner-close.png) no-repeat 0 0;
+			text-indent: -1000em;
+		}
+		.site-balloon .close:hover {
+			background-color: #447BC4;
+			background-position: -25px 0;
 		}
 			
 	#site-nonfx {

@@ -51,5 +51,13 @@
 			$('#lightbox, #lightbox-overlay').hideLightbox();
 			return false;
 		});
+		
+		$('.site-balloon .close').click(function() {
+			$(this)
+				.closest('.site-balloon')
+				.animate({ opacity: 0 }, 200, 'linear')
+				.animate({ height: 'hide' }, 200, 'linear');
+			return false;
+		});
 	});
 })(jQuery);
