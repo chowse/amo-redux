@@ -67,7 +67,7 @@
 				target.addClass('expanded').removeClass('collapsed');
 			}
 			var top = target.offset().top - 15;
-			$(document.documentElement).animate({ scrollTop: top }, 1000);
+			$(document.documentElement).animate({ scrollTop: top }, 500);
 			return false;
 		});
 		
