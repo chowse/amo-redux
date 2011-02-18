@@ -1698,19 +1698,36 @@ html {
 }
 	#proto-controls .floating {
 		position: fixed;
+		oveflow: hidden;
 		left: 0;
 		right: 0;
 		top: 0;
-		height: 12px;
-		padding: 15px 12px;
-		background: rgba(0,0,0, .8);
-		color: #ccc;
-		font-size: 12px;
+		height: 42px;
 		z-index: 1000;
 	}
+		#proto-controls .floating > div {
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			height: 12px;
+			background: #000;
+			padding: 15px 12px;
+			color: #ccc;
+			font-size: 12px;
+			-moz-transition: top .5s;
+		}
+		#proto-controls .floating > div {
+			top: -42px;
+		}
+		#proto-controls.initial .floating > div,
+		#proto-controls .floating:hover > div {
+			top: 0;
+		}
 	#proto-controls .fixed {
 		display: block;
 		height: 42px;
+		height: 0;
 		background: #686868;
 	}
 	#proto-controls a[data-class] {

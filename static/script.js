@@ -59,5 +59,9 @@
 				.animate({ height: 'hide' }, 200, 'linear');
 			return false;
 		});
+		
+		setTimeout(function() {
+			$('#proto-controls').removeClass('initial');
+		}, 1000);
 	});
 })(jQuery);
