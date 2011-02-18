@@ -1403,12 +1403,10 @@ html {
 	#detail-reviews .more {
 	}
 	#detail-reviews .reviews {
-		border-bottom: 1px solid #fff;
 	}
 	#detail-reviews .review {
 		padding: 15px 0;
-		border-top: 1px solid #fff;
-		border-bottom: 1px solid #e4eef8;
+		border-top: 1px dotted #C9DDF2;
 	}
 	#detail-reviews .review:first-child {
 		border-top: 0;
@@ -1438,7 +1436,8 @@ html {
 			line-height: 17px;
 		}
 	#detail-reviews .more {
-		margin-top: 15px;
+		padding-top: 15px;
+		border-top: 1px dotted #C9DDF2;
 	}
 
 
