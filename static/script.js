@@ -60,6 +60,17 @@
 			return false;
 		});
 		
+		$('.anim-scroll').click(function() {
+			var href = $(this).attr('href');
+			var target = $( href.match(/#.*$/)[0] );
+			if (target.hasClass('expandable')) {
+				target.addClass('expanded').removeClass('collapsed');
+			}
+			var top = target.offset().top - 15;
+			$(document.documentElement).animate({ scrollTop: top }, 1000);
+			return false;
+		});
+		
 		setTimeout(function() {
 			$('#proto-controls').removeClass('initial');
 		}, 1000);
