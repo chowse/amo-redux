@@ -1531,6 +1531,7 @@ html {
 #detail-devstuff {
 	margin: 30px 0;
 	font-family: Georgia;
+	font-size: 14px;
 	color: #666;
 }
 	#detail-devstuff h2 {
@@ -1582,56 +1583,40 @@ html {
 
 #detail-relnotes {
 }
-	#detail-relnotes .expandable-content {
-		font-size: 14px;
-		line-height: 17px;
+	#detail-devstuff .version {
+		margin: 15px 0;
 	}
-		#detail-relnotes .expandable-content p {
-			margin-top: 14px;
-		}
-
-#detail-versions {
-}
-	#detail-versions .version {
-		padding: 15px 0;
-		border-top: 1px solid #fff;
-		border-bottom: 1px solid #e4eef8;
-	}
-	#detail-versions .version .first-child {
+	#detail-devstuff .version .first-child {
 		border-top: 0;
 	}
-		#detail-versions .version h3 {
+		#detail-devstuff .version h3 {
 			font-size: 16px;
 			font-style: italic;
 			color: #333;
 		}
-			#detail-versions .version h3 a {
+			#detail-devstuff .version h3 a {
 				color: inherit;
 			}
-			#detail-versions .version h3 .rating-stars {
+			#detail-devstuff .version h3 .rating-stars {
 				margin-left: 4px;
 			}
-		#detail-versions .version .date,
-		#detail-versions .version .support {
+		#detail-devstuff .version .meta {
+			margin: 4px 0;
 			font-size: 12px;
 			font-style: italic;
 			color: #666;
 		}
-		#detail-versions .version .date {
-			margin-top: 4px;
-		}
-		#detail-versions .version p {
-			margin-top: 12px;
+		#detail-devstuff .version p {
+			margin: 12px 0;
 			line-height: 18px;
 		}
-		#detail-versions .version .support {
-			margin-top: 8px;
+		#detail-devstuff .version .go {
+			margin: 15px 0;
 		}
-		#detail-versions .version .go {
-			margin-top: 12px;
-		}
-	#detail-versions .more {
+	#detail-devstuff .more {
 		margin-top: 15px;
+		padding-top: 15px;
+		border-top: 1px dotted #C9DDF2;
 	}
 	
 	
