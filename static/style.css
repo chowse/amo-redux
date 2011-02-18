@@ -424,6 +424,17 @@ html {
 	}
 
 
+.button.developer {
+	background: -moz-linear-gradient(#f84b4e, #bc2b1a);
+	color: #fff;
+}
+	.button.developer span {
+		margin-left: -4px;
+		padding-left: 24px;
+		background: url(img/developer.png) no-repeat 0 center;
+	}
+
+
 .expandable {
 }
 	.expandable .expandable-content {
@@ -977,6 +988,9 @@ html {
 				-moz-border-radius: 3px;
 			}
 			#detail-main .privacy {
+			}
+			#detail-main #developer-button {
+				margin-left: 7px;
 			}
 		#detail-main .stop {
 		}
@@ -1777,3 +1791,6 @@ html.non-firefox #site-nonfx { display: block; }
 
 html #site-welcome { display: none; }
 html.first-run #site-welcome { display: block; }
+
+html #developer-button { display: none; }
+html.owner #developer-button { display: inline-block; }
