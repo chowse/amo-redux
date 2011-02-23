@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="front-page">
 
 <script type="text/javascript">
 	document.documentElement.className += ' js';
@@ -32,7 +32,7 @@
 
 <header id="site-header"><div class="funnel">
 	<h1>
-		<a href="homepage.html">Add-ons</a>
+		<a href="homepage.html">Add-ons <span></span></a>
 	</h1>
 	
 	<form id="site-search">
@@ -43,21 +43,140 @@
 	<nav id="site-nav">
 		<ul>
 			<!--
-			--><li><a href="#">Featured</a></li><!--
-			--><li><a href="#">Most Popular</a></li><!--
-			--><li><a class="selected" href="#">Top Rated</a></li><!--
-			--><li><a href="#">Collections</a></li><!--
-			--><li><a href="#">Personas</a></li><!--
-			--><li><a href="#">Themes</a></li><!--
-			--><li>
-				<form id="site-nav-search">
-					<input type="text" placeholder="Search for Add-ons"></input>
-					<button>Search</button>
-				</form>
-			</li><!--
+			--><li><!--
+				--><a class="top-menu" href="#">Extensions</a><!--
+				--><ul class="submenu two-col">
+					<!--
+					--><li><a class="em" href="#">Featured</a></li><!--
+					--><li><a class="em" href="#">Most Popular</a></li><!--
+					--><li><a class="em" href="#">Top Rated</a></li><!--
+					
+					--><li><a href="#">Abstract</a></li><!--
+					--><li><a href="#">Appearance</a></li><!--
+					--><li><a href="#">Bookmarks</a></li><!--
+					--><li><a href="#">Download Management</a></li><!--
+					--><li><a href="#">Feeds, News &amp; Blogging</a></li><!--
+					--><li><a href="#">Games &amp; Entertainment</a></li><!--
+					--><li><a href="#">Language Support</a></li><!--
+					--><li><a href="#">Photos, Music &amp; Video</a></li><!--
+					--><li><a href="#">Privacy &amp; Security</a></li><!--
+					--><li><a href="#">Shopping</a></li><!--
+					--><li><a href="#">Social &amp; Communication</a></li><!--
+					--><li><a href="#">Tabs</a></li><!--
+					--><li><a href="#">Web Development</a></li><!--
+					--><li><a href="#">Other</a></li><!--
+					-->
+				   </ul><!--
+			   --></li><!--
+			--><li class="sep"></li><!--
+			--><li><!--
+				--><a class="top-menu" href="#">Personas</a><!--
+				--><ul class="submenu two-col">
+					<!--
+					--><li><a class="em" href="#">Featured</a></li><!--
+					--><li><a class="em" href="#">Most Popular</a></li><!--
+					--><li><a class="em" href="#">Top Rated</a></li><!--
+					
+					--><li><a href="#">Abstract</a></li><!--
+					--><li><a href="#">Causes</a></li><!--
+					--><li><a href="#">Fashion</a></li><!--
+					--><li><a href="#">Film and TV</a></li><!--
+					--><li><a href="#">Firefox</a></li><!--
+					--><li><a href="#">Foxkeh</a></li><!--
+					--><li><a href="#">Holiday</a></li><!--
+					--><li><a href="#">Music</a></li><!--
+					--><li><a href="#">Nature</a></li><!--
+					--><li><a href="#">Other</a></li><!--
+					--><li><a href="#">Scenery</a></li><!--
+					--><li><a href="#">Seasonal</a></li><!--
+					--><li><a href="#">Solid</a></li><!--
+					--><li><a href="#">Sports</a></li><!--
+					--><li><a href="#">Websites</a></li><!--
+					-->
+				   </ul><!--
+			   --></li><!--
+			--><li class="sep"></li><!--
+			--><li><!--
+				--><a class="top-menu" href="#">Themes</a><!--
+				--><ul class="submenu two-col">
+					<!--
+					--><li><a class="em" href="#">Featured</a></li><!--
+					--><li><a class="em" href="#">Most Popular</a></li><!--
+					--><li><a class="em" href="#">Top Rated</a></li><!--
+					
+					--><li><a href="#">Animals</a></li><!--
+					--><li><a href="#">Compact</a></li><!--
+					--><li><a href="#">Large</a></li><!--
+					--><li><a href="#">Modern</a></li><!--
+					--><li><a href="#">Nature</a></li><!--
+					--><li><a href="#">OS Integration</a></li><!--
+					--><li><a href="#">Retro</a></li><!--
+					--><li><a href="#">Sports</a></li><!--
+					--><li><a href="#">Miscellaneous</a></li><!--
+					-->
+				   </ul><!--
+			--></li><!--
+			--><li class="sep"></li><!--
+			--><li><!--
+				--><a class="top-menu" href="#">Collections</a><!--
+				--><ul class="submenu">
+					<!--
+					--><li><a href="#">Featured</a></li><!--
+					--><li><a href="#">Most Popular</a></li><!--
+					--><li><a href="#">Top Rated</a></li><!--
+					-->
+				   </ul><!--
+			   --></li><!--
+			--><li class="sep"></li><!--
+			--><li><!--
+				--><span class="top-menu" href="#">More&hellip;</span><!--
+				--><ul class="submenu">
+					<!--
+					--><li><a href="#">Dictionaries &amp; Language Packs</a></li><!--
+					--><li><a href="#">Plugins</a></li><!--
+					--><li><a href="#">Search Tools</a></li><!--
+					--><li><a href="#">Developer Hub</a></li><!--
+					-->
+				   </ul><!--
+			--></li><!--
 			-->
 		</ul>
 	</nav>
+
+	<form id="site-nav-search">
+		<input type="text" placeholder="Search for Add-ons"></input>
+		<span class="submit">
+			<button class="button small"><span>Search</span></button>
+		</span>
+	</form>
+	
+	<div id="site-nonfx" class="site-balloon">
+		<b><em></em></b>
+		
+		<h3>Aren't you forgetting something?</h3>
+		
+		<p>
+			To use the thousands of add-ons available here, download 
+			<a href="#">Mozilla Firefox</a>
+			&mdash; a fast, free Web browser.
+		</p>
+		
+		<a class="close" href="#">Close</a>
+	</div>
+	
+	
+	<div id="site-welcome" class="site-balloon">
+		<b><em></em></b>
+		
+		<h3>Welcome to Firefox Add-ons.</h3>
+		
+		<p>
+			Choose from thousands of extra features and styles for Firefox.
+			<a href="#">Learn more&hellip;</a>
+		</p>
+
+		<a class="close" href="#">Close</a>
+	</div>
 </div></header>
 
 

@@ -937,9 +937,14 @@ html {
 }
 
 
+/* Front page */
+
+.front-page #site-header {
+	margin-bottom: 35px;
+}
+
 
 /* Detail Pages  */
-
 
 #detail-main {
 	margin: 0;
