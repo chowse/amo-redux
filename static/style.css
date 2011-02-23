@@ -786,6 +786,14 @@ html {
 }
 
 
+
+
+/* Front page */
+
+.front-page #site-header {
+	margin-bottom: 35px;
+}
+
 #nav-sidebar {
 	width: 180px;
 	float: left;
@@ -932,15 +940,12 @@ html {
 
 
 #promo-block {
-	height: 200px;
+	height: 270px;
+	padding: 0;
 	margin-bottom: 30px;
-}
-
-
-/* Front page */
-
-.front-page #site-header {
-	margin-bottom: 35px;
+	background: url(img/promo-1.jpg) no-repeat center 0;
+	-moz-box-shadow: 0 -4px 0 rgba(0, 0, 0, 0.05) inset,
+	                 0 2px 0 rgba(0, 0, 0, 0.05)
 }
 
 
