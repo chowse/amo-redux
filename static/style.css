@@ -801,6 +801,7 @@ html {
 	font-size: 12px;
 	color: #484848;
 }
+	/*
 	#nav-primary {
 		display: none;
 		margin-bottom: 15px;
@@ -867,62 +868,59 @@ html {
 		#nav-primary a.selected:after {
 			display: inline;
 		}
+	*/
 
-
-	#nav-categories {
+	#nav-sidebar .menu {
 		display: block;
-		margin-bottom: 15px;
-		padding: 15px;
-		border: 1px solid #c9ddf2;
-		background: #fff;
+		margin-bottom: 28px;
 		font-family: Trebuchet MS;
 		font-size: 12px;
-		-moz-border-radius: 5px;
-		-moz-box-shadow: 0 -4px 0 rgba(204,223,243, .3) inset,
-		                 0 2px 0 rgba(0,0,0, .05);
 	}
-		#nav-categories h2 {
-			margin-bottom: 15px;
-			font-size: 13px;
+		#nav-sidebar .menu h2,
+		#nav-sidebar .menu a {
+			line-height: 28px;
+			padding: 0 6px;
+		}
+		#nav-sidebar .menu h2 {
+			font-size: 14px;
 			font-weight: bold;
 			text-transform: uppercase;
 		}
-		#nav-categories a {
+		#nav-sidebar .menu a {
 			display: block;
 			position: relative;
-			margin: 0 -15px;
-			padding: 7px 15px;
-			border: 0 solid #f0f3f7;
+			border: 0 solid rgba(3, 48, 81, .2);
 			border-bottom-width: 1px;
 			text-decoration: none;
 		}
-		#nav-categories li:first-child a {
+		#nav-sidebar .menu li:first-child a {
 			border-top-width: 1px;
 		}
-		#nav-categories a:after {
+		#nav-sidebar .menu a:after {
 			content: '\203a';
 			position: absolute;
-			right: 15px;
+			right: 6px;
+			top: -2px;
 			font-family: Georgia;
 			font-weight: normal;
 			font-size: 18px;
-			line-height: 12px;
 			color: #dadada;
+			color: rgba(0,0,0, .125);
 		}
-		#nav-categories a:hover,
-		#nav-categories a:focus,
-		#nav-categories a.selected {
+		#nav-sidebar .menu a:hover,
+		#nav-sidebar .menu a:focus,
+		#nav-sidebar .menu a.selected {
 			background: #ecf5fe;
 		}
-		#nav-categories a:hover:after,
-		#nav-categories a:focus:after,
-		#nav-categories a.selected:after {
+		#nav-sidebar .menu a:hover:after,
+		#nav-sidebar .menu a:focus:after,
+		#nav-sidebar .menu a.selected:after {
 			color: inherit;
 			display: inline;
 		}
-		#nav-categories a.selected {
+		#nav-sidebar .menu a.selected {
 			color: #333;
-			-moz-box-shadow: 0 2px 0 rgba(204,223,243, .3) inset;
+			font-weight: bold;
 		}
 		
 	#nav-types {
