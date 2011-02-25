@@ -238,16 +238,17 @@ html {
 
 
 .extension-list {
-	font-family: Georgia;
-	font-size: 14px;
+	font-family: Arial;
+	font-size: 12px;
 	list-style: decimal outside;
-	color: #666;
+	color: #999;
 }
 	.extension-list li {
 		display: block;
 		position: relative;
-		margin: 0 -14px 0;
-		padding: 7px 14px;
+		padding: 6px;
+		border: 0 solid rgba(3, 48, 81, 0.1);
+		border-bottom-width: 1px;
 		list-style: decimal inside;
 		white-space: nowrap;
 	}
@@ -255,14 +256,29 @@ html {
 		.extension-list li:focus {
 			background: #ECF5FE;
 		}
+	.extension-list li:first-child {
+		border-top-width: 1px;
+	}
+	.extension-list a,
+	.extension-list b {
+		font-size: 12px;
+		line-height: 14px;
+	 }
 	.extension-list a,
 	.extension-list .meta {
 		display: block;
 		overflow: hidden;
+		margin-left: 21px;
 		white-space: nowrap;
 	}
+	.extension-list b {
+		float: left;
+		width: 16px;
+		font-weight: normal;
+		text-align: center;
+		color: #666;
+	}
 	.extension-list a {
-		line-height: 16px;
 	}
 		.extension-list a span {
 			position: absolute;
@@ -271,12 +287,51 @@ html {
 			top: 0;
 			bottom: 0;
 		}
+	.extension-list a:before {
+/*
+		content: '';
+		content: none;
+		position: absolute;
+		left: 6px;
+		top: 6px;
+		width: 24px;
+		height: 24px;
+		background: url(img/extension-32.png);
+		background-size: 24px;
+*/
+	}
 	.extension-list .meta {
 		display: block;
-		font-size: 12px;
-		line-height: 14px;
+		font-size: 11px;
+		line-height: 13px;
 	}
 
+.extension-list-block {
+	margin-bottom: 28px;
+	font-family: Arial;
+}
+	.extension-list-block h2 {
+		position: relative;
+		padding: 0 6px;
+		font-size: 14px;
+		font-weight: bold;
+		line-height: 28px;
+		text-transform: uppercase;
+	}
+		.extension-list-block h2 a {
+			margin-left: .25em;
+			font-size: 12px;
+			font-weight: normal;
+			text-transform: none;
+		}
+		.extension-list-block h2 a:after {
+			content:;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+		}
 
 .persona-list {
 }
