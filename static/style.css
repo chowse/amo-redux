@@ -101,7 +101,66 @@ html {
 			position: absolute;
 			right: 0px;
 			top: 0px;
+			font-family: Georgia;
+			font-size: 21px;
 		}
+			.island header .pager a {
+				display: inline-block;
+				position: relative;
+				overflow: hidden;
+				width: 16px;
+				height: 16px;
+				margin: 4px 0;
+				text-indent: -1000em;
+			}
+				.island header .pager a:after {
+					content: '';
+					position: absolute;
+					left: 4px;
+					right: 4px;
+					top: 4px;
+					bottom: 4px;
+					-moz-border-radius: 6px;
+					background: rgba(0,0,0, .1);
+				}
+				.island header .pager a:hover:after {
+					background: rgba(0,0,0, .4);
+				}
+				.island header .pager a.selected:after {
+					background: #447BC4;
+				}
+			.island header .pager .prev,
+			.island header .pager .next {
+				overflow: hidden;
+				width: 24px;
+				height: 24px;
+				margin: 0;
+			}
+				.island header .pager .prev:after,
+				.island header .pager .next:after {
+					content: '<';
+					position: absolute;
+					background: none;
+					color: #A1BDE1;
+					line-height: 12px;
+					text-indent: 0;
+					text-align: center;
+				}
+				.island header .pager .prev:after {
+					content: '\ab';
+				}
+				.island header .pager .next:after {
+					content: '\bb';
+				}
+				.island header .pager .prev:hover:after,
+				.island header .pager .next:hover:after {
+					background: none;
+					color: #447BC4;
+				}
+			.island header .pager .next {
+				border-right-width: 0;
+				text-align: left;
+			}
 
 .island.deep {
 	padding-bottom: 18px;
