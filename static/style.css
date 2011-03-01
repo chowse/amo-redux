@@ -179,14 +179,14 @@ html {
 
 .rating-stars {
 	display: inline-block;
-	width: 68px;
+	width: 63px;
 	height: 12px;
-	background: url(img/stars-12.png) no-repeat left top;
+	background: url(img/stars-11.png) no-repeat left top;
 }
-	.rating-stars.rating-4 { background-position: -14px 0; }
-	.rating-stars.rating-3 { background-position: -28px 0; }
-	.rating-stars.rating-2 { background-position: -42px 0; }
-	.rating-stars.rating-1 { background-position: -56px 0; }
+	.rating-stars.rating-4 { background-position: -13px 0; }
+	.rating-stars.rating-3 { background-position: -26px 0; }
+	.rating-stars.rating-2 { background-position: -39px 0; }
+	.rating-stars.rating-1 { background-position: -52px 0; }
 	
 .rating-stars.large {
 	background: url(img/stars-16.png) no-repeat left top;
@@ -202,7 +202,9 @@ html {
 .extension {
 	display: block;
 	position: relative;
-	font-family: Georgia;
+	color: #666;
+	font-family: Arial;
+	font-size: 11px;
 }
 	.extension .main {
 		position: relative;
@@ -215,7 +217,14 @@ html {
 		.extension:hover .main {
 			background: #fff;
 			border-color: #ccc;
-			-moz-box-shadow: 0 0 4px rgba(0,0,0,.2);
+			-moz-box-shadow: 0 0 5px rgba(0,0,0,.4);
+		}
+		.extension .main p {
+			margin-left: 58px;
+			margin-top: 2px;
+			overflow: hidden;
+			white-space: nowrap;
+			line-height: 13px;
 		}
 	.extension .more {
 		display: none;
@@ -223,13 +232,15 @@ html {
 		z-index: 1001;
 		left: 58px;
 		right: 0;
-		top: 69px;
-		height: 100px;
+		top: 67px;
+		padding: 0 10px 10px;
 		border: 1px solid #ccc;
 		border-width: 0 1px 1px 1px;
 		-moz-border-radius: 0 0 5px 5px;
 		background: #fff;
-		-moz-box-shadow: 0 0 4px rgba(0,0,0,.2);
+		font-size: 11px;
+		color: #666;
+		-moz-box-shadow: 0 0 5px rgba(0,0,0,.4);
 	}
 		.extension:hover .more {
 			display: block;
@@ -237,24 +248,18 @@ html {
 		.extension .more:before {
 			content: '';
 			position: absolute;
-			left: -9px;
+			left: -10px;
 			right: 0;
-			top: -9px;
-			height: 9px;
+			top: -7px;
+			height: 7px;
 			background: #fff;
 		}
 	.extension p {
-		margin-left: 58px;
-		margin-top: 2px;
-		overflow: hidden;
-		white-space: nowrap;
-		font-size: 12px;
-		line-height: 14px;
-		color: #666;
 	}
 	.extension .title {
-		font-size: 14px;
-		line-height: 16px;
+		font-size: 13px;
+		font-weight: bold;
+		line-height: 15px;
 	}
 		.extension .title a:after {
 			content: '';
@@ -264,7 +269,7 @@ html {
 			top: -1px;
 			bottom: -1px;
 		}
-	.extension .icon {
+	.extension .main .icon {
 		position: absolute;
 		top: 10px;
 		left: 10px;
@@ -280,7 +285,25 @@ html {
 			margin: auto;
 		}
 	.extension .rating-stars {
-		vertical-align: bottom;
+		vertical-align: top;
+	}
+	.extension div.install {
+		margin-bottom: 10px;
+	}
+	.extension .more .desc {
+		margin-top: 10px;
+		font-size: 12px;
+		line-height: 14px;
+		color: #333;
+	}
+	.extension .more .author {
+		margin-top: 10px;
+		font-style: italic;
+	}
+	.extension .more .meta {
+		margin-top: 10px;
+		padding-top: 10px;
+		border-top: 1px solid #ccc;
 	}
 
 .theme {
@@ -317,7 +340,8 @@ html {
 .persona {
 	display: block;
 	position: relative;
-	font-family: Georgia;
+	font-family: Arial;
+	font-size: 11px;
 }
 	.persona .main {
 		position: relative;
@@ -332,6 +356,10 @@ html {
 			border-color: #ccc;
 			-moz-box-shadow: 0 0 4px rgba(0,0,0,.2);
 		}
+		.persona .main p {
+			overflow: hidden;
+			white-space: nowrap;
+		}
 	.persona .more {
 		display: none;
 		position: absolute;
@@ -339,11 +367,13 @@ html {
 		left: 0;
 		right: 0;
 		top: 87px;
-		height: 30px;
+		padding: 10px;
+		padding-top: 0;
 		border: 1px solid #ccc;
 		border-width: 0 1px 1px 1px;
 		-moz-border-radius: 0 0 5px 5px;
 		background: #fff;
+		font-size: 11px;
 		-moz-box-shadow: 0 0 4px rgba(0,0,0,.2);
 	}
 		.persona:hover .more {
@@ -358,10 +388,6 @@ html {
 			height: 9px;
 			background: #fff;
 		}
-	.persona p {
-		overflow: hidden;
-		white-space: nowrap;
-	}
 	.persona .preview {
 	}
 		.persona .preview img {
@@ -370,6 +396,7 @@ html {
 		}
 	.persona .title {
 		font-size: 12px;
+		font-weight: bold;
 		line-height: 16px;
 	}
 		.persona .title a:after {
@@ -385,7 +412,9 @@ html {
 .collection {
 	display: block;
 	position: relative;
-	font-family: Georgia;
+	color: #666;
+	font-family: Arial;
+	font-size: 11px;
 }
 	.collection .main {
 		position: relative;
@@ -400,13 +429,21 @@ html {
 			border-color: #ccc;
 			-moz-box-shadow: 0 0 4px rgba(0,0,0,.2);
 		}
+		.collection .main p {
+			margin-left: 58px;
+			margin-top: 2px;
+			overflow: hidden;
+			white-space: nowrap;
+			line-height: 14px;
+		}
+		
 	.collection .more {
 		display: none;
 		position: absolute;
 		z-index: 1001;
 		left: 58px;
 		right: 0;
-		top: 69px;
+		top: 67px;
 		height: 100px;
 		border: 1px solid #ccc;
 		border-width: 0 1px 1px 1px;
@@ -420,20 +457,13 @@ html {
 		.collection .more:before {
 			content: '';
 			position: absolute;
-			left: -9px;
+			left: -5px;
 			right: 0;
-			top: -9px;
-			height: 9px;
+			top: -5px;
+			height: 5px;
 			background: #fff;
 		}
 	.collection p {
-		margin-left: 56px;
-		margin-top: 2px;
-		overflow: hidden;
-		white-space: nowrap;
-		font-size: 12px;
-		line-height: 14px;
-		color: #666;
 	}
 	.collection .title {
 		font-size: 14px;
@@ -447,7 +477,7 @@ html {
 			top: 0;
 			bottom: 0;
 		}
-	.collection .icon {
+	.collection .main .icon {
 		position: absolute;
 		left: 10px;
 		top: 10px;
@@ -462,7 +492,7 @@ html {
 			top: 0;
 			margin: auto;
 		}
-	.collection .mini-desc {
+	.collection .main .mini-desc {
 		white-space: normal;
 		height: 30px;
 	}
@@ -646,19 +676,18 @@ html {
 
 .button.small {
 	font-size: 13px;
-	font-weight: normal;
-	padding: 6px 12px;
-	padding-bottom: 9px;
-	-moz-box-shadow: 0 2px rgba(0, 0, 0, 0.1),
-	                 0 -3px rgba(0, 0, 0, 0.1) inset;
+	padding: 5px 10px;
+	padding-bottom: 7px;
+	-moz-box-shadow: 0 1px rgba(0, 0, 0, 0.1),
+	                 0 -2px rgba(0, 0, 0, 0.1) inset;
 }
 
 .button.small:hover,
 .button.small:focus,
 .button.small:active,
 .button.small.selected {
-	-moz-box-shadow: 0 2px rgba(0, 0, 0, 0.1),
-	                 0 -3px rgba(0, 0, 0, 0.1) inset,
+	-moz-box-shadow: 0 1px rgba(0, 0, 0, 0.1),
+	                 0 -2px rgba(0, 0, 0, 0.1) inset,
 	                 0 0 100px rgba(255, 255, 255, 0.2) inset;
 }
 
@@ -666,9 +695,10 @@ html {
 .button.small.selected {
 	top: 2px;
 	-moz-box-shadow: 0 0px rgba(0, 0, 0, 0.1),
-	                 0 -3px rgba(0, 0, 0, 0.1) inset,
+	                 0 -2px rgba(0, 0, 0, 0.1) inset,
 	                 0 0 100px rgba(255, 255, 255, 0.2) inset;
 }
+
 
 .button.install {
 	background: -moz-linear-gradient(#84C63C, #489615);
@@ -682,7 +712,7 @@ html {
 }
 	.button.install.small span {
 		background-image: url(img/add-small.png);
-		padding-left: 18px;
+		padding-left: 16px;
 	}
 
 .button.install.warning {
