@@ -361,7 +361,7 @@ html {
 		.persona:hover .main {
 			background: #fff;
 			border-color: #ccc;
-			-moz-box-shadow: 0 0 4px rgba(0,0,0,.2);
+			-moz-box-shadow: 0 0 4px rgba(0,0,0,.4);
 		}
 		.persona .main p {
 			overflow: hidden;
@@ -381,7 +381,7 @@ html {
 		-moz-border-radius: 0 0 5px 5px;
 		background: #fff;
 		font-size: 11px;
-		-moz-box-shadow: 0 0 4px rgba(0,0,0,.2);
+		-moz-box-shadow: 0 0 4px rgba(0,0,0,.4);
 	}
 		.persona:hover .more {
 			display: block;
@@ -402,9 +402,9 @@ html {
 			height: 50px;
 		}
 	.persona .title {
-		font-size: 12px;
+		font-size: 13px;
 		font-weight: bold;
-		line-height: 16px;
+		line-height: 15px;
 	}
 		.persona .title a:after {
 			content: '';
@@ -429,12 +429,12 @@ html {
 		min-height: 48px;
 		padding: 9px;
 		border: 1px solid transparent;
-		-moz-border-radius: 3px 3px 0 3px;
+		-moz-border-radius: 5px 5px 0 5px;
 	}
 		.collection:hover .main {
 			background: #fff;
 			border-color: #ccc;
-			-moz-box-shadow: 0 0 4px rgba(0,0,0,.2);
+			-moz-box-shadow: 0 0 4px rgba(0,0,0,.4);
 		}
 		.collection .main p {
 			margin-left: 58px;
@@ -454,9 +454,9 @@ html {
 		height: 100px;
 		border: 1px solid #ccc;
 		border-width: 0 1px 1px 1px;
-		-moz-border-radius: 0 0 3px 3px;
+		-moz-border-radius: 0 0 5px 5px;
 		background: #fff;
-		-moz-box-shadow: 0 0 4px rgba(0,0,0,.2);
+		-moz-box-shadow: 0 0 4px rgba(0,0,0,.4);
 	}
 		.collection:hover .more {
 			display: block;
@@ -473,8 +473,9 @@ html {
 	.collection p {
 	}
 	.collection .title {
-		font-size: 14px;
-		line-height: 16px;
+		font-size: 13px;
+		font-weight: bold;
+		line-height: 15px;
 	}
 		.collection .title a:after {
 			content: '';
