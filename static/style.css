@@ -224,7 +224,7 @@ html {
 		.extension:hover .main {
 			background: #fff;
 			border-color: #ccc;
-			-moz-box-shadow: 0 0 5px rgba(0,0,0,.4);
+			-moz-box-shadow: 0 0 4px rgba(0,0,0,.4);
 		}
 		.extension .main p {
 			margin-left: 58px;
@@ -247,7 +247,7 @@ html {
 		background: #fff;
 		font-size: 11px;
 		color: #666;
-		-moz-box-shadow: 0 0 5px rgba(0,0,0,.4);
+		-moz-box-shadow: 0 0 4px rgba(0,0,0,.4);
 	}
 		.extension:hover .more {
 			display: block;
