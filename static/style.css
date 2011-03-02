@@ -1021,7 +1021,7 @@ html {
 			
 	.site-balloon {
 		position: relative;
-		margin-top: 15px;
+		margin-top: 22px;
 		padding: 15px 15px;
 		border: 1px solid transparent;
 		font-family: Georgia;
@@ -1091,6 +1091,33 @@ html {
 		#site-nonfx em {
 			border-left-color: #fffcee;
 		}
+	
+	
+	#site-mobiswitch {
+		border-color: #E3873B;
+		background: #FCEFB7;
+		color: #333;
+		font-family: droid sans, arial, sans-serif;
+		font-size: 16px;
+	}
+		#site-mobiswitch b {
+			border-left-color: #E3873B;
+		}
+		#site-mobiswitch em {
+			border-left-color: #FCEFB7;
+		}
+		#site-mobiswitch p a {
+			position: relative;
+			color: #C45600;
+			text-decoration: underline;
+		}
+			#site-mobiswitch p a span {
+				position: absolute;
+				left: -16px;
+				right: -16px;
+				top: -16px;
+				bottom: -16px;
+			}
 
 	#site-welcome {
 		border-color: #bae28e;
@@ -2222,6 +2249,9 @@ html.non-firefox #site-nonfx { display: block; }
 
 html #site-welcome { display: none; }
 html.first-run #site-welcome { display: block; }
+
+html #site-mobiswitch { display: none; }
+html.small-screen #site-mobiswitch { display: block; }
 
 html #developer-button { display: none; }
 html.owner #developer-button { display: inline-block; }
