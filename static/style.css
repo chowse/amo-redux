@@ -1018,17 +1018,19 @@ html {
 				background: url(img/search-button.png) no-repeat center center;
 				text-indent: -1000em;
 			}
-			
+
 	.site-balloon {
 		position: relative;
 		margin-top: 22px;
 		padding: 15px 15px;
-		border: 1px solid transparent;
-		font-family: Georgia;
+		border: 2px solid #E3873B;
+		background: #FCEFB7;
+		font-family: Arial;
 		font-size: 14px;
 		color: #333;
 		-moz-border-radius: 10px;
 	}
+/*
 	.site-balloon:before {
 		content: '';
 		position: absolute;
@@ -1040,6 +1042,7 @@ html {
 		-moz-border-radius: 5px;
 		-moz-box-shadow: 0 3px 3px rgba(0,0,0,.1);
 	}
+*/
 		.site-balloon h3,
 		.site-balloon p {
 			display: inline;
@@ -1051,7 +1054,7 @@ html {
 		.site-balloon b,
 		.site-balloon em {
 			position: absolute;
-			border-left: 18px solid transparent;
+			border-left: 18px solid #E3873B;
 			border-top: 18px solid transparent;
 		}
 		.site-balloon b {
@@ -1059,9 +1062,16 @@ html {
 			top: -18px;
 		}
 		.site-balloon em {
-			left: -17px;
-			top: -16px;
+			left: -16px;
+			top: -13px;
+			border-left-color: #FCEFB7;
 		}
+		.site-balloon p {
+		}
+			.site-balloon p a {
+				color: #c40000;
+				font-weight: bold;
+			}
 		.site-balloon .close {
 			position: absolute;
 			overflow: hidden;
@@ -1076,10 +1086,11 @@ html {
 			text-indent: -1000em;
 		}
 		.site-balloon .close:hover {
-			background-color: #447BC4;
+			background-color: #c40000;
 			background-position: -25px 0;
 		}
-			
+
+/*			
 	#site-nonfx {
 		border-color: #ffc900;
 		background: #fffcee;
@@ -1091,25 +1102,18 @@ html {
 		#site-nonfx em {
 			border-left-color: #fffcee;
 		}
-	
+*/
 	
 	#site-mobiswitch {
-		border-color: #E3873B;
-		background: #FCEFB7;
-		color: #333;
 		font-family: droid sans, arial, sans-serif;
-		font-size: 16px;
+		font-size: 18px;
 	}
 		#site-mobiswitch b {
-			border-left-color: #E3873B;
 		}
 		#site-mobiswitch em {
-			border-left-color: #FCEFB7;
 		}
 		#site-mobiswitch p a {
 			position: relative;
-			color: #C45600;
-			text-decoration: underline;
 		}
 			#site-mobiswitch p a span {
 				position: absolute;
@@ -1118,7 +1122,7 @@ html {
 				top: -16px;
 				bottom: -16px;
 			}
-
+/*
 	#site-welcome {
 		border-color: #bae28e;
 		background: #f1ffe0;
@@ -1130,6 +1134,7 @@ html {
 		#site-welcome em {
 			border-left-color: #f1ffe0;
 		}
+*/
 
 	#site-breadcrumbs {
 		margin: 35px 0 15px;
