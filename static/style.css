@@ -291,9 +291,13 @@ html {
 			top: 0;
 			margin: auto;
 		}
-	.extension .rating-stars {
-		vertical-align: bottom;
+	.extension .rating {
+		font-size: 10px;
 	}
+		.extension .rating-stars {
+			margin-right: 2px;
+			vertical-align: bottom;
+		}
 	.extension div.install {
 		margin-bottom: 10px;
 	}
