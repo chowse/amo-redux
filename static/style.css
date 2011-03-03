@@ -311,6 +311,9 @@ html {
 		margin-top: 10px;
 		font-style: italic;
 	}
+		.extension .more .author a {
+			color: inherit;
+		}
 	.extension .more .meta {
 		margin-top: 10px;
 		padding-top: 10px;
