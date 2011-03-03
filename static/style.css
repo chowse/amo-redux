@@ -292,7 +292,7 @@ html {
 			margin: auto;
 		}
 	.extension .rating-stars {
-		vertical-align: top;
+		vertical-align: bottom;
 	}
 	.extension div.install {
 		margin-bottom: 10px;
@@ -1030,19 +1030,6 @@ html {
 		color: #333;
 		-moz-border-radius: 10px;
 	}
-/*
-	.site-balloon:before {
-		content: '';
-		position: absolute;
-		z-index: -1;
-		left: 4px;
-		right: 4px;
-		bottom: 0;
-		height: 15px;
-		-moz-border-radius: 5px;
-		-moz-box-shadow: 0 3px 3px rgba(0,0,0,.1);
-	}
-*/
 		.site-balloon h3,
 		.site-balloon p {
 			display: inline;
@@ -1089,20 +1076,6 @@ html {
 			background-color: #c40000;
 			background-position: -25px 0;
 		}
-
-/*			
-	#site-nonfx {
-		border-color: #ffc900;
-		background: #fffcee;
-		color: #333;
-	}
-		#site-nonfx b {
-			border-left-color: #ffc900;
-		}
-		#site-nonfx em {
-			border-left-color: #fffcee;
-		}
-*/
 	
 	#site-mobiswitch {
 		font-family: droid sans, arial, sans-serif;
@@ -1122,19 +1095,6 @@ html {
 				top: -16px;
 				bottom: -16px;
 			}
-/*
-	#site-welcome {
-		border-color: #bae28e;
-		background: #f1ffe0;
-		color: #333;
-	}
-		#site-welcome b {
-			border-left-color: #bae28e;
-		}
-		#site-welcome em {
-			border-left-color: #f1ffe0;
-		}
-*/
 
 	#site-breadcrumbs {
 		margin: 35px 0 15px;
