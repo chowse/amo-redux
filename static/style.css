@@ -458,7 +458,7 @@ html {
 		left: 58px;
 		right: 0;
 		top: 67px;
-		height: 100px;
+		padding: 0 10px 10px 10px;
 		border: 1px solid #ccc;
 		border-width: 0 1px 1px 1px;
 		-moz-border-radius: 0 0 5px 5px;
@@ -511,6 +511,35 @@ html {
 		white-space: normal;
 		height: 30px;
 	}
+	.collection .more .desc {
+		position: relative;
+		/* kludge */
+		top: -10px;
+		margin-bottom: -10px;
+		line-height: 14px;
+	}
+	.collection .more .author {
+		margin-top: 10px;
+		font-style: italic;
+	}
+		.collection .more .author a {
+			color: inherit;
+		}
+	.collection .more .meta {
+		margin-top: 10px;
+		padding-top: 10px;
+		border-top: 1px dotted #ccc;
+	}
+		.collection .more .meta li {
+			display: inline;
+		}
+		.collection .more .meta li:before {
+			content: '\b7';
+			margin: 0 4px;
+		}
+		.collection .more .meta li:first-child:before {
+			content: none;
+		}
 
 
 .extension-list {
