@@ -965,7 +965,8 @@ html {
 			width: 340px;
 		}
 		#site-nav li:hover .submenu {
-			left: 9px;
+			left: 0;
+			margin-left: 0;
 			color: #484848;
 			opacity: 1;
 		}
@@ -989,6 +990,9 @@ html {
 				background: #e1edfb;
 			}
 			#site-nav .submenu li.sep {
+				display: block;
+				border-top: 1px dotted #ccc;
+				margin: 8px 6px;
 			}
 
 	#site-nav-search {
