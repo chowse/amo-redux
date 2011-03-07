@@ -1420,6 +1420,9 @@ html {
 			line-height: 26px;
 			color: #333;
 		}
+		#detail-main header .version {
+			color: #999;
+		}
 		#detail-main header .author {
 			margin-top: 4px;
 			color: #666;
