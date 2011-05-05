@@ -2,6 +2,65 @@
 layout: common
 title: Firefox Add-ons
 page-class: front-page
+
+top-exts:
+  - Adblock Plus
+  - Video DownloadHelper
+  - NoScript
+  - FlashGot
+  - GreaseMonkey
+  - Firebug
+  - Personas Plus
+  - DownloadThemAll!
+  - Easy YouTube Video Downloader
+  - Download Statusbar
+
+featured-personas:
+  -
+    name: Colorful Fractal
+    icon: persona-01.jpg
+  -
+    name: The Spirit of Autumn
+    icon: persona-02.jpg
+  -
+    name: squaresincolors
+    icon: persona-03.jpg
+  -
+    name: Space - wonderful world
+    icon: persona-04.jpg
+  -
+    name: fractal seafoam gnarls
+    icon: persona-05.jpg
+  -
+    name: Unrestricted Imagination
+    icon: persona-06.jpg
+
+featured-colls:
+  -
+    name: Web Developer's Toolbox
+    icon: coll-01.png
+    mini-desc: Speed up the development process by using add-ons to troubleshoot, ... edit, and debug web projects without ever clicking away from Firefox.
+    desc: edit, and debug web projects without ever clicking away from Firefox.
+    author: Mozilla
+  -
+    name: Traveler's Pack
+    icon: coll-02.png
+    mini-desc: When the travel bug bites, these add-ons make it easy to plan, ... book and document your trip -- without getting lost along the way.
+    desc: and document your trip -- without getting lost along the way.
+    author: Mozilla
+  -
+    name: Family Organizer
+    icon: coll-03.png
+    mini-desc: Create a safe and fun online experience while planning ... everything the family does offline with add-ons that keep the family cooking.
+    desc: everything the family does offline with add-ons that keep the family cooking.
+    author: Mozilla
+  -
+    name: Reference Desk
+    icon: coll-04.png
+    mini-desc: Make the librarian jealous with add-ons that help students, ... researchers or anyone with a tough question find and document all the answers.
+    desc: researchers or anyone with a tough question find and document all the answers.
+    author: Mozilla
+
 ---
 
 <div id="proto-controls" class="initial">
@@ -19,7 +78,7 @@ page-class: front-page
 
 
 <div id="page-content"><div class="funnel">
-	
+
 {% include nav-sidebar.html %}
 
 <div class="primary-col">
@@ -47,56 +106,13 @@ page-class: front-page
 			</header>
 			
 			<ol class="extension-list">
-				<li>
-					<b>1.</b>
-					<a href="detail.html"><span></span> Adblock Plus</a>
-					<span class="meta">9,999,999 users</span>
-				</li>
-				<li>
-					<b>2.</b>
-					<a href="detail.html"><span></span> Video DownloadHelper</a>
-					<span class="meta">9,999,999 users</span>
-				</li>
-				<li>
-					<b>3.</b>
-					<a href="detail.html"><span></span> NoScript</a>
-					<span class="meta">9,999,999 users</span>
-				</li>
-				<li>
-					<b>4.</b>
-					<a href="detail.html"><span></span> FlashGot</a>
-					<span class="meta">9,999,999 users</span>
-				</li>
-				<li>
-					<b>5.</b>
-					<a href="detail.html"><span></span> GreaseMonkey</a>
-					<span class="meta">9,999,999 users</span>
-				</li>
-				<li>
-					<b>6.</b>
-					<a href="detail.html"><span></span> Firebug</a>
-					<span class="meta">9,999,999 users</span>
-				</li>
-				<li>
-					<b>7.</b>
-					<a href="detail.html"><span></span> Personas Plus</a>
-					<span class="meta">9,999,999 users</span>
-				</li>
-				<li>
-					<b>8.</b>
-					<a href="detail.html"><span></span> DownloadThemAll!</a>
-					<span class="meta">9,999,999 users</span>
-				</li>
-				<li>
-					<b>9.</b>
-					<a href="detail.html"><span></span> Easy YouTube Video Downloader</a>
-					<span class="meta">9,999,999 users</span>
-				</li>
-				<li>
-					<b>10.</b>
-					<a href="detail.html"><span></span> Download Statusbar</a>
-					<span class="meta">9,999,999 users</span>
-				</li>
+				{% for ext in page.top-exts %}
+					<li>
+						<b>{{ forloop.index }}.</b>
+						<a href="detail.html"><span></span> {{ ext }}</a>
+						<span class="meta">9,999,999 users</span>
+					</li>
+				{% endfor %}
 			</ol>
 		</section>
 	</div>
@@ -569,11 +585,12 @@ page-class: front-page
 			<div class="pages">
 				<ul class="page threecol">
 					<!--
+					{% for persona in page.featured-personas %}
 					--><li>
 						<div class="persona">
 							<div class="main">
-								<p class="preview"><img src="static/img/icons/persona-01.jpg" /></p>
-								<p class="title"><a href="detail.html">Colorful Fractal</a></p>
+								<p class="preview"><img src="static/img/icons/{{ persona.icon }}" /></p>
+								<p class="title"><a href="detail.html">{{ persona.name }}</a></p>
 							</div>
 
 							<div class="more">
@@ -581,61 +598,7 @@ page-class: front-page
 							</div>
 						</div>
 					</li><!--
-					
-					--><li>
-						<div class="persona">
-							<div class="main">
-								<p class="preview"><img src="static/img/icons/persona-02.jpg" /></p>
-								<p class="title"><a href="detail.html">The Spirit of Autumn</a></p>
-							</div>
-							<div class="more">
-							</div>
-						</div>
-					</li><!--
-					
-					--><li>
-						<div class="persona">
-							<div class="main">
-								<p class="preview"><img src="static/img/icons/persona-03.jpg" /></p>
-								<p class="title"><a href="detail.html">squaresincolors</a></p>
-							</div>
-							<div class="more">
-							</div>
-						</div>
-					</li><!--
-					
-					--><li>
-						<div class="persona">
-							<div class="main">
-								<p class="preview"><img src="static/img/icons/persona-04.jpg" /></p>
-								<p class="title"><a href="detail.html">Space - wonderful world</a></p>
-							</div>
-							<div class="more">
-							</div>
-						</div>
-					</li><!--
-					
-					--><li>
-						<div class="persona">
-							<div class="main">
-								<p class="preview"><img src="static/img/icons/persona-05.jpg" /></p>
-								<p class="title"><a href="detail.html">fractal seafoam gnarls</a></p>
-							</div>
-							<div class="more">
-							</div>
-						</div>
-					</li><!--
-					
-					--><li>
-						<div class="persona">
-							<div class="main">
-								<p class="preview"><img src="static/img/icons/persona-06.jpg" /></p>
-								<p class="title"><a href="detail.html">Unrestricted Imagination</a></p>
-							</div>
-							<div class="more">
-							</div>
-						</div>
-					</li><!--
+					{% endfor %}
 					-->
 				</ul>
 			</div>
@@ -663,19 +626,20 @@ page-class: front-page
 			<div class="pages">
 				<ul class="page">
 					<!--
+					{% for coll in page.featured-colls %}
 					--><li>
 						<div class="collection">
 							<div class="main">
-								<p class="icon"><img src="static/img/icons/coll-01.png" /></p>
-								<p class="title"><a href="detail.html">Web Developer's Toolbox</a></p>
-								<p class="mini-desc">Speed up the development process by using add-ons to troubleshoot, ... edit, and debug web projects without ever clicking away from Firefox.</p>
+								<p class="icon"><img src="static/img/icons/{{ coll.icon }}" /></p>
+								<p class="title"><a href="detail.html">{{ coll.name }}</a></p>
+								<p class="mini-desc">{{ coll.mini-desc }}</p>
 							</div>
 							
 							<div class="more">
-								<p class="desc"> edit, and debug web projects without ever clicking away from Firefox.</p>
+								<p class="desc">{{ coll.desc }}</p>
 								
 								<div class="author">
-									by <a href="#">Mozilla</a>
+									by <a href="#">{{ coll.author }}</a>
 								</div>
 								
 								<ul class="meta">
@@ -687,82 +651,7 @@ page-class: front-page
 							</div>
 						</div>
 					</li><!--
-
-					--><li>
-						<div class="collection">
-							<div class="main">
-								<p class="icon"><img src="static/img/icons/coll-02.png" /></p>
-								<p class="title"><a href="detail.html">Traveler's Pack</a></p>
-								<p class="mini-desc">When the travel bug bites, these add-ons make it easy to plan, ... book and document your trip -- without getting lost along the way.</p>
-							</div>
-
-							<div class="more">
-								<p class="desc"> and document your trip -- without getting lost along the way.</p>
-								
-								<div class="author">
-									by <a href="#">Mozilla</a>
-								</div>
-							
-								<ul class="meta">
-									<!--
-									--><li class="count">10 add-ons</li><!--
-									--><li class="followers">400 followers</li><!--
-									-->
-								</ul>
-							</div>
-						</div>
-					</li><!--
-
-					--><li>
-						<div class="collection">
-							<div class="main">
-								<p class="icon"><img src="static/img/icons/coll-03.png" /></p>
-								<p class="title"><a href="detail.html">Family Organizer</a></p>
-								<p class="mini-desc">Create a safe and fun online experience while planning ... everything the family does offline with add-ons that keep the family cooking.</p>
-							</div>
-
-							<div class="more">
-								<p class="desc"> everything the family does offline with add-ons that keep the family cooking.</p>
-								
-								<div class="author">
-									by <a href="#">Mozilla</a>
-								</div>
-							
-								<ul class="meta">
-									<!--
-									--><li class="count">10 add-ons</li><!--
-									--><li class="followers">400 followers</li><!--
-									-->
-								</ul>
-							</div>
-						</div>
-					</li><!--
-
-					--><li>
-						<div class="collection">
-							<div class="main">
-								<p class="icon"><img src="static/img/icons/coll-04.png" /></p>
-								<p class="title"><a href="detail.html">Reference Desk</a></p>
-								<p class="mini-desc">Make the librarian jealous with add-ons that help students, ... researchers or anyone with a tough question find and document all the answers.</p>
-							</div>
-							<div class="more">
-								<div class="desc">
-									<p>researchers or anyone with a tough question find and document all the answers.</p>
-								</div>
-								
-								<div class="author">
-									by <a href="#">Mozilla</a>
-								</div>
-								
-								<ul class="meta">
-									<!--
-									--><li class="count">10 add-ons</li><!--
-									--><li class="followers">400 followers</li><!--
-									-->
-								</ul>
-							</div>
-						</div>
-					</li><!--
+					{% endfor %}
 					-->
 				</ul>
 			</div>
