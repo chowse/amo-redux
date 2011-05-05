@@ -1,18 +1,8 @@
-<!DOCTYPE html>
-<html class="front-page">
-
-<script type="text/javascript">
-	document.documentElement.className += ' js';
-</script>
-
-<head>
-	<title>Firefox Add-ons</title>
-	<link rel="stylesheet" href="static/reset.min.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="static/style.css" type="text/css" media="screen" />
-</head>
-
-<body>
-
+---
+layout: common
+title: Firefox Add-ons
+page-class: front-page
+---
 
 <div id="proto-controls" class="initial">
 	<div class="floating"><div>
@@ -28,225 +18,9 @@
 </div>
 
 
-<header id="global-header"><div class="funnel">
-	<a id="mozilla-tab" href="#">Mozilla</a>
-	
-	<div class="menu">
-		<p>
-			<a href="#">Register</a>
-			or
-			<a href="#">Log in</a>
-		</p>
-
-		<p>
-			<a href="#">Other Applications</a>
-		</p>
-</div></header>
-
-
-<header id="site-header"><div class="funnel">
-	<h1>
-		<a href="homepage.html">Add-ons <span></span></a>
-	</h1>
-	
-	<form id="site-search">
-		<input type="text" placeholder="Search for Add-ons"></input>
-		<button>Search</button>
-	</form>
-	
-	<nav id="site-nav">
-		<ul>
-			<!--
-			--><li><!--
-				--><a class="top-menu" href="#">Extensions</a><!--
-				--><ul class="submenu two-col">
-					<!--
-					--><li><a class="em" href="#">Featured</a></li><!--
-					--><!-- <li><a class="em" href="#">Up &amp; Coming</a></li> --><!--
-					--><li><a class="em" href="#">Most Popular</a></li><!--
-					--><li><a class="em" href="#">Top Rated</a></li><!--
-					
-					--><li><a href="#">Abstract</a></li><!--
-					--><li><a href="#">Appearance</a></li><!--
-					--><li><a href="#">Bookmarks</a></li><!--
-					--><li><a href="#">Download Management</a></li><!--
-					--><li><a href="#">Feeds, News &amp; Blogging</a></li><!--
-					--><li><a href="#">Games &amp; Entertainment</a></li><!--
-					--><li><a href="#">Language Support</a></li><!--
-					--><li><a href="#">Photos, Music &amp; Video</a></li><!--
-					--><li><a href="#">Privacy &amp; Security</a></li><!--
-					--><li><a href="#">Shopping</a></li><!--
-					--><li><a href="#">Social &amp; Communication</a></li><!--
-					--><li><a href="#">Tabs</a></li><!--
-					--><li><a href="#">Web Development</a></li><!--
-					--><li><a href="#">Other</a></li><!--
-					-->
-				   </ul><!--
-			   --></li><!--
-			--><li class="sep"></li><!--
-			--><li><!--
-				--><a class="top-menu" href="#">Personas</a><!--
-				--><ul class="submenu two-col">
-					<!--
-					--><li><a class="em" href="#">Featured</a></li><!--
-					--><!-- <li><a class="em" href="#">Up &amp; Coming</a></li> --><!--
-					--><li><a class="em" href="#">Most Popular</a></li><!--
-					--><li><a class="em" href="#">Top Rated</a></li><!--
-					
-					--><li><a href="#">Abstract</a></li><!--
-					--><li><a href="#">Causes</a></li><!--
-					--><li><a href="#">Fashion</a></li><!--
-					--><li><a href="#">Film and TV</a></li><!--
-					--><li><a href="#">Firefox</a></li><!--
-					--><li><a href="#">Foxkeh</a></li><!--
-					--><li><a href="#">Holiday</a></li><!--
-					--><li><a href="#">Music</a></li><!--
-					--><li><a href="#">Nature</a></li><!--
-					--><li><a href="#">Other</a></li><!--
-					--><li><a href="#">Scenery</a></li><!--
-					--><li><a href="#">Seasonal</a></li><!--
-					--><li><a href="#">Solid</a></li><!--
-					--><li><a href="#">Sports</a></li><!--
-					--><li><a href="#">Websites</a></li><!--
-					-->
-				   </ul><!--
-			   --></li><!--
-			--><li class="sep"></li><!--
-			--><li><!--
-				--><a class="top-menu" href="#">Themes</a><!--
-				--><ul class="submenu two-col">
-					<!--
-					--><li><a class="em" href="#">Featured</a></li><!--
-					--><li><!-- <a class="em" href="#">Up &amp; Coming</a></li> --><!--
-					--><li><a class="em" href="#">Most Popular</a></li><!--
-					--><li><a class="em" href="#">Top Rated</a></li><!--
-					
-					--><li><a href="#">Animals</a></li><!--
-					--><li><a href="#">Compact</a></li><!--
-					--><li><a href="#">Large</a></li><!--
-					--><li><a href="#">Modern</a></li><!--
-					--><li><a href="#">Nature</a></li><!--
-					--><li><a href="#">OS Integration</a></li><!--
-					--><li><a href="#">Retro</a></li><!--
-					--><li><a href="#">Sports</a></li><!--
-					--><li><a href="#">Miscellaneous</a></li><!--
-					-->
-				   </ul><!--
-			--></li><!--
-			--><li class="sep"></li><!--
-			--><li><!--
-				--><a class="top-menu" href="#">Collections</a><!--
-				--><ul class="submenu">
-					<!--
-					--><li><a href="#">Featured</a></li><!--
-					--><li><a href="#">Most Popular</a></li><!--
-					--><li><a href="#">Top Rated</a></li><!--
-					--><li class="sep"></li><!--
-					--><li><a href="#">Collections I've Made</a></li><!--
-					--><li><a href="#">Collections I'm Following</a></li><!--
-					--><li><a href="#">My Favorite Add-ons</a></li><!--
-					-->
-				   </ul><!--
-			   --></li><!--
-			--><li class="sep"></li><!--
-			--><li><!--
-				--><span class="top-menu" href="#">More&hellip;</span><!--
-				--><ul class="submenu">
-					<!--
-					--><li><a href="#">Dictionaries &amp; Language Packs</a></li><!--
-					--><li><a href="#">Plugins</a></li><!--
-					--><li><a href="#">Search Tools</a></li><!--
-					--><li><a href="#">Developer Hub</a></li><!--
-					-->
-				   </ul><!--
-			--></li><!--
-			-->
-		</ul>
-	</nav>
-
-	<form id="site-nav-search">
-		<input type="text" placeholder="Search for Add-ons"></input>
-		<span class="submit">
-			<button class="button small"><span>Search</span></button>
-		</span>
-	</form>
-	
-	<div id="site-nonfx" class="site-balloon">
-		<b><em></em></b>
-		
-		<h3>Aren't you forgetting something?</h3>
-		
-		<p>
-			To use the thousands of add-ons available here, download 
-			<a href="#">Mozilla Firefox</a>
-			&mdash; a fast, free Web browser.
-		</p>
-		
-		<a class="close" href="#">Close</a>
-	</div>
-	
-	<div id="site-welcome" class="site-balloon">
-		<b><em></em></b>
-		
-		<h3>Welcome to Firefox Add-ons.</h3>
-		
-		<p>
-			Choose from thousands of extra features and styles for Firefox.
-			<a href="#">Learn more&hellip;</a>
-		</p>
-
-		<a class="close" href="#">Close</a>
-	</div>
-	
-	<div id="site-mobiswitch" class="site-balloon">
-		<b><em></em></b>
-		
-		<h3>On the go?</h3>
-		
-		<p>
-			Check out our new  
-			<a href="#">Mobile Add-ons site<span></span></a>.
-		</p>
-		
-		<a class="close" href="#">Close</a>
-	</div>
-</div></header>
-
-
 <div id="page-content"><div class="funnel">
 	
-<nav id="nav-sidebar" class="secondary-col">
-	<div id="nav-primary" class="menu">
-		<h2>Explore</h2>
-		<ul>
-			<li><a href="#">Featured</a></li>
-			<!-- <li><a href="#">Up &amp; Coming</a></li> -->
-			<li><a href="#">Most Popular</a></li>
-			<li><a href="#">Top Rated</a></li>
-		</ul>
-	</div>
-	
-	<div id="nav-categories" class="menu">
-		<h2>Categories</h2>
-		<ul>
-			<li><a href="#">Alerts &amp; Updates</a></li>
-			<li><a href="#">Appearance</a></li>
-			<li><a href="#">Bookmarks</a></li>
-			<li><a href="#">Download Management</a></li>
-			<li><a href="#">Feeds, News &amp; Blogging</a></li>
-			<li><a href="#">Games &amp; Entertainment</a></li>
-			<li><a href="#">Language Support</a></li>
-			<li><a href="#">Photos, Music &amp; Videos</a></li>
-			<li><a href="#">Privacy &amp; Security</a></li>
-			<li><a href="#">Shopping</a></li>
-			<li><a href="#">Social &amp; Communication</a></li>
-			<li><a href="#">Tabs</a></li>
-			<li><a href="#">Web Development</a></li>
-			<li><a href="#">Other</a></li>
-		</ul>
-	</div>
-</nav>
-
+{% include nav-sidebar.html %}
 
 <div class="primary-col">
 	<section id="promo-block" class="island deep">
@@ -275,52 +49,52 @@
 			<ol class="extension-list">
 				<li>
 					<b>1.</b>
-					<a href="#"><span></span> Adblock Plus</a>
+					<a href="detail.html"><span></span> Adblock Plus</a>
 					<span class="meta">9,999,999 users</span>
 				</li>
 				<li>
 					<b>2.</b>
-					<a href="#"><span></span> Video DownloadHelper</a>
+					<a href="detail.html"><span></span> Video DownloadHelper</a>
 					<span class="meta">9,999,999 users</span>
 				</li>
 				<li>
 					<b>3.</b>
-					<a href="#"><span></span> NoScript</a>
+					<a href="detail.html"><span></span> NoScript</a>
 					<span class="meta">9,999,999 users</span>
 				</li>
 				<li>
 					<b>4.</b>
-					<a href="#"><span></span> FlashGot</a>
+					<a href="detail.html"><span></span> FlashGot</a>
 					<span class="meta">9,999,999 users</span>
 				</li>
 				<li>
 					<b>5.</b>
-					<a href="#"><span></span> GreaseMonkey</a>
+					<a href="detail.html"><span></span> GreaseMonkey</a>
 					<span class="meta">9,999,999 users</span>
 				</li>
 				<li>
 					<b>6.</b>
-					<a href="#"><span></span> Firebug</a>
+					<a href="detail.html"><span></span> Firebug</a>
 					<span class="meta">9,999,999 users</span>
 				</li>
 				<li>
 					<b>7.</b>
-					<a href="#"><span></span> Personas Plus</a>
+					<a href="detail.html"><span></span> Personas Plus</a>
 					<span class="meta">9,999,999 users</span>
 				</li>
 				<li>
 					<b>8.</b>
-					<a href="#"><span></span> DownloadThemAll!</a>
+					<a href="detail.html"><span></span> DownloadThemAll!</a>
 					<span class="meta">9,999,999 users</span>
 				</li>
 				<li>
 					<b>9.</b>
-					<a href="#"><span></span> Easy YouTube Video Downloader</a>
+					<a href="detail.html"><span></span> Easy YouTube Video Downloader</a>
 					<span class="meta">9,999,999 users</span>
 				</li>
 				<li>
 					<b>10.</b>
-					<a href="#"><span></span> Download Statusbar</a>
+					<a href="detail.html"><span></span> Download Statusbar</a>
 					<span class="meta">9,999,999 users</span>
 				</li>
 			</ol>
@@ -353,7 +127,7 @@
 						<div class="extension">
 							<div class="main">
 								<p class="icon"><img src="static/img/icons/featured-01.png" /></p>
-								<p class="title"><a href="#">Tab Scope</a></p>
+								<p class="title"><a href="detail.html">Tab Scope</a></p>
 								<p class="category">Tabs</p>
 								<p class="rating"><span class="rating-stars rating-4"></span> (30)</p>
 							</div>
@@ -386,7 +160,7 @@
 						<div class="extension">
 							<div class="main">
 								<p class="icon"><img src="static/img/icons/featured-02.png" /></p>
-								<p class="title"><a href="#">CyberSearch</a></p>
+								<p class="title"><a href="detail.html">CyberSearch</a></p>
 								<p class="category">Search Tools</p>
 								<p class="rating"><span class="rating-stars rating-4"></span> (30)</p>
 							</div>
@@ -419,7 +193,7 @@
 						<div class="extension">
 							<div class="main">
 								<p class="icon"><img src="static/img/icons/featured-03.png" /></p>
-								<p class="title"><a href="#">Pixlr Grabber</a></p>
+								<p class="title"><a href="detail.html">Pixlr Grabber</a></p>
 								<p class="category">Photos, Music &amp; Videos</p>
 								<p class="rating"><span class="rating-stars rating-4"></span> (30)</p>
 							</div>
@@ -452,7 +226,7 @@
 						<div class="extension">
 							<div class="main">
 								<p class="icon"><img src="static/img/icons/featured-04.png" /></p>
-								<p class="title"><a href="#">Xmarks Sync</a></p>
+								<p class="title"><a href="detail.html">Xmarks Sync</a></p>
 								<p class="category">Bookmarks</p>
 								<p class="rating"><span class="rating-stars rating-4"></span> (30)</p>
 							</div>
@@ -485,7 +259,7 @@
 						<div class="extension">
 							<div class="main">
 								<p class="icon"><img src="static/img/icons/featured-05.png" /></p>
-								<p class="title"><a href="#">Stylish</a></p>
+								<p class="title"><a href="detail.html">Stylish</a></p>
 								<p class="category">Appearance</p>
 								<p class="rating"><span class="rating-stars rating-4"></span> (30)</p>
 							</div>
@@ -518,7 +292,7 @@
 						<div class="extension">
 							<div class="main">
 								<p class="icon"><img src="static/img/icons/featured-06.png" /></p>
-								<p class="title"><a href="#">Search Tabs - get Faceboo...</a></p>
+								<p class="title"><a href="detail.html">Search Tabs - get Faceboo...</a></p>
 								<p class="category">Search Tools</p>
 								<p class="rating"><span class="rating-stars rating-4"></span> (30)</p>
 							</div>
@@ -576,7 +350,7 @@
 						<div class="extension">
 							<div class="main">
 								<p class="icon"><img src="static/img/icons/unc-01.png" /></p>
-								<p class="title"><a href="#">Persona Rotator</a></p>
+								<p class="title"><a href="detail.html">Persona Rotator</a></p>
 								<p class="category">Appearance</p>
 								<p class="rating"><span class="rating-stars rating-4"></span> (30)</p>
 							</div>
@@ -609,7 +383,7 @@
 						<div class="extension">
 							<div class="main">
 								<p class="icon"><img src="static/img/icons/unc-02.png" /></p>
-								<p class="title"><a href="#">Tab Mix Plus</a></p>
+								<p class="title"><a href="detail.html">Tab Mix Plus</a></p>
 								<p class="category">Tabs</p>
 								<p class="rating"><span class="rating-stars rating-4"></span> (30)</p>
 							</div>
@@ -642,7 +416,7 @@
 						<div class="extension">
 							<div class="main">
 								<p class="icon"><img src="static/img/icons/unc-03.png" /></p>
-								<p class="title"><a href="#">Fire.fm</a></p>
+								<p class="title"><a href="detail.html">Fire.fm</a></p>
 								<p class="category">Photos, Music &amp; Video</p>
 								<p class="rating"><span class="rating-stars rating-4"></span> (30)</p>
 							</div>
@@ -675,7 +449,7 @@
 						<div class="extension">
 							<div class="main">
 								<p class="icon"><img src="static/img/icons/unc-04.png" /></p>
-								<p class="title"><a href="#">Kid Mode - Firefox for Kids</a></p>
+								<p class="title"><a href="detail.html">Kid Mode - Firefox for Kids</a></p>
 								<p class="category">Privacy &amp; Security</p>
 								<p class="rating"><span class="rating-stars rating-4"></span> (30)</p>
 							</div>
@@ -708,7 +482,7 @@
 						<div class="extension">
 							<div class="main">
 								<p class="icon"><img src="static/img/icons/unc-05.png" /></p>
-								<p class="title"><a href="#">Scrapbook</a></p>
+								<p class="title"><a href="detail.html">Scrapbook</a></p>
 								<p class="category">Download Management</p>
 								<p class="rating"><span class="rating-stars rating-4"></span> (30)</p>
 							</div>
@@ -741,7 +515,7 @@
 						<div class="extension">
 							<div class="main">
 								<p class="icon"><img src="static/img/icons/unc-06.png" /></p>
-								<p class="title"><a href="#">Feedly</a></p>
+								<p class="title"><a href="detail.html">Feedly</a></p>
 								<p class="category">Feeds, News &amp; Blogging</p>
 								<p class="rating"><span class="rating-stars rating-4"></span> (30)</p>
 							</div>
@@ -799,7 +573,7 @@
 						<div class="persona">
 							<div class="main">
 								<p class="preview"><img src="static/img/icons/persona-01.jpg" /></p>
-								<p class="title"><a href="#">Colorful Fractal</a></p>
+								<p class="title"><a href="detail.html">Colorful Fractal</a></p>
 							</div>
 
 							<div class="more">
@@ -812,7 +586,7 @@
 						<div class="persona">
 							<div class="main">
 								<p class="preview"><img src="static/img/icons/persona-02.jpg" /></p>
-								<p class="title"><a href="#">The Spirit of Autumn</a></p>
+								<p class="title"><a href="detail.html">The Spirit of Autumn</a></p>
 							</div>
 							<div class="more">
 							</div>
@@ -823,7 +597,7 @@
 						<div class="persona">
 							<div class="main">
 								<p class="preview"><img src="static/img/icons/persona-03.jpg" /></p>
-								<p class="title"><a href="#">squaresincolors</a></p>
+								<p class="title"><a href="detail.html">squaresincolors</a></p>
 							</div>
 							<div class="more">
 							</div>
@@ -834,7 +608,7 @@
 						<div class="persona">
 							<div class="main">
 								<p class="preview"><img src="static/img/icons/persona-04.jpg" /></p>
-								<p class="title"><a href="#">Space - wonderful world</a></p>
+								<p class="title"><a href="detail.html">Space - wonderful world</a></p>
 							</div>
 							<div class="more">
 							</div>
@@ -845,7 +619,7 @@
 						<div class="persona">
 							<div class="main">
 								<p class="preview"><img src="static/img/icons/persona-05.jpg" /></p>
-								<p class="title"><a href="#">fractal seafoam gnarls</a></p>
+								<p class="title"><a href="detail.html">fractal seafoam gnarls</a></p>
 							</div>
 							<div class="more">
 							</div>
@@ -856,7 +630,7 @@
 						<div class="persona">
 							<div class="main">
 								<p class="preview"><img src="static/img/icons/persona-06.jpg" /></p>
-								<p class="title"><a href="#">Unrestricted Imagination</a></p>
+								<p class="title"><a href="detail.html">Unrestricted Imagination</a></p>
 							</div>
 							<div class="more">
 							</div>
@@ -893,7 +667,7 @@
 						<div class="collection">
 							<div class="main">
 								<p class="icon"><img src="static/img/icons/coll-01.png" /></p>
-								<p class="title"><a href="#">Web Developer's Toolbox</a></p>
+								<p class="title"><a href="detail.html">Web Developer's Toolbox</a></p>
 								<p class="mini-desc">Speed up the development process by using add-ons to troubleshoot, ... edit, and debug web projects without ever clicking away from Firefox.</p>
 							</div>
 							
@@ -918,7 +692,7 @@
 						<div class="collection">
 							<div class="main">
 								<p class="icon"><img src="static/img/icons/coll-02.png" /></p>
-								<p class="title"><a href="#">Traveler's Pack</a></p>
+								<p class="title"><a href="detail.html">Traveler's Pack</a></p>
 								<p class="mini-desc">When the travel bug bites, these add-ons make it easy to plan, ... book and document your trip -- without getting lost along the way.</p>
 							</div>
 
@@ -943,7 +717,7 @@
 						<div class="collection">
 							<div class="main">
 								<p class="icon"><img src="static/img/icons/coll-03.png" /></p>
-								<p class="title"><a href="#">Family Organizer</a></p>
+								<p class="title"><a href="detail.html">Family Organizer</a></p>
 								<p class="mini-desc">Create a safe and fun online experience while planning ... everything the family does offline with add-ons that keep the family cooking.</p>
 							</div>
 
@@ -968,7 +742,7 @@
 						<div class="collection">
 							<div class="main">
 								<p class="icon"><img src="static/img/icons/coll-04.png" /></p>
-								<p class="title"><a href="#">Reference Desk</a></p>
+								<p class="title"><a href="detail.html">Reference Desk</a></p>
 								<p class="mini-desc">Make the librarian jealous with add-ons that help students, ... researchers or anyone with a tough question find and document all the answers.</p>
 							</div>
 							<div class="more">
