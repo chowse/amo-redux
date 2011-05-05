@@ -1,0 +1,128 @@
+---
+layout: common
+title: "Social &amp; Communication :: Firefox Add-ons"
+page-class: front-page
+
+featured-exts:
+  -
+    name: "Tab Scope"
+    icon: "featured-01.png"
+    category: "Tabs"
+    desc: "Preview and navigate tab contents through popup."
+    author: "Filiberto Mastrocola"
+  -
+    name: "CyberSearch"
+    icon: "featured-02.png"
+    category: "Search Tools"
+    desc: "Adds advanced Google Search capabilities to the Firefox 3 address bar. Supercharge the Awesome Bar with instant search results that appear as you type!"
+    author: "Filiberto Mastrocola"
+  -
+    name: "Pixlr Grabber"
+    icon: "featured-03.png"
+    category: "Photos, Music &amp; Videos"
+    desc: "Grabbing screens and pulling images from the web just got a bit easier. With the Pixlr Grabber add-on, you can copy, save, share or even edit your final grabs - including any image or background - with just a right-click."
+    author: "Filiberto Mastrocola"
+  -
+    name: "Xmarks Sync"
+    icon: "featured-04.png"
+    category: "Bookmarks"
+    desc: "NOTE: Xmarks lives! Learn more at http://blog.xmarks.com . Xmarks is the #1 bookmarking add-on. Keep your bookmarks, passwords and open tabs backed up and synchronized across computers and browsers."
+    author: "Filiberto Mastrocola"
+  -
+    name: "Stylish"
+    icon: "featured-05.png"
+    category: "Appearance"
+    desc: "Restyle the web with Stylish, a user styles manager. Stylish lets you easily install themes and skins for Google, Facebook, YouTube, Orkut, and many, many other sites. You can even customize Firefox and other programs themselves."
+    author: "Filiberto Mastrocola"
+  -
+    name: "Search Tabs - get Faceboo..."
+    icon: "featured-06.png"
+    category: "Search Tools"
+    desc: "Get search results from your Gmail, Facebook, Dropbox, LinkedIn accounts and more, on the right-hand side of the Google search results page. Add Wikipedia, Twitter and many more to personalize your search as you like it."
+    author: "Filiberto Mastrocola"
+---
+
+<div id="proto-controls" class="initial">
+	<div class="floating"><div>
+		Show:
+		<a href="#" data-class="non-firefox">Non-Firefox</a>
+		<a href="#" data-class="first-run">First Run</a>
+		<a href="#" data-class="small-screen">Small Screen</a>
+
+		<a href="#" class="close">Close</a>
+	</div></div>
+
+	<div class="fixed"></div>
+</div>
+
+
+<div id="page-content"><div class="funnel">
+
+{% include nav-sidebar.html %}
+
+<div class="primary-col">
+	
+	<section id="featured" class="island">
+		<header>
+			<h2>
+				Featured Extensions
+			</h2>
+		</header>
+		
+		<div class="pages">
+			<ul class="page threecol">
+				<!--
+				{% for i in (1..5) %}
+				{% for ext in page.featured-exts %}
+				--><li>
+					<div class="extension">
+						<div class="main">
+							<p class="icon"><img src="static/img/icons/{{ ext.icon }}" /></p>
+							<p class="title"><a href="detail.html">{{ ext.name }}</a></p>
+							<p class="category">{{ ext.category }}</p>
+							<p class="rating"><span class="rating-stars rating-4"></span> (30)</p>
+						</div>
+
+						<div class="more">
+							<div class="install">
+								<a class="button small install" href="#"><span>Add to Firefox</span></a>
+							</div>
+							
+							<div class="desc">
+								<p>
+									{{ ext.desc }}
+								</p>
+							</div>
+							
+							<div class="author">
+								by <a href="#">{{ ext.author }}</a>
+							</div>
+							
+							<div class="meta">
+								<p class="users">
+									9,999,999 users
+								</p>
+							</div>
+						</div>
+					</div>
+				</li><!--
+				{% endfor %}
+				{% endfor %}
+				-->
+			</ul>
+		</div>
+	</section>
+
+</div>
+
+
+</div></div>
+
+
+
+<script type="text/javascript" src="static/jquery-1.4.3.min.js"></script>
+<script type="text/javascript" src="static/script.js"></script>
+
+</body>
+
+</html>
