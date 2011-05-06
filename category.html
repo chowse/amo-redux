@@ -62,17 +62,17 @@ featured-exts:
 
 <div class="primary-col">
 	
-	<section id="featured" class="island">
+	<section id="featured" class="island deep">
 		<header>
 			<h2>
 				Featured Extensions
+				<a href="#">See all &raquo;</a>
 			</h2>
 		</header>
 		
 		<div class="pages">
 			<ul class="page threecol">
 				<!--
-				{% for i in (1..5) %}
 				{% for ext in page.featured-exts %}
 				--><li>
 					<div class="extension">
@@ -107,6 +107,105 @@ featured-exts:
 					</div>
 				</li><!--
 				{% endfor %}
+				-->
+			</ul>
+		</div>
+	</section>
+
+	<section id="featured" class="island">
+		<header>
+			<h2>
+				Up &amp; Coming
+				<a href="#">See all &raquo;</a>
+			</h2>
+		</header>
+		
+		<div class="pages">
+			<ul class="page threecol">
+				<!--
+				{% for ext in page.featured-exts %}
+				--><li>
+					<div class="extension">
+						<div class="main">
+							<p class="icon"><img src="static/img/icons/{{ ext.icon }}" /></p>
+							<p class="title"><a href="detail.html">{{ ext.name }}</a></p>
+							<p class="category">{{ ext.category }}</p>
+							<p class="rating"><span class="rating-stars rating-4"></span> (30)</p>
+						</div>
+
+						<div class="more">
+							<div class="install">
+								<a class="button small install" href="#"><span>Add to Firefox</span></a>
+							</div>
+							
+							<div class="desc">
+								<p>
+									{{ ext.desc }}
+								</p>
+							</div>
+							
+							<div class="author">
+								by <a href="#">{{ ext.author }}</a>
+							</div>
+							
+							<div class="meta">
+								<p class="users">
+									9,999,999 users
+								</p>
+							</div>
+						</div>
+					</div>
+				</li><!--
+				{% endfor %}
+				-->
+			</ul>
+		</div>
+	</section>
+
+	<section id="featured" class="island">
+		<header>
+			<h2>
+				Highest Rated
+				<a href="#">See all &raquo;</a>
+			</h2>
+		</header>
+		
+		<div class="pages">
+			<ul class="page threecol">
+				<!--
+				{% for ext in page.featured-exts %}
+				--><li>
+					<div class="extension">
+						<div class="main">
+							<p class="icon"><img src="static/img/icons/{{ ext.icon }}" /></p>
+							<p class="title"><a href="detail.html">{{ ext.name }}</a></p>
+							<p class="category">{{ ext.category }}</p>
+							<p class="rating"><span class="rating-stars rating-4"></span> (30)</p>
+						</div>
+
+						<div class="more">
+							<div class="install">
+								<a class="button small install" href="#"><span>Add to Firefox</span></a>
+							</div>
+							
+							<div class="desc">
+								<p>
+									{{ ext.desc }}
+								</p>
+							</div>
+							
+							<div class="author">
+								by <a href="#">{{ ext.author }}</a>
+							</div>
+							
+							<div class="meta">
+								<p class="users">
+									9,999,999 users
+								</p>
+							</div>
+						</div>
+					</div>
+				</li><!--
 				{% endfor %}
 				-->
 			</ul>

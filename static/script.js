@@ -30,7 +30,7 @@
 			return false;
 		});
 		
-		$('#proto-controls').delegate('a', 'click', function() {
+		$('#proto-controls').delegate('a', 'click', function(e) {
 			var btn = $(this),
 			    cls = btn.data('class'),
 			    doc = $(document.documentElement),
