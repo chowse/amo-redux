@@ -128,8 +128,9 @@ featured-exts:
 		<h3>By Category</h3>
 		<ul>
 			{% for field in page.categories %}
+			{% if forloop.index == 1 %}{% assign checked = 'checked' %}{% else %}{% assign checked = '' %}{% endif %}
 			<li>
-				<input id="sfcat{{ forloop.index }}" type="radio" name="sfcat" value="{{ forloop.index }}" />
+				<input id="sfcat{{ forloop.index }}" type="radio" name="sfcat" value="{{ forloop.index }}" {{ checked }} />
 				<label for="sfcat{{ forloop.index }}">
 					<span>{{ field }}</span>
 					<small>(200)</small>
@@ -143,8 +144,9 @@ featured-exts:
 		<h3>By Tag</h3>
 		<ul>
 			{% for field in page.tags %}
+			{% if forloop.index == 1 %}{% assign checked = 'checked' %}{% else %}{% assign checked = '' %}{% endif %}
 			<li>
-				<input id="sftag{{ forloop.index }}" type="radio" name="sftag" value="{{ forloop.index }}" />
+				<input id="sftag{{ forloop.index }}" type="radio" name="sftag" value="{{ forloop.index }}" {{ checked }} />
 				<label for="sftag{{ forloop.index }}">
 					<span>{{ field }}</span>
 					<small>(200)</small>
@@ -159,7 +161,8 @@ featured-exts:
 		<p>
 			<select>
 				{% for opt in page.versions %}
-				<option>{{ opt }}</option>
+				{% if forloop.index == 1 %}{% assign selected = 'selected' %}{% else %}{% assign selected = '' %}{% endif %}
+				<option {{ selected }}>{{ opt }}</option>
 				{% endfor %}
 			</select>
 		</p>
@@ -170,7 +173,8 @@ featured-exts:
 		<p>
 			<select>
 				{% for opt in page.platforms %}
-				<option>{{ opt }}</option>
+				{% if forloop.index == 1 %}{% assign selected = 'selected' %}{% else %}{% assign selected = '' %}{% endif %}
+				<option {{ selected }}>{{ opt }}</option>
 				{% endfor %}
 			</select>
 		</p>
