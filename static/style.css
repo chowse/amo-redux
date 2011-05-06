@@ -1002,26 +1002,26 @@ html {
 		top: 28px;
 		width: 280px;
 		height: 30px;
-		background: #f8fbff;
-		padding: 5px 7px 7px;
-		border: 1px solid #98B2C9;
-		-moz-border-radius: 4px;
-		-moz-box-shadow: 0 -2px 0 rgba(152, 178, 201, 0.3) inset,
-		                 0 2px 0 rgba(0, 0, 0, 0.05);
+		background: #1B5898;
+		background: -moz-linear-gradient(top, #2E89CA, #1B5898) #1B5898;
+		padding: 6px 8px 8px;
+		-moz-border-radius: 5px;
+		-moz-box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.5) inset,
+		                 0 2px 0 rgba(0, 0, 0, 0.1);
 	}
 		#site-nav-search input,
 		#site-nav-search .submit {
 			position: absolute;
 			top: 0;
 			height: 30px;
-			margin: 5px 7px 7px;
+			margin: 6px 8px 8px;
 			-moz-box-sizing: border-box;
 		}
 		#site-nav-search input {
 			display: block;
 			left: 0;
 			bottom: 0;
-			width: 240px;
+			width: 236px;
 			padding: 0;
 			padding-left: 32px;
 			border: 0;
@@ -1030,7 +1030,7 @@ html {
 			color: #333;
 			font-family: Trebuchet MS;
 			font-size: 14px;
-			-moz-box-shadow: 0 0 2px rgba(0,0,0,.4) inset;
+			-moz-box-shadow: 0 1px 1px rgba(0,0,0,.4) inset;
 		}
 		#site-nav-search input:hover,
 		#site-nav-search input:focus {
@@ -1048,6 +1048,10 @@ html {
 			height: 30px;
 			right: 0;
 			border: 0;
+			/* blue */
+			background: url(img/search-button.png) no-repeat center 0,
+			            -moz-linear-gradient(#45beff, #3dabe5);
+			/* green */
 			background: url(img/search-button.png) no-repeat center 0,
 			            -moz-linear-gradient(#84C63C, #489615);
 			cursor: pointer;
