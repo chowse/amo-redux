@@ -73,6 +73,7 @@ html {
 }
 	.island header {
 		position: relative;
+		padding-bottom: 15px;
 	}
 		.island header h2 {
 			display: inline-block;
@@ -102,19 +103,23 @@ html {
 			right: 0px;
 			top: 0px;
 		}
+	.island header.large {
+		margin-bottom: 15px;
+		border-bottom: 1px dotted #c9ddf2;
+	}
+		.island header.large h2 {
+			font-size: 24px;
+		}
 
 .island.deep {
 	padding-bottom: 18px;
 	-moz-box-shadow: 0 -4px 0 rgba(204,223,243, .3) inset,
 	                 0 2px 0 rgba(0,0,0, .05);
 }
-	.island header {
-		padding-bottom: 15px;
-	}
-	
+
 .island.flat {
 	-moz-box-shadow: none;
-	
+
 }
 
 
@@ -194,7 +199,7 @@ html {
 	.rating-stars.rating-3 { background-position: -26px 0; }
 	.rating-stars.rating-2 { background-position: -39px 0; }
 	.rating-stars.rating-1 { background-position: -52px 0; }
-	
+
 .rating-stars.large {
 	background: url(img/stars-16.png) no-repeat left top;
 	width: 88px;
@@ -450,7 +455,7 @@ html {
 			white-space: nowrap;
 			line-height: 14px;
 		}
-		
+
 	.collection .more {
 		display: none;
 		position: absolute;
@@ -664,8 +669,8 @@ html {
 			-moz-box-shadow: 0 1px 2px rgba(0,0,0, .5);
 			border-color: #a1bde1;
 		}
-	
-	
+
+
 .pages {
 }
 	.page {
@@ -840,7 +845,7 @@ html {
 			line-height: 32px;
 			border-left: 1px solid #9fa7af;
 		}
-		
+
 #site-header {
 	margin: 35px 0 0;
 }
@@ -885,7 +890,7 @@ html {
 		display: inline-block;
 		display: none;
 	}
-	
+
 	#site-nav {
 		position: relative;
 		margin-top: 0px;
@@ -1116,7 +1121,7 @@ html {
 			background-color: #c40000;
 			background-position: -25px 0;
 		}
-	
+
 	#site-mobiswitch {
 		font-family: droid sans, arial, sans-serif;
 		font-size: 18px;
@@ -1146,8 +1151,8 @@ html {
 			font-size: 16px;
 			font-weight: bold;
 		}
-	
-		
+
+
 #page-content {
 }
 
@@ -1289,7 +1294,7 @@ html {
 			color: #333;
 			font-weight: bold;
 		}
-		
+
 	#nav-types {
 		padding: 15px;
 	}
@@ -1330,7 +1335,7 @@ html {
 		#promo-block .pager:hover {
 			background: #fff;
 		}
-		
+
 	#promo-block .prev-promo,
 	#promo-block .next-promo {
 		position: absolute;
@@ -1350,7 +1355,7 @@ html {
 	}
 	#promo-block .prev-promo { left: -20px; }
 	#promo-block .next-promo { right: -20px; }
-	
+
 	#promo-block .prev-promo:after,
 	#promo-block .next-promo:after {
 		position: absolute;
@@ -1368,7 +1373,7 @@ html {
 		line-height: 32px;
 		text-align: center;
 		text-indent: 0;
-		-moz-box-shadow: 0 -2px 0 rgba(204, 223, 243, 0.6) inset, 
+		-moz-box-shadow: 0 -2px 0 rgba(204, 223, 243, 0.6) inset,
 		                 0 0 2px rgba(0, 0, 0, 0.1);
 		-moz-transition-property: border-color, color, box-shadow, left, right;
 		-moz-transition-duration: .2s;
@@ -1377,7 +1382,7 @@ html {
 	#promo-block .next-promo:hover:after {
 		border-color: #447BC4;
 		color: #447BC4;
-		-moz-box-shadow: 0 -2px 0 rgba(204, 223, 243, 0.6) inset, 
+		-moz-box-shadow: 0 -2px 0 rgba(204, 223, 243, 0.6) inset,
 		                 0 0 2px rgba(0, 0, 0, 0.2);
 	}
 	#promo-block .prev-promo:after {
@@ -2051,7 +2056,7 @@ html {
 		#detail-devstuff .expanded .expander:hover b {
 			background-image: url(img/collapse-hover.png);
 		}
-	
+
 
 #detail-devcomments {
 }
@@ -2100,8 +2105,25 @@ html {
 		padding-top: 15px;
 		border-top: 1px dotted #C9DDF2;
 	}
-	
-	
+
+
+
+/* Listing pages */
+
+.listing-page #site-header {
+	margin-bottom: 35px;
+}
+
+
+
+/* Category pages */
+
+.category-page #site-header {
+	margin-bottom: 35px;
+}
+
+
+
 .page-overlay {
 	position: fixed;
 	z-index: 10000;
@@ -2153,7 +2175,7 @@ html {
 			font-size: 28px;
 			font-style: italic;
 		}
-		
+
 .page-overlay,
 .page-overlay-box {
 	display: none;

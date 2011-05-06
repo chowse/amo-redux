@@ -2,8 +2,11 @@
 	<div id="nav-primary" class="menu">
 		<h2>Explore</h2>
 		<ul>
+			{% if page.page-class == 'listing-page' %}
+			<li><a class="selected" href="leaderboard.html">Featured</a></li>
+			{% else %}
 			<li><a href="leaderboard.html">Featured</a></li>
-			<!-- <li><a href="#">Up &amp; Coming</a></li> -->
+			{% endif %}
 			<li><a href="leaderboard.html">Most Popular</a></li>
 			<li><a href="leaderboard.html">Top Rated</a></li>
 		</ul>
@@ -22,7 +25,11 @@
 			<li><a href="category.html">Photos, Music &amp; Videos</a></li>
 			<li><a href="category.html">Privacy &amp; Security</a></li>
 			<li><a href="category.html">Shopping</a></li>
+			{% if page.page-class == 'category-page' %}
+			<li><a class="selected" href="category.html">Social &amp; Communication</a></li>
+			{% else %}
 			<li><a href="category.html">Social &amp; Communication</a></li>
+			{% endif %}
 			<li><a href="category.html">Tabs</a></li>
 			<li><a href="category.html">Web Development</a></li>
 			<li><a href="category.html">Other</a></li>
