@@ -63,17 +63,16 @@ featured-exts:
 <div class="primary-col">
 	
 	<section id="featured" class="island deep">
-		<header>
+		<header class="large">
 			<h2>
-				Featured Extensions
-				<a href="#">See all &raquo;</a>
+				Social &amp; Communication Extensions
 			</h2>
 		</header>
 		
 		<div class="pages">
 			<ul class="page threecol">
 				<!--
-				{% for ext in page.featured-exts %}
+				{% for ext in page.featured-exts limit:3 %}
 				--><li>
 					<div class="extension">
 						<div class="main">
@@ -115,7 +114,7 @@ featured-exts:
 	<section id="featured" class="island">
 		<header>
 			<h2>
-				Up &amp; Coming
+				Most Popular
 				<a href="#">See all &raquo;</a>
 			</h2>
 		</header>
@@ -123,7 +122,9 @@ featured-exts:
 		<div class="pages">
 			<ul class="page threecol">
 				<!--
-				{% for ext in page.featured-exts %}
+				{% for i in (1..2) %}
+				{% if i == 1 %}{% assign j = 6 %}{% else %}{% assign j = 3 %}{% endif %}
+				{% for ext in page.featured-exts limit:j %}
 				--><li>
 					<div class="extension">
 						<div class="main">
@@ -157,15 +158,17 @@ featured-exts:
 					</div>
 				</li><!--
 				{% endfor %}
+				{% endfor %}
 				-->
 			</ul>
 		</div>
 	</section>
 
+
 	<section id="featured" class="island">
 		<header>
 			<h2>
-				Highest Rated
+				Top Rated
 				<a href="#">See all &raquo;</a>
 			</h2>
 		</header>
@@ -173,7 +176,9 @@ featured-exts:
 		<div class="pages">
 			<ul class="page threecol">
 				<!--
-				{% for ext in page.featured-exts %}
+				{% for i in (1..2) %}
+				{% if i == 1 %}{% assign j = 6 %}{% else %}{% assign j = 3 %}{% endif %}
+				{% for ext in page.featured-exts limit:j %}
 				--><li>
 					<div class="extension">
 						<div class="main">
@@ -206,6 +211,61 @@ featured-exts:
 						</div>
 					</div>
 				</li><!--
+				{% endfor %}
+				{% endfor %}
+				-->
+			</ul>
+		</div>
+	</section>
+
+
+	<section id="featured" class="island">
+		<header>
+			<h2>
+				Newest Extensions
+				<a href="#">See all &raquo;</a>
+			</h2>
+		</header>
+		
+		<div class="pages">
+			<ul class="page threecol">
+				<!--
+				{% for i in (1..2) %}
+				{% if i == 1 %}{% assign j = 6 %}{% else %}{% assign j = 3 %}{% endif %}
+				{% for ext in page.featured-exts limit:j %}
+				--><li>
+					<div class="extension">
+						<div class="main">
+							<p class="icon"><img src="static/img/icons/{{ ext.icon }}" /></p>
+							<p class="title"><a href="detail.html">{{ ext.name }}</a></p>
+							<p class="category">{{ ext.category }}</p>
+							<p class="rating"><span class="rating-stars rating-4"></span> (30)</p>
+						</div>
+
+						<div class="more">
+							<div class="install">
+								<a class="button small install" href="#"><span>Add to Firefox</span></a>
+							</div>
+							
+							<div class="desc">
+								<p>
+									{{ ext.desc }}
+								</p>
+							</div>
+							
+							<div class="author">
+								by <a href="#">{{ ext.author }}</a>
+							</div>
+							
+							<div class="meta">
+								<p class="users">
+									9,999,999 users
+								</p>
+							</div>
+						</div>
+					</div>
+				</li><!--
+				{% endfor %}
 				{% endfor %}
 				-->
 			</ul>
