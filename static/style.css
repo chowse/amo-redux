@@ -103,12 +103,38 @@ html {
 			right: 0px;
 			top: 0px;
 		}
+		.island header .sort {
+			position: absolute;
+			right: 0px;
+			top: 0px;
+			font-family: Arial;
+			font-size: 12px;
+			line-height: 18px;
+		}
+			.island header .sort select {
+			}
+			.island header .sort optgroup {
+				margin-top: 6px;
+				padding-top: 6px;
+				border-top: 1px solid #ccc;
+			}
+			.island header .sort optgroup:first-child {
+				margin-top: 0;
+				padding-top: 0;
+				border-top: 0;
+			}
+			.island header .sort option {
+				padding: 0 4px;
+			}
 	.island header.large {
 		margin-bottom: 15px;
 		border-bottom: 1px dotted #c9ddf2;
 	}
 		.island header.large h2 {
 			font-size: 24px;
+		}
+		.island header.large .sort {
+			line-height: 24px;
 		}
 
 .island.deep {
