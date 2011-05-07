@@ -213,6 +213,50 @@ html {
 	}
 
 
+.paginator {
+	display: block;
+	position: relative;
+	margin: 21px 15px 0;
+	font-family: Arial;
+	font-size: 12px;
+	line-height: 28px;
+}
+	.paginator .rel {
+		font-size: 14px;
+		font-weight: bold;
+		text-align: center;
+	}
+		.paginator .rel a,
+		.paginator .rel span {
+			margin-left: 7px;
+			font-size: 14px;
+			padding: 7px 14px 9px;
+		}
+		.paginator .rel a:first-child,
+		.paginator .rel span:first-child {
+			margin-left: 0;
+		}
+		.paginator .rel .disabled {
+			opacity: .25;
+		}
+	.paginator .pos,
+	.paginator .feed {
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		color: #999;
+		font-size: 12px;
+	}
+	.paginator .pos {
+		left: 0;
+	}
+	.paginator .feed {
+		right: 0;
+	}
+		.paginator .feed a {
+			padding-left: 16px;
+			background: url(img/feed.png) no-repeat 0 center;
+		}
 
 
 .rating-stars {
