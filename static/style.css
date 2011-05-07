@@ -127,7 +127,7 @@ html {
 				padding: 0 4px;
 			}
 	.island header.large {
-		padding-bottom: 10px;
+		padding-bottom: 15px;
 		border-bottom: 1px dotted #c9ddf2;
 	}
 		.island header.large h2 {
@@ -394,6 +394,83 @@ html {
 		padding-top: 10px;
 		border-top: 1px solid #ccc;
 	}
+	
+.wide-ext {
+	position: relative;
+	padding: 15px 0;
+	font-family: Arial;
+	font-size: 12px;
+}
+	.wide-ext p {
+		margin: 2px 160px 0 58px;
+	}
+	.wide-ext p.icon {
+		position: absolute;
+		left: 0;
+		top: 15px;
+		width: 48px;
+		height: 48px;
+		margin: 0;
+	}
+		.wide-ext p.icon img {
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+	.wide-ext p.title {
+		overflow: hidden;
+		margin-top: 0;
+		padding-bottom: 2px;
+		white-space: nowrap;
+	}
+		.wide-ext p.title a {
+			font-size: 16px;
+			font-weight: bold;
+		}
+		.wide-ext p.title a:after {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 15px;
+			width: 48px;
+			height: 48px;
+		}
+		.wide-ext p.title .author {
+			display: none;
+			color: #999;
+		}
+	.wide-ext p.desc {
+		overflow: hidden;
+		color: #666;
+		line-height: 14px;
+		max-height: 28px;
+	}
+	.wide-ext p.install {
+		opacity: 0;
+		position: absolute;
+		right: 0;
+		top: 15px;
+		margin: 0;
+	}
+.wide-ext:hover {
+	background: rgba(60, 150, 240, 0.05);
+}
+	.wide-ext:hover p.install {
+		opacity: 1;
+		display: block;
+	}
+	
+	
+.wide-ext-list {
+	margin-top: -15px;
+}
+	.wide-ext-list li {
+		border-top: 1px dotted #C9DDF2;
+	}
+	.wide-ext-list li:first-child {
+		border-top: 0;
+	}
+
 
 .theme {
 	display: block;
@@ -753,6 +830,12 @@ html {
 	}
 		.page.threecol li {
 			width: 33.33%;
+		}
+	.page.onecol {
+	}
+		.page.onecol li {
+			display: block;
+			width: auto;
 		}
 
 

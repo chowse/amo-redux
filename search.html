@@ -90,7 +90,7 @@ featured-exts:
     desc: "Restyle the web with Stylish, a user styles manager. Stylish lets you easily install themes and skins for Google, Facebook, YouTube, Orkut, and many, many other sites. You can even customize Firefox and other programs themselves."
     author: "Filiberto Mastrocola"
   -
-    name: "Search Tabs - get Faceboo..."
+    name: "Search Tabs - get Facebook, Gmail&#x2122;++ on Google"
     icon: "featured-06.png"
     category: "Search Tools"
     desc: "Get search results from your Gmail, Facebook, Dropbox, LinkedIn accounts and more, on the right-hand side of the Google search results page. Add Wikipedia, Twitter and many more to personalize your search as you like it."
@@ -212,40 +212,22 @@ featured-exts:
 		</header>
 		
 		<div class="pages">
-			<ul class="page threecol">
+			<ul class="page onecol wide-ext-list">
 				<!--
-				{% for i in (1..5) %}
+				{% for i in (1..3) %}
 				{% for ext in page.featured-exts %}
 				--><li>
-					<div class="extension">
-						<div class="main">
-							<p class="icon"><img src="static/img/icons/{{ ext.icon }}" /></p>
-							<p class="title"><a href="detail.html">{{ ext.name }}</a></p>
-							<p class="category">{{ ext.category }}</p>
-							<p class="rating"><span class="rating-stars rating-4"></span> (30)</p>
-						</div>
-
-						<div class="more">
-							<div class="install">
-								<a class="button small install" href="#"><span>Add to Firefox</span></a>
-							</div>
-							
-							<div class="desc">
-								<p>
-									{{ ext.desc }}
-								</p>
-							</div>
-							
-							<div class="author">
-								by <a href="#">{{ ext.author }}</a>
-							</div>
-							
-							<div class="meta">
-								<p class="users">
-									9,999,999 users
-								</p>
-							</div>
-						</div>
+					<div class="wide-ext">
+						<p class="icon"><img src="static/img/icons/{{ ext.icon }}" /></p>
+						<p class="title">
+							<a href="detail.html">{{ ext.name }}</a>
+							<span class="author">by {{ ext.author }}</span>
+						</p>
+						<p class="rating"><span class="rating-stars rating-4"></span> (30)</p>
+						<p class="desc">{{ ext.desc }}</p>
+						<p class="install">
+							<a class="button small install" href="#"><span>Add to Firefox</span></a>
+						</p>
 					</div>
 				</li><!--
 				{% endfor %}
