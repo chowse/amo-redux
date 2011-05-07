@@ -73,7 +73,7 @@ html {
 }
 	.island header {
 		position: relative;
-		padding-bottom: 15px;
+		margin-bottom: 15px;
 	}
 		.island header h2 {
 			display: inline-block;
@@ -127,7 +127,7 @@ html {
 				padding: 0 4px;
 			}
 	.island header.large {
-		margin-bottom: 15px;
+		padding-bottom: 10px;
 		border-bottom: 1px dotted #c9ddf2;
 	}
 		.island header.large h2 {
