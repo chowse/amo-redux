@@ -373,6 +373,12 @@ html {
 			margin-right: 2px;
 			vertical-align: bottom;
 		}
+	.extension .users {
+		color: #390;
+	}
+	.extension .author {
+		font-style: italic;
+	}
 	.extension div.install {
 		margin-bottom: 10px;
 	}
@@ -384,7 +390,6 @@ html {
 	}
 	.extension .more .author {
 		margin-top: 10px;
-		font-style: italic;
 	}
 		.extension .more .author a {
 			color: inherit;
@@ -402,7 +407,7 @@ html {
 	font-size: 12px;
 }
 	.wide-ext p {
-		margin: 2px 160px 0 58px;
+		margin: 0 160px 0 58px;
 	}
 	.wide-ext p.icon {
 		position: absolute;
@@ -420,7 +425,7 @@ html {
 	.wide-ext p.title {
 		overflow: hidden;
 		margin-top: 0;
-		padding-bottom: 2px;
+		padding-bottom: 4px;
 		white-space: nowrap;
 	}
 		.wide-ext p.title a {
@@ -445,6 +450,16 @@ html {
 		line-height: 14px;
 		max-height: 28px;
 	}
+	.wide-ext p.meta {
+		margin-top: 4px;
+		color: #999;
+	}
+		.wide-ext p.meta span {
+			vertical-align: middle;
+		}
+		.wide-ext .users {
+			color: #093;
+		}
 	.wide-ext p.install {
 		opacity: 0;
 		position: absolute;
