@@ -447,8 +447,8 @@ html {
 	.wide-ext p.desc {
 		overflow: hidden;
 		color: #666;
-		line-height: 14px;
-		max-height: 28px;
+		line-height: 16px;
+		max-height: 32px;
 	}
 	.wide-ext p.meta {
 		margin-top: 4px;
@@ -2315,15 +2315,14 @@ html {
 		text-transform: uppercase;
 	}
 	#search-facets .facet {
-		margin-top: 16px;
+		margin-top: 21px;
 	}
 		#search-facets .facet h3 {
-			margin-bottom: 6px;
-			padding-bottom: 6px;
-			border-bottom: 1px solid rgba(3, 48, 81, 0.2);
+			margin-bottom: 7px;
+			padding-top: 7px;
+			border-top: 1px solid rgba(3, 48, 81, 0.2);
 			font-size: 14px;
 			font-weight: bold;
-			line-height: 18px;
 		}
 		#search-facets .facet li,
 		#search-facets .facet p {
