@@ -127,11 +127,10 @@ html {
 				padding: 0 4px;
 			}
 	.island header.large {
-		padding-bottom: 15px;
-		border-bottom: 1px dotted #c9ddf2;
 	}
 		.island header.large h2 {
 			font-size: 24px;
+			color: #c63717;
 		}
 		.island header.large .sort {
 			line-height: 24px;
@@ -461,8 +460,10 @@ html {
 	}
 		.wide-ext p.icon img {
 			position: absolute;
+			left: 0;
 			right: 0;
 			top: 0;
+			margin: 0 auto;
 		}
 	.wide-ext p.title {
 		overflow: hidden;
@@ -519,13 +520,11 @@ html {
 	
 	
 .wide-ext-list {
-	margin-top: -15px;
 }
 	.wide-ext-list li {
 		border-top: 1px dotted #C9DDF2;
 	}
 	.wide-ext-list li:first-child {
-		border-top: 0;
 	}
 
 
