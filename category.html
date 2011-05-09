@@ -7,18 +7,21 @@ featured-exts:
   -
     name: "Tab Scope"
     icon: "featured-01.png"
+    sshot: "featured-01.png"
     category: "Tabs"
     desc: "Preview and navigate tab contents through popup."
     author: "Filiberto Mastrocola"
   -
     name: "CyberSearch"
     icon: "featured-02.png"
+    sshot: "featured-02.png"
     category: "Search Tools"
     desc: "Adds advanced Google Search capabilities to the Firefox 3 address bar. Supercharge the Awesome Bar with instant search results that appear as you type!"
     author: "Filiberto Mastrocola"
   -
     name: "Pixlr Grabber"
     icon: "featured-03.png"
+    sshot: "featured-03.png"
     category: "Photos, Music &amp; Videos"
     desc: "Grabbing screens and pulling images from the web just got a bit easier. With the Pixlr Grabber add-on, you can copy, save, share or even edit your final grabs - including any image or background - with just a right-click."
     author: "Filiberto Mastrocola"
@@ -74,12 +77,19 @@ featured-exts:
 				<!--
 				{% for ext in page.featured-exts limit:3 %}
 				--><li>
-					<div class="extension">
+					<div class="extension big">
 						<div class="main">
-							<p class="icon"><img src="static/img/icons/{{ ext.icon }}" /></p>
 							<p class="title"><a href="detail.html">{{ ext.name }}</a></p>
-							<p class="author">{{ ext.author }}</p>
-							<p class="rating"><span class="rating-stars rating-4"></span> (30)</p>
+							<p class="sshot">
+								<img src="static/img/sshots/{{ ext.sshot }}" />
+							</p>
+							<!--
+							<div class="mini-desc">
+								<p>
+									{{ ext.desc }}
+								</p>
+							</div>
+							-->
 						</div>
 
 						<div class="more">

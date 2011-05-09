@@ -346,6 +346,7 @@ html {
 		.extension .title a:after {
 			content: '';
 			position: absolute;
+			z-index: 1;
 			left: -1px;
 			right: -1px;
 			top: -1px;
@@ -399,7 +400,48 @@ html {
 		padding-top: 10px;
 		border-top: 1px solid #ccc;
 	}
-	
+
+.extension.big {
+}
+	.extension.big .main {
+	}
+		.extension.big .main p {
+			margin-left: 0;
+		}
+	.extension.big .more {
+		left: 0;
+		top: 210px;
+	}
+	.extension.big .more:before {
+		left: 0;
+	}
+	.extension.big .title {
+		font-size: 16px;
+		line-height: 18px;
+	}
+	.extension.big .sshot {
+		position: relative;
+		overflow: hidden;
+		height: 170px;
+	}
+		.extension.big .sshot img {
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto 0;
+			padding: 8px;
+			border: 1px solid #ccc;
+			background: #fff;
+			box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+		}
+		.extension.big:hover .sshot img {
+			border-color: transparent;
+			box-shadow: none;
+		}
+
+
+
 .wide-ext {
 	position: relative;
 	padding: 15px 0;
