@@ -2484,7 +2484,7 @@ html {
 		right: 0;
 		top: 0;
 		height: 42px;
-		z-index: 1000;
+		z-index: 1000000;
 	}
 		#proto-controls .floating > div {
 			position: absolute;
