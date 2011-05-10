@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html class="{{ page.page-class }}">
+<html class="no-js {{ page.page-class }}">
 
 <script type="text/javascript">
-	document.documentElement.className += ' js';
+	(function(d) {
+		d.className = d.className.replace(/\bno-js\b/, 'js');
+	})(document.documentElement);
 </script>
 
 <head>
