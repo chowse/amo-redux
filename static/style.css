@@ -104,6 +104,7 @@ html {
 			top: 0px;
 		}
 		.island header .sort {
+			display: none;
 			position: absolute;
 			right: 0px;
 			top: 0px;
@@ -134,6 +135,28 @@ html {
 		}
 		.island header.large .sort {
 			line-height: 24px;
+		}
+	.island header .sorter {
+		margin: 10px 0 15px;
+		color: #999;
+		font-family: Arial;
+		font-size: 11px;
+	}
+		.island header .sorter ul,
+		.island header .sorter li {
+			display: inline;
+		}
+		.island header .sorter a {
+			padding: 0 6px;
+			border-left: 1px solid #ccc;
+		}
+		.island header .sorter li:first-child a {
+			border-left: 0;
+		}
+		.island header .sorter a.selected {
+			color: #333;
+			font-weight: bold;
+			text-decoration: none;
 		}
 
 .island.deep {
