@@ -65,6 +65,7 @@ featured-exts:
     category: "Tabs"
     desc: "Preview and navigate tab contents through popup."
     author: "Filiberto Mastrocola"
+    restartless: true
   -
     name: "CyberSearch"
     icon: "featured-02.png"
@@ -77,6 +78,7 @@ featured-exts:
     category: "Photos, Music &amp; Videos"
     desc: "Grabbing screens and pulling images from the web just got a bit easier. With the Pixlr Grabber add-on, you can copy, save, share or even edit your final grabs - including any image or &hellip; background - with just a right-click."
     author: "Filiberto Mastrocola"
+    featured: true
   -
     name: "Xmarks Sync"
     icon: "featured-04.png"
@@ -89,6 +91,8 @@ featured-exts:
     category: "Appearance"
     desc: "Restyle the web with Stylish, a user styles manager. Stylish lets you easily install themes and skins for Google, Facebook, YouTube, Orkut, and many, many other sites. You can even &hellip; customize Firefox and other programs themselves."
     author: "Filiberto Mastrocola"
+    restartless: true
+    featured: true
   -
     name: "Search Tabs - get Facebook, Gmail&#x2122;, Dropbox, LinkedIn on Go&hellip;"
     icon: "featured-06.png"
@@ -221,6 +225,10 @@ featured-exts:
 						<p class="title">
 							<a href="detail.html">{{ ext.name }}</a>
 							<span class="author">by {{ ext.author }}</span>
+							{% if i == 1 %}
+							{% if ext.featured %}<span class="featured">Featured</span>{% endif %}
+							{% if ext.restartless %}<span class="no-restart">No Restart</span>{% endif %}
+							{% endif %}
 						</p>
 						<p class="desc">{{ ext.desc }}</p>
 						<p class="meta">

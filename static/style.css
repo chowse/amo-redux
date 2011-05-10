@@ -443,7 +443,7 @@ html {
 
 .wide-ext {
 	position: relative;
-	padding: 15px 0;
+	padding: 20px 0;
 	font-family: Arial;
 	font-size: 12px;
 }
@@ -486,6 +486,26 @@ html {
 		.wide-ext p.title .author {
 			display: none;
 			color: #999;
+		}
+		.wide-ext p.title .featured,
+		.wide-ext p.title .no-restart {
+			display: inline-block;
+			margin-left: 2px;
+			padding: 2px 4px;
+			border-radius: 2px;
+			font-size: 9px;
+			font-weight: bold;
+			text-transform: uppercase;
+			vertical-align: 3px;
+		}
+		.wide-ext p.title .featured {
+			background: #3c6;
+			background: #093;
+			color: #fff;
+		}
+		.wide-ext p.title .no-restart {
+			background: #e8933a;
+			color: #fff;
 		}
 	.wide-ext p.desc {
 		overflow: hidden;
