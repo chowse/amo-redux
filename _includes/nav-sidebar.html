@@ -1,38 +1,38 @@
 <nav id="nav-sidebar" class="secondary-col">
 	<div id="nav-primary" class="menu">
 		<h2>Explore</h2>
-		<ul>
-			{% if page.page-class == 'listing-page' %}
-			<li><a class="selected" href="leaderboard.html">Featured</a></li>
-			{% else %}
-			<li><a href="leaderboard.html">Featured</a></li>
+		<div>
+			{% if page.categories-only %}{% else %}
+			<ul>
+				{% if page.page-class == 'listing-page' %}
+				<li><a class="selected" href="leaderboard.html">Featured</a></li>
+				{% else %}
+				<li><a href="leaderboard.html">Featured</a></li>
+				{% endif %}
+				<li><a href="leaderboard.html">Most Popular</a></li>
+				<li><a href="leaderboard.html">Highest Rated</a></li>
+			</ul>
 			{% endif %}
-			<li><a href="leaderboard.html">Most Popular</a></li>
-			<li><a href="leaderboard.html">Highest Rated</a></li>
-		</ul>
-	</div>
-	
-	<div id="nav-categories" class="menu">
-		<h2>Categories</h2>
-		<ul>
-			<li><a href="category.html">Alerts &amp; Updates</a></li>
-			<li><a href="category.html">Appearance</a></li>
-			<li><a href="category.html">Bookmarks</a></li>
-			<li><a href="category.html">Download Management</a></li>
-			<li><a href="category.html">Feeds, News &amp; Blogging</a></li>
-			<li><a href="category.html">Games &amp; Entertainment</a></li>
-			<li><a href="category.html">Language Support</a></li>
-			<li><a href="category.html">Photos, Music &amp; Videos</a></li>
-			<li><a href="category.html">Privacy &amp; Security</a></li>
-			<li><a href="category.html">Shopping</a></li>
-			{% if page.page-class == 'category-page' %}
-			<li><a class="selected" href="category.html">Social &amp; Communication</a></li>
-			{% else %}
-			<li><a href="category.html">Social &amp; Communication</a></li>
-			{% endif %}
-			<li><a href="category.html">Tabs</a></li>
-			<li><a href="category.html">Web Development</a></li>
-			<li><a href="category.html">Other</a></li>
-		</ul>
+			<ul id="nav-categories">
+				<li><a href="category.html">Alerts &amp; Updates</a></li>
+				<li><a href="category.html">Appearance</a></li>
+				<li><a href="category.html">Bookmarks</a></li>
+				<li><a href="category.html">Download Management</a></li>
+				<li><a href="category.html">Feeds, News &amp; Blogging</a></li>
+				<li><a href="category.html">Games &amp; Entertainment</a></li>
+				<li><a href="category.html">Language Support</a></li>
+				<li><a href="category.html">Photos, Music &amp; Videos</a></li>
+				<li><a href="category.html">Privacy &amp; Security</a></li>
+				<li><a href="category.html">Shopping</a></li>
+				{% if page.page-class == 'category-page' %}
+				<li><a class="selected" href="category.html">Social &amp; Communication</a></li>
+				{% else %}
+				<li><a href="category.html">Social &amp; Communication</a></li>
+				{% endif %}
+				<li><a href="category.html">Tabs</a></li>
+				<li><a href="category.html">Web Development</a></li>
+				<li><a href="category.html">Other</a></li>
+			</ul>
+		</div>
 	</div>
 </nav>
