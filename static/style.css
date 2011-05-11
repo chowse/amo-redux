@@ -2399,14 +2399,17 @@ html {
 		text-transform: uppercase;
 	}
 	#search-facets .facet {
-		margin-top: 21px;
+		margin-top: 15px;
+		padding-top: 15px;
+		border-top: 1px solid rgba(3, 48, 81, 0.2);
 	}
 		#search-facets .facet h3 {
-			margin-bottom: 7px;
-			padding-top: 7px;
-			border-top: 1px solid rgba(3, 48, 81, 0.2);
+			margin-bottom: 6px;
 			font-size: 14px;
 			font-weight: bold;
+		}
+		#search-facets .facet ul ul {
+			margin-left: 12px;
 		}
 		#search-facets .facet li,
 		#search-facets .facet p {
@@ -2415,6 +2418,13 @@ html {
 		}
 		#search-facets .facet li {
 		}
+			#search-facets .facet a {
+			}
+			#search-facets .facet a.selected {
+				font-weight: bold;
+				color: #333;
+				text-decoration: none;
+			}
 			#search-facets .facet input[type=radio],
 			#search-facets .facet input[type=checkbox] {
 				margin: 0;

@@ -5,7 +5,6 @@ page-class: listing-page
 search-query: youtube
 
 categories:
-  - "All Categories"
   - "Alerts &amp; Updates"
   - "Appearance"
   - "Bookmarks"
@@ -23,7 +22,6 @@ categories:
   - "Other"
 
 tags:
-  - Any tag
   - video
   - youtube
   - toolbar
@@ -37,7 +35,6 @@ tags:
 
 
 versions:
-  - All Versions
   - Firefox 6.0
   - Firefox 5.0
   - Firefox 4.2
@@ -47,7 +44,6 @@ versions:
   - Firefox 3.0
 
 platforms:
-  - All Platforms
   - All Mobile Platforms
   - Windows
   - Mac OS X
@@ -132,31 +128,26 @@ featured-exts:
 	<div class="facet">
 		<h3>By Category</h3>
 		<ul>
-			{% for field in page.categories %}
-			{% if forloop.index == 1 %}{% assign checked = 'checked' %}{% else %}{% assign checked = ' ' %}{% endif %}
+			<li><a href="#">All Add-ons</a></li>
 			<li>
-				<input id="sfcat{{ forloop.index }}" type="radio" name="sfcat" value="{{ forloop.index }}" {{ checked }} />
-				<label for="sfcat{{ forloop.index }}">
-					<span>{{ field }}</span>
-					<small>(200)</small>
-				</label>
+				<a href="#" class="selected">Extensions</a>
+				<ul>
+					{% for field in page.categories %}
+					<li><a href="#">{{ field }}</a></li>
+					{% endfor %}
+				</ul>
 			</li>
-			{% endfor %}
+			<li><a href="#">Themes</a></li>
+			<li><a href="#">Search Tools</a></li>
 		</ul>
 	</div>
 
 	<div class="facet">
 		<h3>By Tag</h3>
 		<ul>
+			<li><a href="#" class="selected">All tags</a></li>
 			{% for field in page.tags %}
-			{% if forloop.index == 1 %}{% assign checked = 'checked' %}{% else %}{% assign checked = ' ' %}{% endif %}
-			<li>
-				<input id="sftag{{ forloop.index }}" type="radio" name="sftag" value="{{ forloop.index }}" {{ checked }} />
-				<label for="sftag{{ forloop.index }}">
-					<span>{{ field }}</span>
-					<small>(200)</small>
-				</label>
-			</li>
+			<li><a href="#">{{ field }}</a></li>
 			{% endfor %}
 		</ul>
 	</div>
@@ -165,9 +156,9 @@ featured-exts:
 		<h3>By Firefox Version</h3>
 		<p>
 			<select>
+				<option selected>All Versions</option>
 				{% for opt in page.versions %}
-				{% if forloop.index == 1 %}{% assign selected = 'selected' %}{% else %}{% assign selected = ' ' %}{% endif %}
-				<option {{ selected }}>{{ opt }}</option>
+				<option>{{ opt }}</option>
 				{% endfor %}
 			</select>
 		</p>
@@ -177,9 +168,9 @@ featured-exts:
 		<h3>By Platform</h3>
 		<p>
 			<select>
+				<option selected>All Platforms</option>
 				{% for opt in page.platforms %}
-				{% if forloop.index == 1 %}{% assign selected = 'selected' %}{% else %}{% assign selected = ' ' %}{% endif %}
-				<option {{ selected }}>{{ opt }}</option>
+				<option>{{ opt }}</option>
 				{% endfor %}
 			</select>
 		</p>
