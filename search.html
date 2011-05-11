@@ -3,6 +3,8 @@ layout: common
 title: "youtube :: Search :: Firefox Add-ons"
 page-class: listing-page
 search-query: youtube
+facet-type: search
+facet-compatibility: true
 
 categories:
   - "Alerts &amp; Updates"
@@ -114,69 +116,7 @@ featured-exts:
 <div id="page-content"><div class="funnel">
 
 
-<nav id="search-facets" class="secondary-col">
-<form method="get" action="search.html">
-	<h2>Narrow Results</h2>
-
-	<div class="facet">
-		<p>
-			<input id="sfcompat" type="checkbox" name="sfcompat" value="1" />
-			<label for="sfcompat">Compatible add-ons only</label>
-		</p>
-	</div>
-	
-	<div class="facet">
-		<h3>By Category</h3>
-		<ul>
-			<li><a href="#">All Add-ons</a></li>
-			<li>
-				<a href="#" class="selected">Extensions</a>
-				<ul>
-					{% for field in page.categories %}
-					<li><a href="#">{{ field }}</a></li>
-					{% endfor %}
-				</ul>
-			</li>
-			<li><a href="#">Themes</a></li>
-			<li><a href="#">Search Tools</a></li>
-		</ul>
-	</div>
-
-	<div class="facet">
-		<h3>By Tag</h3>
-		<ul>
-			<li><a href="#" class="selected">All tags</a></li>
-			{% for field in page.tags %}
-			<li><a href="#">{{ field }}</a></li>
-			{% endfor %}
-		</ul>
-	</div>
-
-	<div class="facet">
-		<h3>By Firefox Version</h3>
-		<p>
-			<select>
-				<option selected>All Versions</option>
-				{% for opt in page.versions %}
-				<option>{{ opt }}</option>
-				{% endfor %}
-			</select>
-		</p>
-	</div>
-
-	<div class="facet">
-		<h3>By Platform</h3>
-		<p>
-			<select>
-				<option selected>All Platforms</option>
-				{% for opt in page.platforms %}
-				<option>{{ opt }}</option>
-				{% endfor %}
-			</select>
-		</p>
-	</div>
-</form>
-</nav>
+{% include facets.html %}
 
 
 <div class="primary-col">
@@ -187,6 +127,7 @@ featured-exts:
 				Search Results for &quot;youtube&quot;
 			</h2>
 			
+{% if 0 %}
 			<form class="sort">
 				<label>Sort by</label>
 				<select>
@@ -203,7 +144,7 @@ featured-exts:
 					</optgroup>
 				</select>
 			</form>
-			
+
 			<div class="sorter">
 				Sort by:<!--
 				--><ul><!--
@@ -214,6 +155,7 @@ featured-exts:
 					-->
 				</ul>
 			</div>
+{% endif %}
 		</header>
 		
 		<div class="pages">

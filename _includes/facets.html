@@ -1,0 +1,147 @@
+{% assign narrow-sort-url = 'leaderboard.html' %}
+{% assign widen-sort-url = 'index.html' %}
+{% assign narrow-category-url = 'category.html' %}
+{% assign widen-category-url = 'index.html' %}
+
+{% if page.facet-category %}
+	{% assign narrow-sort-url = 'category-list.html' %}
+	{% assign widen-sort-url = 'category.html' %}
+{% endif %}
+
+{% if page.facet-sort %}
+	{% assign narrow-category-url = 'category-list.html' %}
+	{% assign widen-category-url = 'leaderboard.html' %}
+{% endif %}
+
+{% if page.facet-type == 'search' %}
+	{% assign default-sort = 'Relevance' %}
+{% else %}
+{% assign default-sort = 'Overview' %}
+{% endif %}
+
+
+<nav id="search-facets" class="secondary-col">
+	<form method="get" action="search.html">
+		{% if page.facet-type == 'search' %}
+		<h2>Search</h2>
+		{% else %}
+		<h2>Browse</h2>
+		{% endif %}
+		
+		{% if page.facet-compatibility %}
+		<div class="facet">
+			<p>
+				<input id="sfcompat" type="checkbox" name="sfcompat" value="1" />
+				<label for="sfcompat">Compatible add-ons only</label>
+			</p>
+		</div>
+		{% endif %}
+		
+		<div class="facet">
+			<h3>Order By</h3>
+			<ul>
+				{% if page.facet-sort %}
+				<li><a href="{{ widen-sort-url }}">{{ default-sort }}</a></li>
+				<li><a class="selected" href="{{ narrow-sort-url }}">Featured</a></li>
+				{% else %}
+				<li><a href="{{ widen-sort-url }}" class="selected">{{ default-sort }}</a></li>
+				<li><a href="{{ narrow-sort-url }}">Featured</a></li>
+				{% endif %}
+				<li><a href="{{ narrow-sort-url }}">Most Used</a></li>
+				<li><a href="{{ narrow-sort-url }}">Last Updated</a></li>
+			</ul>
+		</div>
+		
+		<div class="facet">
+			<h3>Category</h3>
+			<ul>
+				{% if page.facet-category %}
+				<li><a href="{{ widen-category-url }}">All Add-ons</a></li>
+				{% else %}
+				<li><a class="selected" href="{{ widen-category-url }}">All Add-ons</a></li>
+				{% endif %}
+				<li>
+					<a href="{{ widen-category-url }}">Extensions</a>
+					<ul>
+						<li><a href="{{ narrow-category-url }}">Alerts &amp; Updates</a></li>
+						<li><a href="{{ narrow-category-url }}">Appearance</a></li>
+						<li><a href="{{ narrow-category-url }}">Bookmarks</a></li>
+						<li><a href="{{ narrow-category-url }}">Download Management</a></li>
+						<li><a href="{{ narrow-category-url }}">Feeds, News &amp; Blogging</a></li>
+						<li><a href="{{ narrow-category-url }}">Games &amp; Entertainment</a></li>
+						<li><a href="{{ narrow-category-url }}">Language Support</a></li>
+						<li><a href="{{ narrow-category-url }}">Photos, Music &amp; Videos</a></li>
+						<li><a href="{{ narrow-category-url }}">Privacy &amp; Security</a></li>
+						<li><a href="{{ narrow-category-url }}">Shopping</a></li>
+						{% if page.facet-category %}
+						<li><a class="selected" href="{{ narrow-category-url }}">Social &amp; Communication</a></li>
+						{% else %}
+						<li><a href="{{ narrow-category-url }}">Social &amp; Communication</a></li>
+						{% endif %}
+						<li><a href="{{ narrow-category-url }}">Tabs</a></li>
+						<li><a href="{{ narrow-category-url }}">Web Development</a></li>
+						<li><a href="{{ narrow-category-url }}">Other</a></li>
+					</ul>
+				</li>
+				<li><a href="{{ widen-category-url }}">Personas</a></li>
+				<li><a href="{{ widen-category-url }}">Themes</a></li>
+				<li><a href="{{ widen-category-url }}">Search Tools</a></li>
+			</ul>
+		</div>
+
+		{% if page.facet-compatibility %}
+		<div class="facet">
+			<h3>Tagged</h3>
+			<ul>
+				<li><a href="#" class="selected">All tags</a></li>
+				{% for field in page.tags %}
+				<li><a href="#">{{ field }}</a></li>
+				{% endfor %}
+				<li><a href="#">video</a></li>
+				<li><a href="#">youtube</a></li>
+				<li><a href="#">toolbar</a></li>
+				<li><a href="#">sports</a></li>
+				<li><a href="#">download</a></li>
+				<li><a href="#">blogs</a></li>
+				<li><a href="#">search</a></li>
+				<li><a href="#">twitter</a></li>
+				<li><a href="#">shopping</a></li>
+				<li><a href="#">youtube downloader</a></li>
+			</ul>
+		</div>
+
+		<div class="facet">
+			<h3>Firefox Version</h3>
+			<p>
+				<select>
+					<option selected>All Versions</option>
+					<option>Firefox 6.0</option>
+					<option>Firefox 5.0</option>
+					<option>Firefox 4.2</option>
+					<option>Firefox 4.0</option>
+					<option>Firefox 3.6</option>
+					<option>Firefox 3.5</option>
+					<option>Firefox 3.0</option>
+				</select>
+			</p>
+		</div>
+
+		<div class="facet">
+			<h3>Platform</h3>
+			<p>
+				<select>
+					<option selected>All Platforms</option>
+					<option>All Mobile Platforms</option>
+					<option>Windows</option>
+					<option>Mac OS X</option>
+					<option>Linux</option>
+					<option>BSD</option>
+					<option>Solaris</option>
+					<option>Android</option>
+					<option>Maemo</option>
+				</select>
+			</p>
+		</div>
+		{% endif %}
+	</form>
+</nav>

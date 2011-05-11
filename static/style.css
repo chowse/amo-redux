@@ -137,6 +137,7 @@ html {
 			line-height: 24px;
 		}
 	.island header .sorter {
+		display: none;
 		margin: 10px 0 15px;
 		color: #999;
 		font-family: Arial;
