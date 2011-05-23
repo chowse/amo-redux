@@ -1,7 +1,7 @@
 <nav id="nav-sidebar" class="secondary-col">
-	<div id="nav-primary" class="menu">
-		<h2>Explore</h2>
-		<div>
+	<div id="nav-primary">
+		<div class="menu">
+			<h2>Explore</h2>
 			{% if page.categories-only %}{% else %}
 			<ul>
 				{% if page.page-class == 'listing-page' %}
@@ -13,6 +13,9 @@
 				<li><a href="leaderboard.html">Highest Rated</a></li>
 			</ul>
 			{% endif %}
+		</div>
+		<div class="menu">
+			<h2>Categories</h2>
 			<ul id="nav-categories">
 				<li><a href="category.html">Alerts &amp; Updates</a></li>
 				<li><a href="category.html">Appearance</a></li>

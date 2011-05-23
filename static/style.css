@@ -1501,19 +1501,10 @@ html {
 		font-family: Arial;
 		font-size: 12px;
 	}
-		#nav-sidebar .menu ul {
-			margin-top: 10px;
-			padding-top: 11px;
-			border-top: 1px solid rgba(3, 48, 81, 0.2);
-		}
-		#nav-sidebar .menu ul:first-chil {
-			margin-top: 0;
-			padding-top: 0;
-			border-top: 0;
-		}
 		#nav-sidebar .menu h2,
 		#nav-sidebar .menu a {
-			line-height: 22px;
+			line-height: 28px;
+			padding: 0 6px;
 		}
 		#nav-sidebar .menu h2 {
 			font-size: 14px;
@@ -1523,27 +1514,39 @@ html {
 		#nav-sidebar .menu a {
 			display: block;
 			position: relative;
+			border: 0 solid rgba(3, 48, 81, .2);
+			border-bottom-width: 1px;
+			text-decoration: none;
 		}
 		#nav-sidebar .menu li:first-child a {
+			border-top-width: 1px;
 		}
 		#nav-sidebar .menu a:after {
 			content: '\203a';
-			visibility: hidden;
 			position: absolute;
+			right: 6px;
 			top: -2px;
-			margin-left: 6px;
 			font-family: Georgia;
 			font-weight: normal;
 			font-size: 18px;
+			color: #dadada;
+			color: rgba(0,0,0, .125);
+		}
+		#nav-sidebar .menu a:hover,
+		#nav-sidebar .menu a:focus,
+		#nav-sidebar .menu a.selected {
+			background: #ecf5fe;
+			background: rgba(60, 150, 240, .1); /* + #fff = #ecf5fe  */
+		}
+		#nav-sidebar .menu a:hover:after,
+		#nav-sidebar .menu a:focus:after,
+		#nav-sidebar .menu a.selected:after {
+			color: inherit;
+			display: inline;
 		}
 		#nav-sidebar .menu a.selected {
 			color: #333;
-			color: #D16B00;
 			font-weight: bold;
-			text-decoration: none;
-		}
-		#nav-sidebar .menu a.selected:after {
-			visibility: visible;
 		}
 
 	#nav-types {
