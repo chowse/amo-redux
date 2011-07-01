@@ -1719,10 +1719,19 @@ html {
 				margin-left: 14px;
 			}
 			#detail-main .no-restart {
-				padding: 3px 9px;
-				border: 1px solid #C9DDF2;
-				background: #fff;
-				-moz-border-radius: 3px;
+				display: inline-block;
+				margin-left: 6px;
+				padding: 3px 6px;
+				border-radius: 2px;
+				font-size: 9px;
+				font-family: Arial;
+				font-weight: bold;
+				font-style: normal;
+				line-height: 1;
+				text-transform: uppercase;
+				background: #e8933a;
+				color: #fff;
+				vertical-align: 3px;
 			}
 			#detail-main .privacy {
 			}
