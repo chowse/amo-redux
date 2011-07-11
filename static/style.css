@@ -10,7 +10,7 @@
 html {
 	font-family: Trebuchet MS, sans-serif;
 	font-size: 13px;
-	background: #fff url(img/body-bg.png) repeat-x 0 0;
+	background: #f6f9fe url(img/body-bg.png) repeat-x 0 0;
 	color: #333;
 	padding-bottom: 200px;
 }
@@ -63,12 +63,11 @@ html {
 	display: block;
 	padding: 14px;
 	padding-bottom: 16px;
-	border: 1px solid #c9ddf2;
-	background: #F4F8FC;
-	background: -moz-linear-gradient(top , #FCFDFE, #F4F8FC);
+	border: 1px solid #afc2d3;
+	background: #fff;
 	-moz-border-radius: 5px;
-	-moz-box-shadow: 0 -2px 0 rgba(204,223,243, .3) inset,
-	                 0 0 2px rgba(0,0,0, .1);
+	-moz-box-shadow: 0 -2px 0 #dfecf8 inset,
+	                 0 2px 0 rgba(0,0,0, .05);
 	margin-bottom: 15px;
 }
 	.island header {
@@ -1754,8 +1753,10 @@ html {
 
 
 #detail-slow {
-	border-color: #fff8dc;
+	border-color: #e2dbbf;
 	background: #fff8dc url(img/turtle.png) no-repeat 36px 15px;
+	box-shadow: 0 -1px 0 #f7f0d5 inset,
+	            0 1px 0 rgba(0,0,0,.05);
 	font-family: Georgia;
 	font-size: 14px;
 	color: #666;
@@ -1772,8 +1773,10 @@ html {
 
 #detail-contribute {
 	position: relative;
-	background: #ECF5FE;
-	border-color: #ECF5FE;
+	background: #E3EDFA;
+	border-color: #ccd6e3;
+	box-shadow: 0 -1px 0 #d7e1ed inset,
+	            0 1px 0 rgba(0,0,0,.05);
 	font-family: Georgia;
 	font-size: 14px;
 	color: #666;
@@ -1919,14 +1922,14 @@ html {
 	                                 rgba(16, 83, 130, 0.5),
 	                                 rgba(16, 83, 130, 0)),
 	            -moz-linear-gradient(left,
-	                                 #F4F8FC,
-	                                 rgba(255,255,255,0),
-	                                 #F4F8FC),
+	                                 #f0f5fb,
+	                                 rgba(246,249,254,0),
+	                                 #f0f5fb),
 	            -moz-linear-gradient(top,
-	                                 rgba(255,255,255,0),
-	                                 #F4F8FC 50px,
-	                                 #F4F8FC 180px,
-	                                 rgba(255,255,255,0)),
+	                                 rgba(246,249,254,0),
+	                                 #f0f5fb 50px,
+	                                 #f0f5fb 180px,
+	                                 rgba(246,249,254,0)),
 	            url(img/sshot-bg.png);
 	background-size: 100% 5px, 100% 5px, auto, auto, auto;
 	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat;
@@ -1961,13 +1964,13 @@ html {
 	#detail-sshots .prev {
 		left: 0;
 		padding-left: 5px;
-		background: -moz-linear-gradient(left, #fff , rgba(255,255,255,0));
+		background: -moz-linear-gradient(left, #F6F9FE, rgba(255,255,255,0));
 		text-align: left;
 	}
 	#detail-sshots .next {
 		right: 0;
 		padding-right: 5px;
-		background: -moz-linear-gradient(right, #fff, rgba(255,255,255,0));
+		background: -moz-linear-gradient(right, #F6F9FE, rgba(255,255,255,0));
 		text-align: right;
 		text-indent: -5px;
 	}
@@ -2034,7 +2037,6 @@ html {
 
 
 .detail-page .island {
-	background: -moz-linear-gradient(top, #fcfdfe, #f4f8fc);
 	margin: 30px 0;
 	font-family: Georgia;
 	color: #666;
