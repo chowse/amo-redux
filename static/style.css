@@ -1651,6 +1651,34 @@ html {
 
 /* Detail Pages  */
 
+
+
+.detail-page .island {
+	margin: 30px 0;
+	font-family: Georgia;
+	color: #666;
+}
+	.detail-page .island h2 {
+		font-size: 18px;
+		font-style: italic;
+		color: #333;
+	}
+	.detail-page .island .island-segment {
+		margin: 0 -14px;
+		padding: 14px;
+		border-top: 1px solid #fff;
+		border-bottom: 1px solid #C9DDF2;
+	}
+	.detail-page .island .island-segment:first-child {
+		padding-top: 0;
+		border-top: 0;
+	}
+	.detail-page .island .island-segment:last-child {
+		padding-bottom: 0;
+		border-bottom: 0;
+	}
+
+
 #detail-main {
 	margin: 0;
 	margin-bottom: 30px;
@@ -1771,7 +1799,7 @@ html {
 		margin-bottom: 4px;
 	}
 
-#detail-contribute {
+.detail-page .detail-contribute {
 	position: relative;
 	background: #E3EDFA;
 	border-color: #ccd6e3;
@@ -1781,64 +1809,67 @@ html {
 	font-size: 14px;
 	color: #666;
 }
-	#detail-contribute .avatar {
+	.detail-page .detail-contribute .avatar {
 		position: absolute;
 		left: 29px;
 		top: 15px;
 	}
-		#detail-contribute .avatar a,
-		#detail-contribute .avatar img {
+		.detail-page .detail-contribute .avatar a,
+		.detail-page .detail-contribute .avatar img {
 			display: block;
 			width: 40px;
 			height: 40px;
 		}
-		#detail-contribute .avatar a {
-			padding: 3px;
-			border: 1px solid #fff;
+		.detail-page .detail-contribute .avatar a {
+			padding: 4px;
 			background: #fff;
+			box-shadow: 0 0 0px 1px rgba(68, 123, 196, .25);
 		}
-			#detail-contribute .avatar a:hover,
-			#detail-contribute .avatar a:focus {
-				border-color: #C9DDF2;
+			.detail-page .detail-contribute .avatar a:hover,
+			.detail-page .detail-contribute .avatar a:focus {
+				box-shadow: 0 0 0px 2px rgba(68, 123, 196, .25);
 			}
-		#detail-contribute .avatar img {
+		.detail-page .detail-contribute .avatar img {
 			background: url(img/avatar.png) no-repeat center center;
 		}
-	#detail-contribute .body {
+	.detail-page .detail-contribute .body {
 		min-height: 52px;
 		margin-top: 4px;
 		margin-left: 84px;
 		margin-right: 180px;
 	}
-		#detail-contribute h2,
-		#detail-contribute p {
+		.detail-page .detail-contribute h2,
+		.detail-page .detail-contribute p {
 		}
-		#detail-contribute h2 {
+		.detail-page .detail-contribute h2 {
 			margin-bottom: 4px;
 			font-size: 16px;
 			color: #333;
 		}
-		#detail-contribute p {
+		.detail-page .detail-contribute p {
 			line-height: 18px;
 		}
-	#detail-contribute .action {
+	.detail-page .detail-contribute.no-action .body {
+		margin-right: 0;
+	}
+	.detail-page .detail-contribute .action {
 		position: absolute;
 		right: 15px;
 		top: 15px;
 		width: 160px;
 		text-align: center;
 	}
-		#detail-contribute .button span {
+		.detail-page .detail-contribute .button span {
 			padding-left: 20px;
 			background: url(img/contribute.png) no-repeat left center;
 		}
-		#detail-contribute .action small {
+		.detail-page .detail-contribute .action small {
 			display: block;
 			margin-top: 4px;
 			font-family: Trebuchet MS;
 			font-size: 11px;
 		}
-		#detail-contribute .action strong {
+		.detail-page .detail-contribute .action strong {
 			color: #333;
 		}
 
@@ -2034,32 +2065,6 @@ html {
 				bottom: 0;
 				margin: auto auto;
 			}
-
-
-.detail-page .island {
-	margin: 30px 0;
-	font-family: Georgia;
-	color: #666;
-}
-	.detail-page .island h2 {
-		font-size: 18px;
-		font-style: italic;
-		color: #333;
-	}
-	.detail-page .island .island-segment {
-		margin: 0 -14px;
-		padding: 14px;
-		border-top: 1px solid #fff;
-		border-bottom: 1px solid #C9DDF2;
-	}
-	.detail-page .island .island-segment:first-child {
-		padding-top: 0;
-		border-top: 0;
-	}
-	.detail-page .island .island-segment:last-child {
-		padding-bottom: 0;
-		border-bottom: 0;
-	}
 
 
 .detail-sidebar {
@@ -2591,6 +2596,9 @@ html.slow #detail-slow { display: block; }
 
 html #detail-contribute { display: none; }
 html.contrib #detail-contribute { display: block; }
+
+html #detail-meet { display: none; }
+html.meet #detail-meet { display: block; }
 
 html #install-button { }
 html.incompatible #install-button, html.experimental #install-button { display: none; }
