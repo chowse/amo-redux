@@ -2126,8 +2126,30 @@ html {
 			#detail-about-sidebar .data .version a {
 				font-size: 10px;
 			}
+	#detail-about-sidebar .langs {
+		line-height: 15px;
+	}
+		#detail-about-sidebar .langs strong {
+			font-weight: bold;
+		}
+		#detail-about-sidebar .more {
+		}
+			#detail-about-sidebar .more span {
+				display: none;
+			}
+	#detail-about-sidebar .langs.expanded {
+	}
+		#detail-about-sidebar .langs.expanded .more {
+		}
+			#detail-about-sidebar .langs.expanded .more a {
+				display: none;
+			}
+			#detail-about-sidebar .langs.expanded .more span {
+				display: inline;
+			}
 
-	#detail-about-sidebar ul {
+	#detail-about-sidebar ul,
+	#detail-about-sidebar p {
 		margin-top: 18px;
 	}
 	#detail-about-sidebar ul:first-child {

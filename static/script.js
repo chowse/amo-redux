@@ -71,6 +71,11 @@
 			return false;
 		});
 		
+		$('#detail-langs .more a').click(function() {
+			$('#detail-langs').addClass('expanded');
+			return false;
+		});
+		
 		setTimeout(function() {
 			$('#proto-controls').removeClass('initial');
 		}, 1000);
