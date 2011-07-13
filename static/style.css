@@ -545,6 +545,16 @@ html {
 		.wide-ext .users {
 			color: #093;
 		}
+	.wide-ext p.slow {
+		margin-top: 10px;
+		color: #666;
+	}
+		.wide-ext p.slow span {
+			padding: 2px 4px;
+			background: #fff3cc;
+		}
+		.wide-ext p.slow a {
+		}
 	.wide-ext p.install {
 		opacity: 0;
 		position: absolute;

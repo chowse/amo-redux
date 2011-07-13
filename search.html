@@ -84,6 +84,7 @@ featured-exts:
     category: "Bookmarks"
     desc: "NOTE: Xmarks lives! Learn more at http://blog.xmarks.com . Xmarks is the #1 bookmarking add-on. Keep your bookmarks, passwords and open tabs backed up and synchronized &hellip; across computers and browsers."
     author: "Filiberto Mastrocola"
+    slow: true
   -
     name: "Stylish"
     icon: "featured-05.png"
@@ -185,6 +186,11 @@ featured-exts:
 							&middot;
 							<span class="users">9,999,999 users</span>
 						</p>
+						{% if ext.slow %}
+							<p class="slow">
+								<span>This add-on can slow down Firefox. <a href="#">Explain&hellip;</a></span>
+							</p>
+						{% endif %}
 						<p class="install">
 							<a class="button small install" href="#"><span>Add to Firefox</span></a>
 							{% if ext.incompatible %}
