@@ -560,7 +560,37 @@ html {
 		display: block;
 	}
 	
-	
+.wide-ext.incompatible {
+}
+	.wide-ext.incompatible p {
+		opacity: .6;
+	}
+	.wide-ext.incompatible p.icon {
+		opacity: .4;
+	}
+	.wide-ext.incompatible p.install {
+		opacity: .6;
+	}
+		.wide-ext.incompatible p.install .button {
+			display: none;
+		}
+		.wide-ext.incompatible p.install .msg {
+			display: block;
+			width: 160px;
+			color: #666;
+			font-size: 10px;
+			text-align: right;
+		}
+.wide-ext.incompatible:hover {
+}
+	.wide-ext.incompatible:hover p.install {
+		opacity: 1;
+	}
+		.wide-ext.incompatible:hover p.install .msg {
+			color: #c00000;
+		}
+		
+
 .wide-ext-list {
 }
 	.wide-ext-list li {

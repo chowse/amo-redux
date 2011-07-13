@@ -70,6 +70,7 @@ featured-exts:
     category: "Search Tools"
     desc: "Adds advanced Google Search capabilities to the Firefox 3 address bar. Supercharge the Awesome Bar with instant search results that appear as you type!"
     author: "Filiberto Mastrocola"
+    incompatible: true
   -
     name: "Pixlr Grabber"
     icon: "featured-03.png"
@@ -164,7 +165,11 @@ featured-exts:
 				{% for i in (1..3) %}
 				{% for ext in page.featured-exts %}
 				--><li>
+					{% if ext.incompatible %}
+					<div class="wide-ext incompatible">
+					{% else %}
 					<div class="wide-ext">
+					{% endif %}
 						<p class="icon"><img src="static/img/icons/{{ ext.icon }}" /></p>
 						<p class="title">
 							<a href="detail.html">{{ ext.name }}</a>
@@ -182,6 +187,9 @@ featured-exts:
 						</p>
 						<p class="install">
 							<a class="button small install" href="#"><span>Add to Firefox</span></a>
+							{% if ext.incompatible %}
+							<span class="msg">Not available for Firefox 4.0b5pre</span>
+							{% endif %}
 						</p>
 					</div>
 				</li><!--
