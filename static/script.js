@@ -18,6 +18,88 @@
 		return this;
 	};
 	
+	$.fn.searchSuggestions = function(results) {
+		var self = this;
+		
+		this.keydown(function(e) {
+			if (e.keyCode == 38 || e.keyCode == 40) {
+				return false;
+			}
+		});
+		
+		this.keyup(function(e) {
+			var val = $(this).val();
+			var match = !!val;
+			
+			if (val) {
+				$(results).find('.val').text(val);
+				
+				var pat = new RegExp('\\b'+val, 'gi');
+			
+				$(results).find('a').each(function(i) {
+					if (i == 0) {
+						return;
+					}
+					var inner = $(this).text();
+					var newInner = inner.replace(pat, '<strong>$&</strong>');
+					if (inner != newInner) {
+						$(this).html(newInner).show();
+						match = true;
+					} else {
+						$(this).hide();
+					}
+				});
+			}
+			
+			$(results).toggleClass('visible', match);
+			
+			if (e.keyCode == 38 || e.keyCode == 40) {
+				var sel = $(results).find('.sel');
+				var elems = $(results).find('a:visible');
+				var i = elems.index(sel.get(0));
+				
+				if (sel.length && i >= 0) {
+					if (e.keyCode == 38) {
+						i = Math.max(0, i-1);
+					} else {
+						i = Math.min(i+1, elems.length-1);
+					}
+				} else {
+					i = 0;
+				}
+				
+				sel.removeClass('sel');
+				$(elems.get(i)).addClass('sel');
+				
+				return false;
+			}
+			
+			else if (e.keyCode == 27) {
+				$(results).removeClass('visible');
+				$(results).find('.sel').removeClass('sel');
+			}
+			
+			else {
+				$(results).find('.sel').removeClass('sel');
+				$(results).find('a:visible:first').addClass('sel');
+			}
+		});
+		
+		this.blur(function() {
+			$('#site-search-suggestions').removeClass('visible');
+		});
+		
+		this.closest('form').submit(function() {
+			var sel = $('#site-search-suggestions .sel');
+			if (sel) {
+				window.location = sel.get(0).href;
+				return false;
+			}
+		});
+		
+		return this;
+	};
+	
 	$(function() {
 		
 		$('.expandable .expander').click(function() {
@@ -75,6 +157,8 @@
 			$('#detail-langs').addClass('expanded');
 			return false;
 		});
+		
+		$('#site-nav-search input').searchSuggestions('#site-search-suggestions');
 		
 		setTimeout(function() {
 			$('#proto-controls').removeClass('initial');

@@ -2653,6 +2653,98 @@ html {
 		text-transform: uppercase;
 	}
 
+#site-search-suggestions {
+	position: absolute;
+	visibility: hidden;
+	z-index: 1000;
+	left: -10px;
+	right: -10px;
+	bottom: -5px;
+	height: 1px;
+	font-size: 14px;
+	opacity: 0;
+	-moz-transition-property: bottom, opacity, visibility;
+	-moz-transition-duration: .3s;
+}
+	#site-search-suggestions .wrap {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		background: #fff;
+		border: 1px solid #98B2C9;
+		border-radius: 4px;
+		box-shadow: 0 0 4px rgba(0, 0, 0, 0.2),
+		            0 -2px 0 rgba(152, 178, 201, 0.3) inset;
+	}
+	#site-search-suggestions .stem {
+		position: absolute;
+		top: -20px;
+		left: 14px;
+		width: 40px;
+		height: 20px;
+		background: url(img/search-stem.png) no-repeat center bottom;
+	}
+	#site-search-suggestions ul {
+		margin: 10px 16px;
+	}
+	#site-search-suggestions a {
+		display: block;
+		overflow: hidden;
+		padding: 0 4px;
+		padding-left: 32px;
+		background: none no-repeat 8px 4px;
+		line-height: 26px;
+		font-family: Arial;
+		font-size: 13px;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		text-decoration: none;
+	}
+		#site-search-suggestions a strong {
+			font-weight: bold;
+/*
+			font-weight: bold;
+			text-decoration: underline;
+*/
+		}
+	#site-search-suggestions a:hover,
+	#site-search-suggestions a.sel {
+		background-color: #EBF4FE;
+		color: #447BC4;
+	}
+	#site-search-suggestions a:after {
+		margin-left: .5em;
+		color: #b3b3b3;
+		font-size: 12px;
+		font-weight: normal;
+	}
+	#site-search-suggestions a.search {
+	}
+		#site-search-suggestions a.search strong {
+			text-decoration: none;
+		}
+	#site-search-suggestions a.cat {
+		background-image: url(img/search-cat.png);
+	}
+	#site-search-suggestions a.cat:after {
+		content: 'Category';
+	}
+	#site-search-suggestions a.ext {
+		background-image: url(img/search-ext.png);
+		background-image: url(img/icons/featured-01.png);
+		background-size: 16px 16px;
+	}
+	#site-search-suggestions a.ext:after {
+		content: 'Extension';
+	}
+#site-search-suggestions.visible {
+	visibility: visible;
+	bottom: -15px;
+	opacity: 1;
+}
+
+
 
 html #detail-slow { display: none; }
 html.slow #detail-slow { display: block; }
